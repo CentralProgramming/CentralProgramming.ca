@@ -1,0 +1,117 @@
+div#container {
+    width: 100%;
+}
+h1 {
+    font-family: "Graduate";
+    text-shadow: 2px 4px #cccccc;
+}
+h2 {
+    font-family: "Graduate";
+    font-size: 35px;
+    margin-top: 0px;
+}
+p {
+     font-family: "Alike Angular";
+}
+
+
+/*HEADER*/
+header {
+    background-color: #fff;
+    height: 85px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    border-bottom: 5px outset #fff;
+    box-shadow: 0 0 20px #666666;
+}
+h1#title {
+    font-size: 45px;
+    margin: 20px;
+    margin-top: 17px;
+    margin-left: 20px;
+    float: left;
+}
+
+
+/*NAVIGATION*/
+nav {
+    margin-top: 74.5px;
+    background-color: #000;
+    height: 100px;
+}
+ul#nav {
+    list-style-type: none;
+    overflow: hidden;
+    padding: 0px;
+    padding-top: 5px;
+    padding-right: 16.5px;
+    margin: 0px;
+}
+header li a{
+    float: right;
+    display: block;
+    padding:20px;
+    font-size: 35px;
+    text-align: center;
+    text-decoration: none;
+    color: #000;
+    border-right: 1px solid #bbb;
+}
+header li a:hover, .dropdown:hover .dropbtn {
+    background-color: #000;
+    color: #fff;
+}
+li.dropdown {
+    display: block;
+    float: right;
+}
+.dropdown-content {
+    margin-right: 16.5px;
+    margin-top: 70px;
+    display: none;
+    position: absolute;
+    background-color: #f2f2f2;
+    min-width: 184px;
+    box-shadow: 0px 8px 16px 0px #595959;
+    z-index: 1;
+}
+.dropdown-content a {
+    font-size: 25px;
+    display: block;
+    text-align: left;
+}
+.dropdown-content a:hover {
+    background-color: #666666;
+}
+.dropdown:hover .dropdown-content {
+    display: grid;
+}
+
+
+
+/*SECTION*/
+section.filler {
+    height: 1000px;
+    background-color: #f2f2f2;
+}
+
+
+/*PARALLAX*/
+.parallax {
+    height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.parallax#first {
+    background-image: url(https://i.ytimg.com/vi/5Y1GpL768Sk/maxresdefault.jpg);
+}
+.parabox {
+    width: 500px;
+    height: 400px;
+    background-color: #e6e6e6;
+    border-radius: 10px;
+    box-shadow: 0 10px 50px #666666;
+}
