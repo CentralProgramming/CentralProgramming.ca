@@ -4,25 +4,47 @@ div#container {
 h1 {
     text-align: center;
     font-family: "Graduate";
-    text-shadow: 2px 4px #cccccc;
+    color: #e69900;
+    text-shadow: 2px 4px #000;
 }
 h2 {
     font-family: "Graduate";
     font-size: 50px;
     text-align: center;
     margin: 0;
-    color: #e69900;
+    color: #ffcc66;
     text-shadow: 2px 4px #000;
 }
 h3 {
     font-family: "Alike Angular";
     font-size: 25px;
     margin: 0;
+    color: #333333;
     text-align: center;
 }
 p {
      font-family: "Alike Angular";
     font-size: 20px;
+}
+
+
+/*PARALLAX*/
+.parallax {
+    height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.parallax#first {
+    background-image: url(https://i.ytimg.com/vi/5Y1GpL768Sk/maxresdefault.jpg);
+}
+.parabox {
+    width: 500px;
+    height: 400px;
+    background-color: #e6e6e6;
+    border-radius: 10px;
+    box-shadow: 0 10px 50px #666666;
 }
 
 
@@ -54,7 +76,7 @@ ul#nav {
 nav li a{
     float: right;
     display: block;
-    padding:20px;
+    padding: 20px;
     font-size: 35px;
     text-align: center;
     text-decoration: none;
@@ -95,46 +117,55 @@ li.dropdown {
 
 
 /*INTRO*/
-section.intro {
-    height: 1500px;
-    background-color: #f2f2f2;
+section#intro {
+    height: auto;
+    background-color: #fff;
 }
 div.center {
     width: 500px;
     padding: 10px;
     text-align: left;
-    background-color: #999999;
+    background-color: #d9d9d9;
     border-radius: 10px;
-    box-shadow: 0 10px 10px #666666;
+    box-shadow: 0 5px 5px #666666;
 }
 div.rounded {
     width: 750px;
     height: 150px;
     padding: 10px;
     text-align: left;
-    background-color: #ffdd99;
+    background-color: #ffeecc;
     border-radius: 50px;
     border-top-left-radius: 0px;
     border-bottom-right-radius: 0px;
-    box-shadow: 0 10px 10px #666666;  
+    box-shadow: 0 5px 5px #666666;  
 }
 
 
-/*PARALLAX*/
-.parallax {
+/*About*/
+section#about {
     height: 500px;
-    background-attachment: fixed;
+    background-color: #404040;
+}
+#about-para {
+    width: 50%;
+    height: inherit;
+    float: left;
+    background-image: url(http://www.publicdomainpictures.net/pictures/160000/velka/ordinateur-de-bureau-pc-1456070535WEH.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
-.parallax#first {
-    background-image: url(https://i.ytimg.com/vi/5Y1GpL768Sk/maxresdefault.jpg);
+div#about {
+    float: right;
+    height: inherit;
+    width: 50%;
 }
-.parabox {
-    width: 500px;
-    height: 400px;
-    background-color: #e6e6e6;
-    border-radius: 10px;
-    box-shadow: 0 10px 50px #666666;
+div#about h2 {
+    color: #fff;
+}
+div#about p {
+    color: #d9d9d9;
+    margin: 40px;
+    line-height: 30px;
 }
