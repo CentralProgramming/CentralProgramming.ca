@@ -2,17 +2,27 @@ div#container {
     width: 100%;
 }
 h1 {
-    
+    text-align: center;
     font-family: "Graduate";
     text-shadow: 2px 4px #cccccc;
 }
 h2 {
     font-family: "Graduate";
-    font-size: 35px;
-    margin-top: 0px;
+    font-size: 50px;
+    text-align: center;
+    margin: 0;
+    color: #e69900;
+    text-shadow: 2px 4px #000;
+}
+h3 {
+    font-family: "Alike Angular";
+    font-size: 25px;
+    margin: 0;
+    text-align: center;
 }
 p {
      font-family: "Alike Angular";
+    font-size: 20px;
 }
 
 
@@ -20,12 +30,11 @@ p {
 h1#title {
     font-size: 80px;
     margin: 20px;
-    text-align: center;
 }
 
 /*NAVIGATION*/
 nav {
-    background-color: #fff;
+    background-color: #000;
     height: 85px;
     width: 100%;
     position: sticky; top: 10px;
@@ -49,13 +58,13 @@ nav li a{
     font-size: 35px;
     text-align: center;
     text-decoration: none;
-    color: #000;
+    color: #fff;
     border-right: 1px solid #bbb;
     border-left: 1px solid #bbb;
 }
 nav li a:hover, .dropdown:hover .dropbtn {
-    background-color: #000;
-    color: #fff;
+    background-color: #fff;
+    color: #000;
 }
 li.dropdown {
     display: block;
@@ -66,7 +75,7 @@ li.dropdown {
     margin-top: 70px;
     display: none;
     position: absolute;
-    background-color: #f2f2f2;
+    background-color: #666666;
     min-width: 184px;
     box-shadow: 0px 8px 16px 0px #595959;
     z-index: 1;
@@ -77,7 +86,7 @@ li.dropdown {
     text-align: left;
 }
 .dropdown-content a:hover {
-    background-color: #666666;
+    background-color: #f2f2f2;
 }
 .dropdown:hover .dropdown-content {
     display: grid;
@@ -85,10 +94,29 @@ li.dropdown {
 
 
 
-/*SECTION*/
-section.filler {
-    height: 1000px;
+/*INTRO*/
+section.intro {
+    height: 1500px;
     background-color: #f2f2f2;
+}
+div.center {
+    width: 500px;
+    padding: 10px;
+    text-align: left;
+    background-color: #999999;
+    border-radius: 10px;
+    box-shadow: 0 10px 10px #666666;
+}
+div.rounded {
+    width: 750px;
+    height: 150px;
+    padding: 10px;
+    text-align: left;
+    background-color: #ffdd99;
+    border-radius: 50px;
+    border-top-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    box-shadow: 0 10px 10px #666666;  
 }
 
 
