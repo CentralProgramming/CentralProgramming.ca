@@ -17,7 +17,14 @@ p {
 
 
 /*HEADER*/
-header {
+h1#title {
+    font-size: 80px;
+    margin: 20px;
+    text-align: center;
+}
+
+/*NAVIGATION*/
+nav {
     background-color: #fff;
     height: 85px;
     width: 100%;
@@ -26,28 +33,16 @@ header {
     border-bottom: 5px outset #fff;
     box-shadow: 0 0 20px #666666;
 }
-h1#title {
-    font-size: 80px;
-    margin: 20px;
-    text-align: center;
-}
-
-
-/*NAVIGATION*/
-nav {
-    margin-top: 74.5px;
-    background-color: #000;
-    height: 100px;
-}
 ul#nav {
     list-style-type: none;
     overflow: hidden;
     padding: 0px;
     padding-top: 5px;
     padding-right: 16.5px;
-    margin: 0px;
+    margin: auto;
+    width: 800px;
 }
-header li a{
+nav li a{
     float: right;
     display: block;
     padding:20px;
@@ -56,8 +51,9 @@ header li a{
     text-decoration: none;
     color: #000;
     border-right: 1px solid #bbb;
+    border-left: 1px solid #bbb;
 }
-header li a:hover, .dropdown:hover .dropbtn {
+nav li a:hover, .dropdown:hover .dropbtn {
     background-color: #000;
     color: #fff;
 }
