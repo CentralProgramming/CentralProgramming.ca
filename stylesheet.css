@@ -2,6 +2,7 @@ div#container {
     width: 100%;
 }
 h1 {
+    
     font-family: "Graduate";
     text-shadow: 2px 4px #cccccc;
 }
@@ -20,17 +21,15 @@ header {
     background-color: #fff;
     height: 85px;
     width: 100%;
-    position: fixed;
+    position: sticky; top: 10px;
     top: 0;
     border-bottom: 5px outset #fff;
     box-shadow: 0 0 20px #666666;
 }
 h1#title {
-    font-size: 45px;
+    font-size: 80px;
     margin: 20px;
-    margin-top: 17px;
-    margin-left: 20px;
-    float: left;
+    text-align: center;
 }
 
 
