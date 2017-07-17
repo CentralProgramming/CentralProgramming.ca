@@ -10,6 +10,7 @@ h1 {
     font-family: "Graduate";
     color: #e69900;
     text-shadow: 2px 4px #000;
+    line-height: 1.5;
 }
 h2 {
     font-family: "Graduate";
@@ -26,7 +27,7 @@ h3 {
     text-align: center;
 }
 p {
-     font-family: "Alike Angular";
+    font-family: "Alike Angular";
     font-size: 20px;
 }
 
@@ -208,4 +209,25 @@ footer div {
     width: 100%;
     height: 50px;
     background-color: #ffcc66;
+}
+
+
+/*TOP*/
+#topBtn {
+    display: none;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    z-index: 99;
+    padding: 10px;
+    border: none;
+    outline: none;
+    box-shadow: 0 5px 5px #666666;
+    border-radius: 15px;
+    background-color: #ffcc66;
+    font-size: 20px;
+    cursor: pointer;
+}
+#topBtn:hover {
+    background-color: #e69900;
 }
