@@ -10,7 +10,7 @@ h1 {
     font-family: "Graduate";
     color: #e69900;
     text-shadow: 2px 4px #000;
-    line-height: 1.5;
+    line-height: 1.2;
 }
 h2 {
     font-family: "Graduate";
@@ -40,9 +40,6 @@ p {
     background-repeat: no-repeat;
     background-size: cover;
 }
-.parallax#first {
-    background-image: url(https://i.ytimg.com/vi/5Y1GpL768Sk/maxresdefault.jpg);
-}
 .parabox {
     width: 500px;
     height: 400px;
@@ -54,8 +51,39 @@ p {
 
 /*HEADER*/
 h1#title {
-    font-size: 80px;
-    margin: 20px;
+    font-size: 105px;
+}
+.centered {
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+/*COUNTDOWN*/
+div#countdown {
+    display: inline-block;
+    position: fixed;
+    width: 200px;
+    top: 15px;
+    left: 70px;
+    z-index: 98;
+    padding: 10px;
+    border: none;
+    outline: none;
+    box-shadow: 0 5px 5px #666666;
+    border-radius: 15px;
+    background-color: #ffcc66;
+    font-size: 20px;
+}
+p#timer {
+    display: inline;
+    text-align: center;
+}
+span {
+    float: right;
+    padding-right: 10px;
 }
 
 /*NAVIGATION*/
@@ -63,7 +91,7 @@ nav {
     background-color: #000;
     height: 85px;
     width: 100%;
-    position: sticky; top: 10px;
+    position: sticky;
     top: 0;
     border-bottom: 5px outset #fff;
     box-shadow: 0 0 20px #666666;
@@ -126,12 +154,14 @@ section#intro {
     background-color: #fff;
 }
 div.center {
-    width: 500px;
-    padding: 10px;
+    width: 750px;
+    padding: 20px;
     text-align: left;
     background-color: #d9d9d9;
     border-radius: 10px;
     box-shadow: 0 5px 5px #666666;
+    font-size: 20px;
+    line-height: 2;
 }
 div.rounded {
     width: 750px;
@@ -211,7 +241,6 @@ footer div {
     background-color: #ffcc66;
 }
 
-
 /*TOP*/
 #topBtn {
     display: none;
@@ -224,10 +253,10 @@ footer div {
     outline: none;
     box-shadow: 0 5px 5px #666666;
     border-radius: 15px;
-    background-color: #ffcc66;
+    background-color: #e69900;
     font-size: 20px;
     cursor: pointer;
 }
 #topBtn:hover {
-    background-color: #e69900;
+    background-color: #ffbb33;
 }
