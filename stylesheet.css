@@ -1,7 +1,9 @@
 * {
     margin: 0px;
 }
-
+html {
+    font-size: 20px;
+}
 div#container {
     width: 100%;
 }
@@ -14,21 +16,20 @@ h1 {
 }
 h2 {
     font-family: "Graduate";
-    font-size: 50px;
+    font-size: 2.5rem;
     text-align: center;
     color: #ffcc66;
     text-shadow: 2px 4px #000;
 }
 h3 {
     font-family: "Alike Angular";
-    font-size: 25px;
-    margin: 0;
+    font-size: 1.125rem;
     color: #333333;
     text-align: center;
 }
 p {
     font-family: "Alike Angular";
-    font-size: 20px;
+    font-size: 1rem;
 }
 
 
@@ -40,6 +41,7 @@ p {
     background-repeat: no-repeat;
     background-size: cover;
 }
+/*
 .parabox {
     width: 500px;
     height: 400px;
@@ -47,11 +49,11 @@ p {
     border-radius: 10px;
     box-shadow: 0 10px 50px #666666;
 }
-
+*/
 
 /*HEADER*/
 h1#title {
-    font-size: 105px;
+    font-size: 5.25rem;
 }
 .centered {
     position: absolute;
@@ -75,7 +77,7 @@ div#countdown {
     box-shadow: 0 5px 5px #666666;
     border-radius: 15px;
     background-color: #ffcc66;
-    font-size: 20px;
+    font-size: 1rem;
 }
 p#timer {
     display: inline;
@@ -109,7 +111,7 @@ nav li a{
     float: right;
     display: block;
     padding: 20px;
-    font-size: 35px;
+    font-size: 1.75rem;
     text-align: center;
     text-decoration: none;
     color: #fff;
@@ -135,7 +137,7 @@ li.dropdown {
     z-index: 1;
 }
 .dropdown-content a {
-    font-size: 25px;
+    font-size: 1.25rem;
     display: block;
     text-align: left;
 }
@@ -150,22 +152,21 @@ li.dropdown {
 
 /*INTRO*/
 section#intro {
-    height: auto;
     background-color: #fff;
 }
 div.center {
-    width: 750px;
+    width: 55%;
     padding: 20px;
     text-align: left;
     background-color: #d9d9d9;
     border-radius: 10px;
     box-shadow: 0 5px 5px #666666;
-    font-size: 20px;
+    font-size: 1rem;
     line-height: 2;
 }
 div.rounded {
-    width: 750px;
-    height: 150px;
+    width: 55%;
+    height: 150px; /*TEMP*/
     padding: 10px;
     text-align: left;
     background-color: #ffeecc;
@@ -254,7 +255,7 @@ footer div {
     box-shadow: 0 5px 5px #666666;
     border-radius: 15px;
     background-color: #e69900;
-    font-size: 20px;
+    font-size: 1rem;
     cursor: pointer;
 }
 #topBtn:hover {
