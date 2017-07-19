@@ -210,7 +210,7 @@ div#about p {
 section#team {
 }
 .row {
-    width: 75%;
+    width: 80%;
     padding-bottom: 20px;
 }
 .column {
@@ -220,6 +220,7 @@ section#team {
     padding: 0 10px;
 }
 .card {
+    min-height: 550px;
     background-color: #f2f2f2;
     box-shadow: 0 0 20px #666666;
 }
@@ -266,6 +267,21 @@ button.contact {
 }
 button.contact:hover {
     background-color: #ffcc66;
+}
+@media only screen and (max-width: 1024px) {
+    .column {
+        width: 50%;
+        display: block;
+    }
+    .row {
+        width: 90%;
+    }
+}
+@media only screen and (max-width: 650px) {
+    .column {
+        width: 100%;
+        display: block;
+    }
 }
 
 
