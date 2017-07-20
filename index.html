@@ -12,7 +12,7 @@
                 
                 <header>
                     <div class="parallax" style="background-image: url(https://i.ytimg.com/vi/5Y1GpL768Sk/maxresdefault.jpg);">
-                        <div class="centered"><h1 id="title">Central<br/>Programming</h1></div>
+                        <div class="centered"><h1 id="title">Central Coding Club</h1></div>
                     </div>
                 </header>
 
@@ -50,9 +50,10 @@
                 </script>
                 
                 
-                <nav class="nav">
-                    <ul id="nav">
-                        <li class="dropdown">
+                <nav>
+                    <div id="nav" class="topNav">
+                        <a href="javascript:void(0);" id="icon" onclick="navButton()">&#9776;</a>
+                        <div class="dropdown">
                             <a href="javascript:void(0)" class="dropbtn">Resources</a>
                             <div class="dropdown-content">
                                 <a href="#">Input Types</a>
@@ -60,20 +61,36 @@
                                 <a href="#">Array Lists</a>
                                 <a href="#">Recursion</a>
                             </div>
-                        </li>
-                        <li><a href="#">Contests</a></li>
-                        <li><a href="#">Weekly Problems</a></li>
-                        <li><a href="index.html">Home</a></li>
-                    </ul>
+                        </div>
+                        <a href="#">Contests</a>
+                        <a href="#">Weekly Problems</a>
+                        <a href="index.html" id="home">Home</a>
+                    </div>
                 </nav>
+                
+                <script>
+                    function navButton() {
+                        var x = document.getElementById("nav");
+                        if(x.className === "topNav") {
+                            x.className += " responsive";
+                        }
+                        else {
+                            x.className = "topNav";
+                        }
+                    }
+                </script>
                 
                 <section id="intro">
                     <hr style="height: 75px; border: 0;">
-                    <h2 style="font-size: 75px;">Welcome to CCC</h2>
-                    <h3 style="font-size: 50px;">"Connecting Central Coders"</h3>
-                    <hr style="height: 15px; border: 0;">
+                    <div id="introbox">
+                    <div id="h2box">
+                        <h2>Welcome to CCC</h2>
+                        </div>
+                    <hr style="height: 20px; border: 0;">
+                    <h3>"Connecting Central Coders"</h3>
+                    <hr style="height: 40px; border: 0;">
                     <center>
-                        <div class="center" style="height: 150px;">
+                        <div class="center">
                             <ul>
                                 <li>Practice every week</li>
                                 <li>Meeting every first xday of the month</li>
@@ -81,13 +98,27 @@
                             </ul>
                         </div>
                     </center>
+                    </div>
+                    
+                    <!--<hr style="height: 70px; border: 0;">
+                    <hr hr style="height: 12px; width: 70%; display: inline-block; border: 0; box-shadow: inset 0 12px 12px -12px #666;">
+                    <hr style="height: 50px; border: 0;">-->
                     
                     <hr style="height: 100px; border: 0;">
-                    <h2>Weekly Announcements</h2>
+                    <h2 id="news"></h2>
                     <hr style="height: 15px; border: 0;">
                     <center>
                         <div class="rounded">
-                            <p></p>
+                            <div id="rounded-content">
+                                <ul>
+                                    <li>Lorem ipsum dolor sit amet</li>
+                                    <li>consectetur adipiscing elit</li>
+                                    <li>Pellentesque euismod eros in vestibulum viverra</li>
+                                    <li>Lorem ipsum dolor sit amet</li>
+                                    <li>consectetur adipiscing elit</li>
+                                    <li>Pellentesque euismod eros in vestibulum viverra</li>
+                                </ul>
+                            </div>
                         </div>
                     </center>
                     <hr style="height: 100px; border: 0;">

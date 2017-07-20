@@ -64,13 +64,14 @@ h1#title {
     text-align: center;
 }
 
+
 /*COUNTDOWN*/
 div#countdown {
     display: inline-block;
     position: fixed;
     width: 200px;
     top: 7px;
-    left: 70px;
+    left: 10px;
     z-index: 98;
     padding: 5px;
     border: none;
@@ -89,26 +90,19 @@ span {
     padding-right: 10px;
 }
 
+
 /*NAVIGATION*/
 nav {
-    background-color: #000;
-    height: 85px;
-    width: 100%;
     position: sticky;
     top: 0;
+    background-color: #000;
     border-bottom: 5px outset #fff;
-    box-shadow: 0 0 20px #666666;
+    text-align: center;
 }
-ul#nav {
-    list-style-type: none;
-    overflow: hidden;
-    padding: 0px;
-    padding-top: 5px;
-    padding-right: 16.5px;
-    margin: auto;
-    width: 800px;
+div#nav {
+    display: inline-block;
 }
-nav li a{
+nav a {
     float: right;
     display: block;
     padding: 20px;
@@ -119,17 +113,19 @@ nav li a{
     border-right: 1px solid #bbb;
     border-left: 1px solid #bbb;
 }
-nav li a:hover, .dropdown:hover .dropbtn {
+nav a:hover, .dropdown:hover .dropbtn {
     background-color: #fff;
     color: #000;
 }
-li.dropdown {
+nav a#icon {
+    display: none;
+}
+.dropdown {
     display: block;
     float: right;
 }
 .dropdown-content {
-    margin-right: 16.5px;
-    margin-top: 70px;
+    margin-top: 80px;
     display: none;
     position: absolute;
     background-color: #666666;
@@ -138,15 +134,16 @@ li.dropdown {
     z-index: 1;
 }
 .dropdown-content a {
+    float: none;
     font-size: 1.25rem;
     display: block;
     text-align: left;
 }
 .dropdown-content a:hover {
-    background-color: #f2f2f2;
+    background-color: #e6e6e6;
 }
 .dropdown:hover .dropdown-content {
-    display: grid;
+    display: block;
 }
 
 
@@ -154,9 +151,37 @@ li.dropdown {
 /*INTRO*/
 section#intro {
     background-color: #fff;
+    text-align: center;
+}
+/*#introbox {
+    background-color: #ffcc66;
+    width: 100%;
+    display: inline-block;
+    overflow: hidden;
+    min-height: 200px;
+    padding: 2%;
+    border: 5px outset;
+}*/
+/*section#intro #h2box {
+    width: 100%;
+    text-align: center;
+}*/
+section#intro #h2box h2 {
+    /*min-width: 50%;
+    max-width: 90%;
+    display: inline-block;
+    padding: 2%;;
+    color: #fff;
+    background-color: #ffcc66;*/
+    font-size: 3.75rem;
+}
+section#intro h3 {
+    font-size: 2.5rem;
 }
 div.center {
     width: 55%;
+    min-height: 20px;
+    overflow: hidden;
     padding: 20px;
     text-align: left;
     background-color: #d9d9d9;
@@ -165,9 +190,13 @@ div.center {
     font-size: 1rem;
     line-height: 2;
 }
+section#intro h2#news:after {  
+        content: "Weekly Announcements";
+    }
 div.rounded {
     width: 55%;
-    height: 150px; /*TEMP*/
+    min-height: 150px;
+    overflow: hidden;
     padding: 10px;
     text-align: left;
     background-color: #ffeecc;
@@ -176,26 +205,36 @@ div.rounded {
     border-bottom-right-radius: 0px;
     box-shadow: 0 5px 5px #666666;  
 }
+#rounded-content {
+    margin: 2%;
+    padding: 2%;
+    height: 80%;
+    background-color: #fff7e6;
+}
 
 
 /*ABOUT*/
 section#about {
-    height: 500px;
-    background-color: #404040;
+    display: flex;
 }
 #about-img {
     width: 50%;
-    height: inherit;
+    min-height: 500px;
     float: left;
     background-image: url(http://www.publicdomainpictures.net/pictures/160000/velka/ordinateur-de-bureau-pc-1456070535WEH.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
+#about-img img {
+    max-width: 100%;
+    height: auto;
+}
 div#about {
     float: right;
-    height: inherit;
+    min-height: 500px;
     width: 50%;
+    background-color: #404040;
 }
 div#about h2 {
     color: #fff;
@@ -268,21 +307,6 @@ button.contact {
 button.contact:hover {
     background-color: #ffcc66;
 }
-@media only screen and (max-width: 1024px) {
-    .column {
-        width: 50%;
-        display: block;
-    }
-    .row {
-        width: 90%;
-    }
-}
-@media only screen and (max-width: 650px) {
-    .column {
-        width: 100%;
-        display: block;
-    }
-}
 
 
 /*FOOTER*/
@@ -314,4 +338,110 @@ footer div {
 }
 #topBtn:hover {
     background-color: #ffbb33;
+}
+
+
+/*MEDIA QUERIES*/
+@media only screen and (max-width: 1200px) {
+   div#countdown {
+       top: 100px;
+}
+@media only screen and (max-width: 1024px) {
+    /*HEADER*/
+    h1#title {
+        font-size: 4.25rem;
+    }
+    
+    /*NAV*/
+     #nav {
+        width: 100%;
+    }
+    nav a:not(#home) {
+        display: none;
+    }
+    nav a#home {
+        float: left;
+        border: none;
+        margin-left: 2%;
+    }
+    nav a#icon {
+        float: right;
+        display: block;
+        margin-right: 2%;
+        border: none;
+    }
+    .topNav.responsive {
+        position: relative;
+    }
+    .topNav.responsive a#icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    .topNav.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+    
+    /*INTRO*/
+    div.center {
+        width: 80%;
+    }
+    div.rounded {
+        width: 80%;
+    }
+    
+    /*ABOUT*/
+    section#about {
+        display: inline-block;
+    }
+    #about-img {
+       width: 100%;
+    }
+    div#about {
+        width: 100%;
+    }
+    
+    /*TEAM*/
+    section#team .column {
+        width: 50%;
+        display: block;
+    }
+    section#team .row {
+        width: 90%;
+    }
+}
+@media only screen and (max-width: 650px) {
+    /*HEADER*/
+    h1#title {
+        font-size: 3.5rem;
+    }
+    div#countdown {
+        display: none;
+    }
+    
+    /*INTRO*/
+    section#intro h2#news:after {  
+        content: "Weekly News";
+    }
+    section#intro #h2box h2 {
+        font-size: 2.75rem;
+    }
+    section#intro h3 {
+        font-size: 1.5rem;
+    }
+    div.center {
+        width: 90%;
+    }
+    div.rounded {
+        width: 100%;
+        border-radius: 0;
+    }
+    
+    /*TEAM*/
+    section#team .column {
+        width: 100%;
+        display: block;
+    }
 }
