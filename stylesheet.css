@@ -45,30 +45,22 @@ li {
     background-repeat: no-repeat;
     background-size: cover;
 }
-/*
-.parabox {
-    width: 500px;
-    height: 400px;
-    background-color: #e6e6e6;
-    border-radius: 10px;
-    box-shadow: 0 10px 50px #666666;
-}
-*/
 
 
 /*HEADER*/
 h1#title {
-    font-size: 4rem;
+    font-size: 6vw;
     font-family: "Monoton";
     letter-spacing: 0.2rem;
     line-height: 1.0;
 }
-.centered {
+.centered {/*
     position: absolute;
     top: 35%;
     left: 50%;
     transform: translate(-50%, -50%);
-    text-align: center;
+    text-align: center;*/
+    width: 50%;
 }
 
 
@@ -370,7 +362,10 @@ footer div {
 @media only screen and (max-width: 1024px) {
     /*HEADER*/
     h1#title {
-        font-size: 4.25rem;
+        font-size: 10vw;
+    }
+    .centered {
+        width: 80%;
     }
     
     /*NAV*/
@@ -456,7 +451,7 @@ footer div {
 @media only screen and (max-width: 650px) {
     /*HEADER*/
     h1#title {
-        font-size: 3rem;
+        font-size: 12vw;
     }
     div#countdown {
         display: none;
