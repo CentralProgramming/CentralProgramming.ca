@@ -365,6 +365,9 @@ footer div {
     h1#title {
         font-size: 10vw;
     }
+    .parallax {
+        background-attachment: scroll;
+    }
     .centered {
         width: 80%;
     }
