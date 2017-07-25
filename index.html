@@ -1,17 +1,31 @@
 <!DOCTYPE HTML>
 <html>
     <head>
-           <link href="https://fonts.googleapis.com/css?family=Alike+Angular|Monoton|VT323|Graduate" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+           <link href="https://fonts.googleapis.com/css?family=Monoton|Patua+One|Graduate|Nunito" rel="stylesheet">
             <title>Central Programming</title>
             <link rel="stylesheet" href="stylesheet.css">
             <link rel="shortcut icon" href="http://www.tvdsb.ca/pix/logos/21.png">
         </head>
-        <body>
+        <body id="body" onresize="resize()">
+            
+            <script>
+                function resize() {
+                    if (window.matchMedia("(min-width: 801px)").matches) {
+                        document.getElementById("nav").className = "topNav";
+                        
+                        document.getElementById("navbar").style.height = "auto";
+                        document.getElementById("navbar").style.position = "sticky";
+                        document.getElementById("body").style.overflow = "auto";
+                    }
+                }
+            </script>
+            
             <div id="container">
                 
                 <header>
                     <div class="parallax" style="background-image: url(https://i.ytimg.com/vi/5Y1GpL768Sk/maxresdefault.jpg);">
-                        <div class="centered"><h1 id="title">Central<br/>Programming</h1></div>
+                        <div class="centered"><h1 id="title">Central Coding Club</h1></div>
                     </div>
                 </header>
 
@@ -49,9 +63,23 @@
                 </script>
                 
                 
-                <nav class="nav">
-                    <ul id="nav">
-                        <li class="dropdown">
+                <nav id="navbar">
+                    <div id="nav" class="topNav">
+                        <a href="index.html" id="home">Home</a>
+                        <a href="#">Weekly Problems</a>
+                        <a href="#">Contests</a>
+                        
+                        <div class="resources">
+                            <a href="#">Resources</a>
+                            <div class="resources-content">
+                                <a href="#">Input Types</a>
+                                <a href="#">Arrays</a>
+                                <a href="#">Array Lists</a>
+                                <a href="#">Recursion</a>
+                            </div>
+                        </div>
+                        
+                        <div class="dropdown">
                             <a href="javascript:void(0)" class="dropbtn">Resources</a>
                             <div class="dropdown-content">
                                 <a href="#">Input Types</a>
@@ -59,20 +87,41 @@
                                 <a href="#">Array Lists</a>
                                 <a href="#">Recursion</a>
                             </div>
-                        </li>
-                        <li><a href="#">Contests</a></li>
-                        <li><a href="#">Weekly Problems</a></li>
-                        <li><a href="index.html">Home</a></li>
-                    </ul>
+                        </div>
+                        
+                        <a href="javascript:void(0);" id="icon" onclick="navButton()">&#9776;</a>
+                    </div>
                 </nav>
+                
+                <script>
+                    function navButton() {
+                        var x = document.getElementById("nav");
+                        
+                        if(x.className === "topNav") {
+                            x.className += " responsive";
+                            if (window.matchMedia("(max-width: 800px), (max-height: 500px)").matches) {
+                                document.getElementById("navbar").style.height = "100%";
+                                document.getElementById("navbar").style.position = "fixed";
+                                document.getElementById("body").style.overflow = "hidden";
+                            }
+                        }
+                        else {
+                            x.className = "topNav";
+                            document.getElementById("navbar").style.height = "auto";
+                            document.getElementById("navbar").style.position = "sticky";
+                            document.getElementById("body").style.overflow = "auto";
+                        }
+                    }
+                </script>
                 
                 <section id="intro">
                     <hr style="height: 75px; border: 0;">
-                    <h2 style="font-size: 75px;">Welcome to CCC</h2>
-                    <h3 style="font-size: 50px;">"Connecting Central Coders"</h3>
-                    <hr style="height: 15px; border: 0;">
+                    <div id="introbox">
+                        <h2 id="welcome">Welcome to CCC</h2>
+                    <h3>"Connecting Central Coders"</h3>
+                    <hr style="height: 40px; border: 0;">
                     <center>
-                        <div class="center" style="height: 150px;">
+                        <div class="center">
                             <ul>
                                 <li>Practice every week</li>
                                 <li>Meeting every first xday of the month</li>
@@ -80,13 +129,23 @@
                             </ul>
                         </div>
                     </center>
+                    </div>
                     
                     <hr style="height: 100px; border: 0;">
-                    <h2>Weekly Announcements</h2>
+                    <h2 id="news"></h2>
                     <hr style="height: 15px; border: 0;">
                     <center>
                         <div class="rounded">
-                            <p></p>
+                            <div id="rounded-content">
+                                <ul>
+                                    <li>Lorem ipsum dolor sit amet</li>
+                                    <li>consectetur adipiscing elit</li>
+                                    <li>Pellentesque euismod eros in vestibulum viverra</li>
+                                    <li>Lorem ipsum dolor sit amet</li>
+                                    <li>consectetur adipiscing elit</li>
+                                    <li>Pellentesque euismod eros in vestibulum viverra</li>
+                                </ul>
+                            </div>
                         </div>
                     </center>
                     <hr style="height: 100px; border: 0;">
@@ -112,8 +171,8 @@
                                 <div class="card">
                                 <img src="https://c1.staticflickr.com/7/6209/6078274585_26f787dcac_b.jpg">
                                     <div class="container">
-                                        <h3><b>Ms. Ward</b></h3>
-                                        <p class="title">Teacher Supervisor</p>
+                                        <h3><b>Amy</b></h3>
+                                        <p class="title">Co-President</p>
                                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque euismod eros in vestibulum viverra.</p>
                                         <p class="email">email@example.com</p>
                                         <a href="mailto:email@example.com"><button class="contact">Contact</button></a>
@@ -126,36 +185,7 @@
                                 <img src="https://c1.staticflickr.com/7/6209/6078274585_26f787dcac_b.jpg">
                                     <div class="container">
                                         <h3><b>Angela</b></h3>
-                                        <p class="title">???</p>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque euismod eros in vestibulum viverra.</p>
-                                        <p class="email">email@example.com</p>
-                                        <a href="mailto:email@example.com"><button class="contact">Contact</button></a>
-                                    </div>
-                                </div>
-                            </div>
-                            
-                            <div class="column">
-                                <div class="card">
-                                <img src="https://c1.staticflickr.com/7/6209/6078274585_26f787dcac_b.jpg">
-                                    <div class="container">
-                                        <h3><b>Fay</b></h3>
-                                        <p class="title">???</p>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque euismod eros in vestibulum viverra.</p>
-                                        <p class="email">email@example.com</p>
-                                        <a href="mailto:email@example.com"><button class="contact">Contact</button></a>
-                                    </div>
-                                </div>
-                            </div>
-                            
-                        </div>
-                        <div class="row">
-                            
-                            <div class="column">
-                                <div class="card">
-                                <img src="https://c1.staticflickr.com/7/6209/6078274585_26f787dcac_b.jpg">
-                                    <div class="container">
-                                        <h3><b>Amy</b></h3>
-                                        <p class="title">???</p>
+                                        <p class="title">Co-President</p>
                                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque euismod eros in vestibulum viverra.</p>
                                         <p class="email">email@example.com</p>
                                         <a href="mailto:email@example.com"><button class="contact">Contact</button></a>
@@ -168,7 +198,33 @@
                                 <img src="https://c1.staticflickr.com/7/6209/6078274585_26f787dcac_b.jpg">
                                     <div class="container">
                                         <h3><b>Ashley</b></h3>
-                                        <p class="title">???</p>
+                                        <p class="title">Co-President</p>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque euismod eros in vestibulum viverra.</p>
+                                        <p class="email">ashmc335@gmail.com</p>
+                                        <a href="mailto:ashmc335@gmail.com"><button class="contact">Contact</button></a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="column">
+                                <div class="card">
+                                <img src="https://c1.staticflickr.com/7/6209/6078274585_26f787dcac_b.jpg">
+                                    <div class="container">
+                                        <h3><b>Fay</b></h3>
+                                        <p class="title">Co-President</p>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque euismod eros in vestibulum viverra.</p>
+                                        <p class="email">email@example.com</p>
+                                        <a href="mailto:email@example.com"><button class="contact">Contact</button></a>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="column">
+                                <div class="card">
+                                <img src="https://c1.staticflickr.com/7/6209/6078274585_26f787dcac_b.jpg">
+                                    <div class="container">
+                                        <h3><b>Ms. Ward</b></h3>
+                                        <p class="title">Teacher Supervisor</p>
                                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque euismod eros in vestibulum viverra.</p>
                                         <p class="email">email@example.com</p>
                                         <a href="mailto:email@example.com"><button class="contact">Contact</button></a>
@@ -184,9 +240,11 @@
                                         <h3><b>You!</b></h3>
                                         <p class="title">???</p>
                                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque euismod eros in vestibulum viverra.</p>
+                                        <br/><br/><br/><br/><br/>
                                     </div>
                                 </div>
                             </div>
+                            
                         </div>
                     </center>
                     <hr style="height: 50px; border: 0;">
