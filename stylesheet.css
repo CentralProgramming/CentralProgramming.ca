@@ -98,13 +98,7 @@ span {
 }
 
 
-/*
-
-    SCROLL ON NAV NOT BACKGROUND
-    CHANGE HEIGHT WHEN RESIZE
-    TITLE PROBLEMS
-
-NAVIGATION*/
+/*NAVIGATION*/
 nav {
     z-index: 99;
     width: 100%;
