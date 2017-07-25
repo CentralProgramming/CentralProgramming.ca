@@ -1,50 +1,251 @@
+<!DOCTYPE HTML>
 <html>
+    
     <head>
-           <link href="https://fonts.googleapis.com/css?family=Alike+Angular|Corben|Graduate" rel="stylesheet">
-            <title>Central Programming</title>
-            <link rel="stylesheet" href="stylesheet.css">
-            <link rel="shortcut icon" href="http://www.tvdsb.ca/pix/logos/21.png">
-        </head>
-        <body>
-            <div id="container">
-                <header>
-                    <h1 id="title">Central Programming</h1>
-                    <ul id="nav">
-                        <li class="dropdown">
-                            <a href="javascript:void(0)" class="dropbtn">Resources</a>
-                            <div class="dropdown-content">
-                                <a href="#">Input Types</a>
-                                <a href="#">Arrays</a>
-                                <a href="#">Array Lists</a>
-                                <a href="#">Recursion</a>
-                            </div>
-                        </li>
-                        <li><a href="#">Contests</a></li>
-                        <li><a href="#">Weekly Problems</a></li>
-                        <li><a href="index.html">Home</a></li>
-                    </ul>
-                </header>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <!--FONTS-->
+        <link href="https://fonts.googleapis.com/css?family=Monoton|Patua+One|Graduate|Nunito" rel="stylesheet">
+        
+        <!--TAB TITLE AND ICON-->
+        <title>Central Programming</title>
+        <link rel="shortcut icon" href="http://www.tvdsb.ca/pix/logos/21.png">
+        
+        <!--STYLESHEET AND JAVASCRIPT LINKS-->
+        <link rel="stylesheet" href="stylesheet.css">
+        <script src="scripts.js"></script>
+    </head>
+    
+    <body id="body" onresize="resize()">
+        <div id="container">
+            
+            <!--HEADER IMAGE AND TITLE-->
+            <header>
+                <div class="parallax" style="background-image: url(https://i.ytimg.com/vi/5Y1GpL768Sk/maxresdefault.jpg);">
+                    <div class="centered"><h1 id="title">Central Coding Club</h1></div>
+                </div>
+            </header>
 
-               <nav></nav>
+            
+            <!--COUNTDOWN TIMER-->
+            <div id="countdown"><center>
+                <h3>First meeting in:</h3>
+                <p id="timer"></p>
+                <span class="closebtn" style="cursor: pointer;" onclick="hideCountdown()">&times;</span>
+                </center>
+            </div>
 
-                <section>
-                    <div class="parallax" id="first">
-                        <hr style="height: 40px; border: 0;">
-                        <center>
-                            <div class="parabox">
-                                <br/>
-                                <h2>Welcome!</h2>
-                            </div>
-                        </center>
+            
+            <!--NAVIGATION-->
+            <nav id="navbar">
+                <div id="nav" class="topNav">
+                    <a href="index.html" id="home">Home</a>
+                    <a href="#">Weekly Problems</a>
+                    <a href="#">Contests</a>
+                    
+                    <!--RESOURCES SECTION (MOBILE)-->
+                    <div class="resources">
+                        <a href="#">Resources</a>
+                        <div class="resources-content">
+                            <a href="#">Input Types</a>
+                            <a href="#">Arrays</a>
+                            <a href="#">Array Lists</a>
+                            <a href="#">Recursion</a>
+                        </div>
+
                     </div>
                     
-                    
-                </section>
+                    <!--RESOURCES SECTION (DROPDOWN)-->
+                    <div class="dropdown">
+                        <a href="javascript:void(0)" class="dropbtn">Resources</a>
+                        <div class="dropdown-content">
+                            <a href="#">Input Types</a>
+                            <a href="#">Arrays</a>
+                            <a href="#">Array Lists</a>
+                            <a href="#">Recursion</a>
+                        </div>
+                    </div>
 
-                <section class="filler"></section>
+                    <!--MOBILE LINKS OPEN/CLOSE-->
+                    <a href="javascript:void(0);" id="icon" onclick="navButton()">&#9776;</a>
+                </div>
+            </nav>
+
+            
+            <!--INTRO SECTION-->
+            <section id="intro">
+                <hr style="height: 75px; border: 0;">
                 
-                <footer>
-                </footer>
-            </div>
-        </body>
+                <!--WELCOME SECTION-->
+                <div id="introbox">
+                    <h2 id="welcome">Welcome to CCC</h2>
+                <h3>"Connecting Central Coders"</h3>
+                <hr style="height: 40px; border: 0;">
+                <center>
+                    
+                    <!--WELCOME TEXT-->
+                    <div class="center">
+                        <ul>
+                            <li>Practice every week</li>
+                            <li>Meeting every first xday of the month</li>
+                            <li>INSERT MORE HERE</li>
+                        </ul>
+                    </div>
+                </center>
+                </div>
+
+                <hr style="height: 100px; border: 0;">
+                
+
+                <!--ANNOUNCEMENTS SECTION-->
+                <h2 id="news"></h2>
+                <hr style="height: 15px; border: 0;">
+                <center>
+                    <div class="rounded">
+                        
+                        <!--ANOUNCEMENTS-->
+                        <div id="rounded-content">
+                            <ul>
+                                <li>Lorem ipsum dolor sit amet</li>
+                                <li>consectetur adipiscing elit</li>
+                                <li>Pellentesque euismod eros in vestibulum viverra</li>
+                                <li>Lorem ipsum dolor sit amet</li>
+                                <li>consectetur adipiscing elit</li>
+                                <li>Pellentesque euismod eros in vestibulum viverra</li>
+                            </ul>
+                        </div>
+                    </div>
+                </center>
+                <hr style="height: 100px; border: 0;">
+            </section>
+
+            
+            <!--ABOUT SECTION-->
+            <section id="about">
+                <div id="about-img"></div>
+                <div id="about">
+                    <hr style="height: 50px; border: 0;">
+                    
+                    <!--ABOUT TEXT-->
+                    <h2>About the CCC</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras tempor magna quis risus iaculis, sed mollis mi consectetur. Cras et tortor ut lacus blandit gravida. Praesent eu sodales nulla. Praesent aliquam fringilla dignissim. Suspendisse euismod, massa at rutrum tempor, nibh tellus efficitur nisl, id porta lectus ligula ac felis. Proin pretium, ex sit amet dapibus malesuada, ante est eleifend erat, vehicula tincidunt diam ex at odio. Quisque maximus arcu in tortor varius imperdiet. Nulla ultricies vehicula purus, eget tempor arcu feugiat vitae. </p>
+                </div>
+            </section>
+
+
+            <!--TEAM SECTION-->
+            <section id="team">
+                <hr style="height: 100px; border: 0;">
+                <h2>Team</h2>
+                <hr style="height: 50px; border: 0;">
+                <center>
+                    
+                    <div class="row">
+                        
+                        <!--AMY-->
+                        <div class="column">
+                            <div class="card">
+                            <img src="https://c1.staticflickr.com/7/6209/6078274585_26f787dcac_b.jpg">
+                                <!--AMY TEXT-->
+                                <div class="container">
+                                    <h3><b>Amy</b></h3>
+                                    <p class="title">Co-President</p>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque euismod eros in vestibulum viverra.</p>
+                                    <p class="email">email@example.com</p>
+                                    <a href="mailto:email@example.com"><button class="contact">Contact</button></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--ANGELA-->
+                        <div class="column">
+                            <div class="card">
+                            <img src="https://c1.staticflickr.com/7/6209/6078274585_26f787dcac_b.jpg">
+                                <!--ANGELA TEXT-->
+                                <div class="container">
+                                    <h3><b>Angela</b></h3>
+                                    <p class="title">Co-President</p>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque euismod eros in vestibulum viverra.</p>
+                                    <p class="email">email@example.com</p>
+                                    <a href="mailto:email@example.com"><button class="contact">Contact</button></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--ASHLEY-->
+                        <div class="column">
+                            <div class="card">
+                            <img src="https://c1.staticflickr.com/7/6209/6078274585_26f787dcac_b.jpg">
+                                <!--ASHLEY TEXT-->
+                                <div class="container">
+                                    <h3><b>Ashley</b></h3>
+                                    <p class="title">Co-President</p>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque euismod eros in vestibulum viverra.</p>
+                                    <p class="email">email@example.com</p>
+                                    <a href="mailto:email@example.com"><button class="contact">Contact</button></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--FAY-->
+                        <div class="column">
+                            <div class="card">
+                            <img src="https://c1.staticflickr.com/7/6209/6078274585_26f787dcac_b.jpg">
+                                <!--FAY TEXT-->
+                                <div class="container">
+                                    <h3><b>Fay</b></h3>
+                                    <p class="title">Co-President</p>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque euismod eros in vestibulum viverra.</p>
+                                    <p class="email">email@example.com</p>
+                                    <a href="mailto:email@example.com"><button class="contact">Contact</button></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--MS. WARD-->
+                        <div class="column">
+                            <div class="card">
+                            <img src="https://c1.staticflickr.com/7/6209/6078274585_26f787dcac_b.jpg">
+                                <!--MS. WARD TEXT-->
+                                <div class="container">
+                                    <h3><b>Ms. Ward</b></h3>
+                                    <p class="title">Teacher Supervisor</p>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque euismod eros in vestibulum viverra.</p>
+                                    <p class="email">email@example.com</p>
+                                    <a href="mailto:email@example.com"><button class="contact">Contact</button></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--YOU-->
+                        <div class="column">
+                            <div class="card">
+                            <img src="https://c1.staticflickr.com/7/6209/6078274585_26f787dcac_b.jpg">
+                                <!--YOU TEXT-->
+                                <div class="container">
+                                    <h3><b>You!</b></h3>
+                                    <p class="title">???</p>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque euismod eros in vestibulum viverra.</p>
+                                    <br/><br/><br/><br/><br/>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </center>
+                <hr style="height: 50px; border: 0;">
+            </section>
+
+            
+            <!--FOOTER-->
+            <footer>
+                <div></div>
+            </footer>
+
+
+            <!--BACK TO TOP BUTTON-->
+            <button onclick="topFunction()" id="topBtn"><h3>Top</h3></button>
+
+        </div>
+    </body>
 </html>
