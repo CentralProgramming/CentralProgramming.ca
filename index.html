@@ -7,7 +7,20 @@
             <link rel="stylesheet" href="stylesheet.css">
             <link rel="shortcut icon" href="http://www.tvdsb.ca/pix/logos/21.png">
         </head>
-        <body>
+        <body id="body" onresize="resize()">
+            
+            <script>
+                function resize() {
+                    if (window.matchMedia("(min-width: 801px)").matches) {
+                        document.getElementById("nav").className = "topNav";
+                        
+                        document.getElementById("navbar").style.height = "auto";
+                        document.getElementById("navbar").style.position = "sticky";
+                        document.getElementById("body").style.overflow = "auto";
+                    }
+                }
+            </script>
+            
             <div id="container">
                 
                 <header>
@@ -50,7 +63,7 @@
                 </script>
                 
                 
-                <nav>
+                <nav id="navbar">
                     <div id="nav" class="topNav">
                         <a href="index.html" id="home">Home</a>
                         <a href="#">Weekly Problems</a>
@@ -75,6 +88,7 @@
                                 <a href="#">Recursion</a>
                             </div>
                         </div>
+                        
                         <a href="javascript:void(0);" id="icon" onclick="navButton()">&#9776;</a>
                     </div>
                 </nav>
@@ -82,11 +96,20 @@
                 <script>
                     function navButton() {
                         var x = document.getElementById("nav");
+                        
                         if(x.className === "topNav") {
                             x.className += " responsive";
+                            if (window.matchMedia("(max-width: 800px), (max-height: 500px)").matches) {
+                                document.getElementById("navbar").style.height = "100%";
+                                document.getElementById("navbar").style.position = "fixed";
+                                document.getElementById("body").style.overflow = "hidden";
+                            }
                         }
                         else {
                             x.className = "topNav";
+                            document.getElementById("navbar").style.height = "auto";
+                            document.getElementById("navbar").style.position = "sticky";
+                            document.getElementById("body").style.overflow = "auto";
                         }
                     }
                 </script>
@@ -216,10 +239,12 @@
                                     <div class="container">
                                         <h3><b>You!</b></h3>
                                         <p class="title">???</p>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque euismod eros in vestibulum viverra. </p>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque euismod eros in vestibulum viverra.</p>
+                                        <br/><br/><br/><br/><br/>
                                     </div>
                                 </div>
                             </div>
+                            
                         </div>
                     </center>
                     <hr style="height: 50px; border: 0;">
