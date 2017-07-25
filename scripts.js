@@ -30,6 +30,7 @@ function resize() {
 
         document.getElementById("navbar").style.height = "auto";
         document.getElementById("navbar").style.position = "sticky";
+        document.getElementById("navbar").style.position = "-webkit-sticky";
         document.getElementById("body").style.overflow = "auto";
     }
 }
@@ -49,6 +50,7 @@ function navButton() {
         x.className = "topNav";
         document.getElementById("navbar").style.height = "auto";
         document.getElementById("navbar").style.position = "sticky";
+        document.getElementById("navbar").style.position = "-webkit-sticky";
         document.getElementById("body").style.overflow = "auto";
     }
 }
