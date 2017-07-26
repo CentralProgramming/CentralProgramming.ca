@@ -32,6 +32,7 @@ function resize() {
         document.getElementById("navbar").style.position = "sticky";
         document.getElementById("navbar").style.position = "-webkit-sticky";
         document.getElementById("body").style.overflow = "auto";
+        stopBodyScrolling(false);
     }
 }
 
@@ -44,6 +45,7 @@ function navButton() {
             document.getElementById("navbar").style.height = "100%";
             document.getElementById("navbar").style.position = "fixed";
             document.getElementById("body").style.overflow = "hidden";
+            stopBodyScrolling(true);
         }
     }
     else {
@@ -52,8 +54,22 @@ function navButton() {
         document.getElementById("navbar").style.position = "sticky";
         document.getElementById("navbar").style.position = "-webkit-sticky";
         document.getElementById("body").style.overflow = "auto";
+        stopBodyScrolling(false);
     }
 }
+
+function stopBodyScrolling(bool){
+    if(bool === true){
+        document.body.addEventListener("touchmove", freezeVp, false);
+    }
+    else{
+        document.body.removeEventListener("touchmove", freezeVp, false);
+    }
+}
+
+var freezeVp = function(e){
+    e.preventDefault();
+};
 
 
 /*TOP BUTTON*/

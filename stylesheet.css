@@ -92,8 +92,8 @@ span {
 
 /*NAVIGATION*/
 nav {
-    z-index: 99;
     width: 100%;
+    position: fixed;
     position: sticky;
     position: -webkit-sticky;
     top: 0;
@@ -358,6 +358,9 @@ footer div {
    /*COUNTDOWN*/ 
    div#countdown {
        top: 100px;
+    }
+    nav {     
+        z-index: 99;
     }
 }
 @media only screen and (max-width: 1024px) {
