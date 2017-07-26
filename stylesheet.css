@@ -60,7 +60,6 @@ h1#title {
 .centered {
     margin-left: auto;
     margin-right: auto;
-    width: 50%;
 }
 
 
@@ -109,7 +108,7 @@ nav a {
     font-family: "Patua One";
     float: left;
     display: block;
-    padding: 20px;
+    padding: 3%;
     font-size: 1.75rem;
     text-align: center;
     text-decoration: none;
@@ -410,6 +409,7 @@ footer div {
     }
     .topNav.responsive {
         position: relative;
+        height: 400px;
     }
     .topNav.responsive a#icon {
         position: absolute;
@@ -421,7 +421,9 @@ footer div {
         display: block;
         text-align: left;
     }
-    
+      .topNav.responsive.reduced .resources-content a {
+          display: none;
+    }
     .topNav.responsive .resources {
         width: 100%;
         display: inline-block;
@@ -429,7 +431,6 @@ footer div {
         margin-bottom: 2%;
     }
     .topNav.responsive .resources-content a {
-        display: flex;
         padding: 20px;
         float: left;
         margin: 1%;

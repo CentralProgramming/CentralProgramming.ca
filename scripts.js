@@ -41,11 +41,14 @@ function navButton() {
 
     if(x.className === "topNav") {
         x.className += " responsive";
-        if (window.matchMedia("(max-width: 800px), (max-height: 500px)").matches) {
+        if(window.matchMedia("(max-width: 800px), (max-height: 500px)").matches) {
             document.getElementById("navbar").style.height = "100%";
             document.getElementById("navbar").style.position = "fixed";
             document.getElementById("body").style.overflow = "hidden";
             stopBodyScrolling(true);
+        }
+        if(window.matchMedia("(max-width: 800px) and (max-height: 430px)").matches){
+            x.className += " reduced"
         }
     }
     else {
