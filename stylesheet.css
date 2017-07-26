@@ -48,18 +48,18 @@ li {
 
 
 /*HEADER*/
+header {
+    text-align: center;
+}
 h1#title {
     font-size: 6vw;
     font-family: "Monoton";
     letter-spacing: 0.2rem;
     line-height: 1.0;
 }
-.centered {/*
-    position: absolute;
-    top: 35%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;*/
+.centered {
+    margin-left: auto;
+    margin-right: auto;
     width: 50%;
 }
 
@@ -79,6 +79,7 @@ div#countdown {
     border-radius: 15px;
     background-color: #ffcc66;
     font-size: 1rem;
+    text-align: center;
 }
 p#timer {
     display: inline;
@@ -198,6 +199,8 @@ div.center {
     box-shadow: 0 5px 5px #666666;
     font-size: 1rem;
     line-height: 2;
+    margin-left: auto;
+    margin-right: auto;
 }
 section#intro h2#news:after {  
         content: "Weekly Announcements";
@@ -212,7 +215,9 @@ div.rounded {
     border-radius: 50px;
     border-top-left-radius: 0px;
     border-bottom-right-radius: 0px;
-    box-shadow: 0 5px 5px #666666;  
+    box-shadow: 0 5px 5px #666666;
+    margin-left: auto;
+    margin-right: auto;  
 }
 #rounded-content {
     margin: 2%;
@@ -239,16 +244,16 @@ section#about {
     max-width: 100%;
     height: auto;
 }
-div#about {
+#about-text {
     float: right;
     min-height: 500px;
     width: 50%;
     background-color: #404040;
 }
-div#about h2 {
+#about-text h2 {
     color: #fff;
 }
-div#about p {
+#about-text p {
     color: #d9d9d9;
     margin: 40px;
     line-height: 30px;
@@ -258,6 +263,8 @@ div#about p {
 /*TEAM*/
 .row {
     width: 80%;
+    margin-left: auto;
+    margin-right: auto;
 }
 .column {
     display: table-cell;
@@ -301,9 +308,7 @@ p.email {
     padding-top: 15px;
     padding-bottom: 25px;
 }
-button.contact {
-    font-size: 20px;
-    font-family: "Nunito";
+a.contact {
     display: inline-block;
     padding: 10px;
     border: none;
@@ -313,8 +318,12 @@ button.contact {
     background-color: #ffbb33;
     cursor: pointer;
     width: 100%;
+    font-size: 20px;
+    font-family: "Nunito";
+    text-decoration: none;
+    color: #000;
 }
-button.contact:hover {
+a.contact:hover {
     background-color: #ffcc66;
 }
 
@@ -343,7 +352,9 @@ footer div {
     box-shadow: 0 5px 5px #666666;
     border-radius: 15px;
     background-color: #e69900;
-    font-size: 1rem;
+    font-family: "Nunito";
+    font-size: 1.125rem;
+    text-align: center;
     cursor: pointer;
 }
 #topBtn:hover {
@@ -417,9 +428,6 @@ footer div {
         text-align: center;
         margin-bottom: 2%;
     }
-    .topNav.responsive .resources a {
-        float: none;
-    }
     .topNav.responsive .resources-content a {
         display: flex;
         padding: 20px;
@@ -442,7 +450,7 @@ footer div {
     #about-img {
        width: 100%;
     }
-    div#about {
+    #about-text {
         width: 100%;
     }
     
