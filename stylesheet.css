@@ -421,9 +421,14 @@ footer div {
         display: block;
         text-align: left;
     }
-      .topNav.responsive.reduced .resources-content a {
+    .topNav.responsive.reduced .resources-content a {
           display: none;
     }
+    .topNav.responsive.reduced .resources {
+        background-color: #000;
+        border-top: none;
+    }
+    
     .topNav.responsive .resources {
         width: 100%;
         display: inline-block;
