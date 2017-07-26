@@ -108,7 +108,7 @@ nav a {
     font-family: "Patua One";
     float: left;
     display: block;
-    padding: 3%;
+    padding: 20px;
     font-size: 1.75rem;
     text-align: center;
     text-decoration: none;
@@ -398,6 +398,7 @@ footer div {
         padding-left: 4%;
     }
     nav a {
+        padding: 3%;
         border: none;
         padding-left: 4%;
     }
