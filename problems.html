@@ -1,0 +1,247 @@
+<!DOCTYPE HTML>
+<html lang="en">
+    
+    <head>
+        <!--META DATA-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="UTF-8">
+        <meta name="keywords" content="central programming club, programming club, central secondary, lcss, central clubs, london central">
+        <meta name="description" content="London Central Secondary School's Programming Club.">
+        <meta name="author" content="Central Programming">
+        
+        <!--FONTS-->
+        <link href="https://fonts.googleapis.com/css?family=Monoton|Patua+One|Graduate|Nunito:400,700" rel="stylesheet">
+        
+        <!--TAB TITLE AND ICON-->
+        <title>Weekly Problems</title>
+        <link rel="shortcut icon" href="http://www.tvdsb.ca/pix/logos/21.png">
+        
+        <!--STYLESHEET AND JAVASCRIPT LINKS-->
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/problemspage.css">
+        <script src="scripts.js"></script>
+    </head>
+    
+    <body id="body" onresize="resize()">
+        <div id="container">
+            
+            <!--HEADER IMAGE AND TITLE-->
+            <header>
+                <div class="parallax" style="background-image: url(images/header.jpg);">
+                <hr style="height: 150px; border: 0;">
+                <div class="centered"><h1 id="title">Central<br/>Coding<br/>Club</h1></div>
+                </div>
+            </header>
+
+            
+            <!--COUNTDOWN TIMER-->
+            <div id="countdown">
+                <h3>First meeting in:</h3>
+                <p id="timer"></p>
+                <span class="closebtn" style="cursor: pointer;" onclick="hideCountdown()">&times;</span>
+            </div>
+
+            
+            <!--NAVIGATION-->
+            <nav id="navbar">
+                <div id="nav" class="topNav">
+                    <a href="index.html" id="home">Home</a>
+                    <a href="#">Weekly Problems</a>
+                    <a href="#">Contests</a>
+                    
+                    <!--RESOURCES SECTION (MOBILE)-->
+                    <div class="resources">
+                        <a href="#">Resources</a>
+                        <div class="resources-content">
+                            <a href="#">Input Types</a>
+                            <a href="#">Arrays</a>
+                            <a href="#">Array Lists</a>
+                            <a href="#">Recursion</a>
+                        </div>
+                    </div>
+                    
+                    <!--RESOURCES SECTION (DROPDOWN)-->
+                    <div class="dropdown">
+                        <a href="javascript:void(0)" class="dropbtn">Resources</a>
+                        <div class="dropdown-content">
+                            <a href="#">Input Types</a>
+                            <a href="#">Arrays</a>
+                            <a href="#">Array Lists</a>
+                            <a href="#">Recursion</a>
+                        </div>
+                    </div>
+
+                    <!--MOBILE LINKS OPEN/CLOSE-->
+                    <a href="javascript:void(0);" id="icon" onclick="navButton()">&#9776;</a>
+                </div>
+            </nav>
+
+            
+            <div id="top">
+                <div id="left">
+                    
+                    <!--PURPOSE SECTION-->
+                    <section id="about">
+                        <div id="about-content">
+                            <h2>Purpose</h2><br/>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras tempor magna quis risus iaculis, sed mollis mi consectetur. Cras et tortor ut lacus blandit gravida. Praesent eu sodales nulla. Praesent aliquam fringilla dignissim.</p><br/>
+                            <p><span>Last week's top scorer: </span><b>N/A</b></p>
+                        </div>
+                    </section>
+
+                    
+                    <!--THIS WEEKS PROBLEM-->
+                    <section id="this-week">
+                        <h2>This Week's Problem</h2>
+                        <div class="prob">
+                            <!--<h3>Check back for a new problem once the club gets started</h3>-->
+                            <h3><a href="https://dmoj.ca/problem/">Problem Name &raquo;</a></h3>
+                            <ul>
+                                <li><b>Points:</b> #</li>
+                                <li><b>Time limit:</b> #s</li>
+                                <li><b>Author:</b> name</li>
+                            </ul>
+                            <br/><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras tempor magna quis risus iaculis, sed mollis mi consectetur.</p>
+                        </div>
+                    </section>
+                </div>
+
+                
+                
+                <!--LEADERBOARD-->
+                <section id="leaderboard">
+                    <div id="leader-title">
+                        <h2>Leaderboard</h2>
+                    </div>
+                    <table>
+                        <tr>
+                            <th>Rank</th>
+                            <th>Username</th>
+                            <th>Points</th>
+                        </tr>
+                        <tr id="01">
+                            <td class="rank">01</td>
+                            <td class="user"></td>
+                            <td class="points"></td>
+                        </tr>
+                        <tr id="02">
+                            <td class="rank">02</td>
+                            <td class="user"></td>
+                            <td class="points"></td>
+                        </tr>
+                        <tr id="03">
+                            <td class="rank">03</td>
+                            <td class="user"></td>
+                            <td class="points"></td>
+                        </tr>
+                        <tr id="04">
+                            <td class="rank">04</td>
+                            <td class="user"></td>
+                            <td class="points"></td>
+                        </tr>
+                        <tr id="05">
+                            <td class="rank">05</td>
+                            <td class="user"></td>
+                            <td class="points"></td>
+                        </tr>
+                        <tr id="06">
+                            <td class="rank">06</td>
+                            <td class="user"></td>
+                            <td class="points"></td>
+                        </tr>
+                        <tr id="07">
+                            <td class="rank">07</td>
+                            <td class="user"></td>
+                            <td class="points"></td>
+                        </tr>
+                        <tr id="08">
+                            <td class="rank">08</td>
+                            <td class="user"></td>
+                            <td class="points"></td>
+                        </tr>
+                        <tr id="09">
+                            <td class="rank">09</td>
+                            <td class="user"></td>
+                            <td class="points"></td>
+                        </tr>
+                        <tr id="10">
+                            <td class="rank">10</td>
+                            <td class="user"></td>
+                            <td class="points"></td>
+                        </tr>
+                    </table>
+                </section>
+            </div>
+            
+            
+            
+            <!--PAST PROBLEMS-->
+            <hr style="height: 30px; border: 0;">
+            
+            <h2>Past Problems</h2>
+            <section id="past-probs">
+                <div class="prob">
+                    <p class="date"><b>Date: </b>1/1/17</p><br/>
+                    <h3><a href="https://dmoj.ca/problem/">Problem Name &raquo;</a></h3>
+                    <ul>
+                        <li><b>Points:</b> #</li>
+                        <li><b>Time limit:</b> #s</li>
+                        <li><b>Author:</b> name</li>
+                    </ul>
+                    <br/><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras tempor magna quis risus iaculis, sed mollis mi consectetur.</p><br/>
+                    <p class="top-score"><b>Top Score: </b>user</p>
+                </div>
+                
+                <div class="prob">
+                    <p class="date"><b>Date: </b>1/1/17</p><br/>
+                    <h3><a href="https://dmoj.ca/problem/">Problem Name &raquo;</a></h3>
+                    <ul>
+                        <li><b>Points:</b> #</li>
+                        <li><b>Time limit:</b> #s</li>
+                        <li><b>Author:</b> name</li>
+                    </ul>
+                    <br/><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras tempor magna quis risus iaculis, sed mollis mi consectetur.</p><br/>
+                    <p class="top-score"><b>Top Score: </b>user</p>
+                </div>
+                
+                <div class="prob">
+                    <p class="date"><b>Date: </b>1/1/17</p><br/>
+                    <h3><a href="https://dmoj.ca/problem/">Problem Name &raquo;</a></h3>
+                    <ul>
+                        <li><b>Points:</b> #</li>
+                        <li><b>Time limit:</b> #s</li>
+                        <li><b>Author:</b> name</li>
+                    </ul>
+                    <br/><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras tempor magna quis risus iaculis, sed mollis mi consectetur.</p><br/>
+                    <p class="top-score"><b>Top Score: </b>user</p>
+                </div>
+                
+                <div class="prob">
+                    <p class="date"><b>Date: </b>1/1/17</p><br/>
+                    <h3><a href="https://dmoj.ca/problem/">Problem Name &raquo;</a></h3>
+                    <ul>
+                        <li><b>Points:</b> #</li>
+                        <li><b>Time limit:</b> #s</li>
+                        <li><b>Author:</b> name</li>
+                    </ul>
+                    <br/><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras tempor magna quis risus iaculis, sed mollis mi consectetur.</p><br/>
+                    <p class="top-score"><b>Top Score: </b>user</p>
+                </div>
+            </section>
+            
+            
+            <hr style="height: 70px; border: 0;">
+            
+            
+            <!--FOOTER-->
+            <footer>
+                <div></div>
+            </footer>
+
+
+            <!--BACK TO TOP BUTTON-->
+            <button onclick="topFunction()" id="topBtn">Top</button>
+
+        </div>
+    </body>
+</html>
