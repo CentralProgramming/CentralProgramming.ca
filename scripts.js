@@ -48,7 +48,7 @@ function navButton() {
             stopBodyScrolling(true);
         }
         if(window.matchMedia("(max-width: 800px) and (max-height: 430px)").matches){
-            x.className += " reduced"
+            x.className += " reduced";
         }
     }
     else {
@@ -90,3 +90,12 @@ function topFunction(){
     document.body.scrollTop = 0;
     document.documentElement.scrollTop = 0;
     }
+
+
+/*CONTEST CARD FLIP*/
+function flipBack(linkElement){
+   linkElement.parentElement.parentElement.className += " flipped";
+}
+function flipFront(linkElement){
+    linkElement.parentElement.parentElement.className = "contest";
+}

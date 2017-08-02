@@ -32,8 +32,18 @@ p {
     font-family: "Nunito";
     font-size: 1rem;
 }
+a {
+    text-decoration: none;
+    color: #4c00e6;
+}
 li {
     list-style: square;
+}
+p span {
+    text-shadow: 1px 1px #000;
+    font-size: 1.15rem;
+    font-variant: small-caps;
+    font-weight: bolder;
 }
 
 
@@ -86,7 +96,7 @@ p#timer {
     display: inline;
     text-align: center;
 }
-span {
+#countdownspan {
     float: right;
     padding-right: 10px;
 }
@@ -100,6 +110,7 @@ nav {
     position: sticky;
     position: -webkit-sticky;
     top: 0;
+    z-index: 95;
     background-color: #000;
     border-bottom: 5px outset #fff;
     text-align: center;
@@ -114,7 +125,6 @@ nav a {
     padding: 20px;
     font-size: 1.75rem;
     text-align: center;
-    text-decoration: none;
     color: #fff;
     border-right: 1px solid #bbb;
     border-left: 1px solid #bbb;
