@@ -81,17 +81,10 @@
             
             <section id="upcoming">
                 <h2>Upcoming Contests</h2>
-                
-                    <div class="column" style="width: 40%;">
-                        <div id="container">
-                            <div class="contest" style="height: 100px; background-color: #808080; text-shadow: 2px 4px #000;">
-
-                            <hr style="height: 25%; border: 0;">
-                            <h3 style="color: #fff; font-size: 3rem;">Nothing Upcoming</h3>
-
-                        </div>
+                    <div class="none">
+                        <hr style="height: 25%; border: 0;">
+                        <h3>Nothing Upcoming</h3>
                     </div>
-                </div>
             </section>
             
             <hr style="height: 50px; border: 0;">
@@ -121,6 +114,7 @@
                                         <li><b>Organizer: </b> Central Programming Club</li>
                                     </ul>
                                     <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras tempor magna quis risus iaculis, sed mollis mi consectetur. Cras et tortor ut lacus blandit gravida. Praesent eu sodales nulla. Praesent aliquam fringilla dignissim.</p>
+                                    <a href="https://dmoj.ca/problems/" class="block" target="_blank">Practice</a>
                                 </div>
                             
                         </div>
@@ -128,8 +122,7 @@
                 </div>
                 
                 
-          
-                                <br style="clear:both;" />      <div class="column">
+                <div class="column">
                     <div id="container">
                         <div class="contest">
 
@@ -185,6 +178,76 @@
                             
                         </div>
                     </div>
+                </div>
+            </section>
+            
+            
+            
+            <hr style="height: 50px; border: 0;">
+            
+            
+            
+            <section id="past">
+                <h2>Past Contests</h2>
+                
+                <div class="column">
+                        <div id="container">
+                            <div class="contest">
+                                
+                                <div class="front">
+                                    <p class="date">M/D/Y</p>
+                                    <hr style="height: 20%; border: 0;">
+                                    <h3>Contest</h3>
+                                    <div class="info" onclick="flipBack(this)">More info</div>
+                                </div>
+
+                                <div class="back">
+                                    <span class="turn" onclick="flipFront(this)">&orarr;</span>
+                                    <h3>Central #1</h3>
+                                    <ul>
+                                        <li><b>Date: </b> </li>
+                                        <li><b>Type: </b> </li>
+                                        <li><b>Location: </b> </li>
+                                        <li><b>Organizer: </b> </li>
+                                    </ul>
+                                    <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras tempor magna quis risus iaculis, sed mollis mi consectetur. Cras et tortor ut lacus blandit gravida. Praesent eu sodales nulla. Praesent aliquam fringilla dignissim.</p>
+                                    <a href="#" class="block">Results</a>
+                                </div>
+                            
+                        </div>
+                    </div>
+                </div>
+                
+            </section>
+            
+            
+            <!--<hr style="height: 50px; border: 0;">
+            <hr class="divisor">
+            <hr style="height: 75px; border: 0;">-->
+            <hr style="height: 100px; border: 0;">
+            
+            
+            <section id="contact">
+                
+                <div id="text">
+                    <h2>Know about a contest not listed here?</h2>
+                    <hr style="height: 75px; border: 0;">
+                    <h2 style="color: #ffaa00;">Let us know</h2>
+                </div>
+                <hr style="height: 25px; border: 0;">
+                
+                <div class="form">
+                    <form>
+                        <h3><span class="required">*</span> Name of contest:</h3>
+                        <input type="text" name="name">
+                        <br/><br/>
+                        
+                        <h3><span class="required">*</span> Contest website:</h3>
+                        <input type="url" name="site">
+                        <br/><br/>
+                        
+                        <input type="submit" value="Submit" id="submit">
+                    </form>
                 </div>
             </section>
             

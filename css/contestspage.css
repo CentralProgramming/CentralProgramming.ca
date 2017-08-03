@@ -3,7 +3,6 @@
     float: left;
     width: 50%;
     padding: 2%;
-    padding-bottom: 0;
 }
 .container {
     position: relative;
@@ -110,36 +109,82 @@
     }
 
 
-/*UPCOMING CONTESTS bfbfbf*/
-#upcoming {
+
+/*CONTEST SECTIONS*/
+#upcoming, #future, #past {
     width: 90%;
     margin-left: auto;
     margin-right: auto;
     padding-bottom: 2%;
     overflow: hidden;
+}
+#upcoming h2, #future h2, #past h2{
+    padding-top: 2%;
+    padding-left: 2%;
+    text-align: left;
+}
+
+
+/*UPCOMING CONTESTS*/
+#upcoming {
     background-color: #ffd480;
 }
 #upcoming h2 {
-    padding-top: 2%;
-    padding-left: 2%;
-    text-align: left;
     color: #fff;
 }
+.none {
+    width: 400px;
+    height: 200px;
+    margin: 2%;
+    padding: 2%;
+    box-shadow: 0 5px 10px #666666;
+    background-color: #f2f2f2;
+}
+.none h3 {
+    font-size: 2rem;
+}
 
-/*FUTURE CONTESTS*/
-#future {
-    width: 90%;
-    padding-bottom: 2%;
-    overflow: hidden;
+
+/*PAST CONTESTS*/
+#past {
+    background-color: #f2f2f2;
+}
+#past .back {
+    background-color: #ddd;
+}
+#past .back .description {
+    background-color: #f2f2f2;
+}
+
+/*CONTACT SECTION*/
+section#contact {
+    width: 80%;
     margin-left: auto;
     margin-right: auto;
+    overflow: auto;
 }
-#future h2 {
-    padding-top: 2%;
-    padding-left: 2%;
-    text-align: left;
+#text {
+    width: 56%;
+    padding: 2%;
+    padding-top: 0;
+    float: left;
 }
 
+.form {
+    width: 35%;
+    min-height: 300px;
+    margin: 4%;
+    margin-top: 0;
+    padding: 2%;
+    float: right;
+    text-align: center;
+}
+form h3 {
+    text-align: center;
+}
+input {
+    width: 85%;
+}
 
 
 @media only screen and (max-width: 950px){
@@ -147,20 +192,44 @@
         width: 100%;
         padding-bottom: 4%;
     }
+    #text {
+        width: 100%;
+        float: none;
+    }
+    .form {
+        width: 90%;
+        padding-top: 7%;
+        padding-bottom: 7%;
+        float: none;
+    }
+}
+@media only screen and (max-width: 750px){
+    .none {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #upcoming h2, #future h2, #past h2 {
+        text-align: center;
+        font-size: 2.rem;
+    }
 }
 @media only screen and (max-width: 500px){
-    #upcoming h2, #future h2 {
-        text-align: center;
-    }
     .column {
         padding: 0;
         padding-bottom: 5%;
         padding-top: 5%;
     }
     .contest {
-        min-height: 545px;
+        min-height: 550px;
     }
-    #future, #upcoming {
+    #future, #upcoming, #past {
         width: 100%;
+        padding-bottom: 4%;
+    }
+    .none {
+        width: 90%;
+    }
+    #text h2 {
+    font-size: 2rem;
     }
 }
