@@ -1,0 +1,142 @@
+/*SIDE NAV*/
+#sidenav {
+    width: 20%;
+    margin: 5%;
+    margin-right: 0;
+    float: left;
+    box-shadow: 0 3px 3px #666666;
+}
+#sidenav button {
+    width: 100%;
+    height: 125px;
+    display: block;
+    border: 3px outset #ffc34d;
+    outline: none;
+    background-color: #ffd480;
+}
+#sidenav button:hover {
+    border: 5px outset #ffd480;
+    background-color: #ffe6b3;
+}
+#sidenav button:active, .activebutton {
+    border: 5px inset #ffd480;
+}
+#sidenav button h2 {
+    font-size: 2rem;
+    color: #fff;
+}
+
+
+
+/*CONTENT*/
+#info {
+    width: 60%;
+    min-height: 500px;
+    margin: 5%;
+    margin-left: 0;
+    float: right;
+    box-shadow: 0 5px 5px #666666;
+    background-color: #f2f2f2;
+}
+
+/*CONTENT NAV*/
+.content-nav {
+    overflow: hidden;
+    background-color: #8c8c8c;
+}
+.content-nav button {
+    float: left;
+    cursor: pointer;
+    padding: 20px;
+    box-shadow: 0 5px 15px #000;
+    border: none;
+    outline: none;
+    background-color: #666;
+}
+.content-nav button:hover {
+    background-color: #808080;
+}
+.content-nav button.active {
+    background-color: #d9d9d9;
+}
+.content-nav button.active h3 {
+    color: #000;
+}
+.content-nav button h3 {
+    color: #fff;
+}
+.content {
+    padding: 5%;
+    display: none;
+}
+
+
+
+
+#sidenav2 {
+    width: 20%;
+    margin: 5%;
+    margin-right: 0;
+    float: left;
+    position: sticky;
+    top: 100px;
+    box-shadow: 0 3px 3px #666666;
+}
+#sidenav2 button h3 {
+    font-size: 1.75rem;
+    color: #fff;
+    text-shadow: 2px 2px #996600;
+}
+button.accordion {
+    width: 100%;
+    height: 10vh;
+    display: block;
+    cursor: pointer;
+    outline: none;
+    border: 1px solid #ffaa00;
+    background-color: #ffcc66;
+}
+button.accordion:hover, button.accordion.active {
+    background-color: #ffdd99;
+}
+.panel {
+    padding: 2%;
+    padding-bottom: 6%;
+    display: none;
+    background-color: #ffeecc;
+}
+button.expanded {
+    width: 100%;
+    height: 5vh;
+    display: block;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    background-color: #ffeecc;
+}
+button.expanded:hover, button.expanded.active {
+    background-color: #fff7e6;
+}
+#sidenav2 button h4 {
+    padding: 3%;
+    text-align: center;
+    font-size: 1.25rem;
+    color: #805500;
+}
+
+
+section#info2 {
+    width: 65%;
+    min-height: 75vh;
+    margin: 5%;
+    margin-left: 0;
+    margin-bottom: 0;
+    padding: 2%;
+    float: right;
+    box-shadow: 0 5px 5px #666666;
+    background-color: rgba(0, 0, 0, 0.025);
+}
+#info2 p {
+    margin: 2%;
+    text-indent: 50px;
+}

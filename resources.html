@@ -1,0 +1,208 @@
+<!DOCTYPE HTML>
+<html lang="en">
+    
+    <head>
+        <!--META DATA-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="UTF-8">
+        <meta name="keywords" content="central programming club, programming club, central secondary, lcss, central clubs, london central">
+        <meta name="description" content="London Central Secondary School's Programming Club.">
+        <meta name="author" content="Central Programming">
+        
+        <!--FONTS-->
+        <link href="https://fonts.googleapis.com/css?family=Monoton|Patua+One|Graduate|Nunito:400,700" rel="stylesheet">
+        
+        <!--TAB TITLE AND ICON-->
+        <title>Central Programming</title>
+        <link rel="shortcut icon" href="http://www.tvdsb.ca/pix/logos/21.png">
+        
+        <!--STYLESHEET AND JAVASCRIPT LINKS-->
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/resourcespage.css">
+        <script src="scripts.js"></script>
+    </head>
+    
+    <body id="body" onresize="resize()">
+        <div id="container">
+            
+            <!--HEADER IMAGE AND TITLE-->
+            <header>
+                <div class="parallax" style="background-image: url(images/header.jpg);">
+                <hr style="height: 150px; border: 0;">
+                <div class="centered"><h1 id="title">Central<br/>Coding<br/>Club</h1></div>
+                </div>
+            </header>
+
+            
+            <!--COUNTDOWN TIMER-->
+            <div id="countdown">
+                <h3>First meeting in:</h3>
+                <p id="timer"></p>
+                <span class="closebtn" style="cursor: pointer;" onclick="hideCountdown()">&times;</span>
+            </div>
+
+            
+            <!--NAVIGATION-->
+            <nav id="navbar">
+                <div id="nav" class="topNav">
+                    <a href="index.html" id="home">Home</a>
+                    <a href="problems.html">Weekly Problems</a>
+                    <a href="contests.html">Contests</a>
+                    
+                    <!--RESOURCES SECTION (MOBILE)-->
+                    <div class="resources">
+                        <a href="#">Resources</a>
+                        <div class="resources-content">
+                            <a href="#">Input Types</a>
+                            <a href="#">Arrays</a>
+                            <a href="#">Array Lists</a>
+                            <a href="#">Recursion</a>
+                        </div>
+                    </div>
+                    
+                    <!--RESOURCES SECTION (DROPDOWN)-->
+                    <div class="dropdown">
+                        <a href="javascript:void(0)" class="dropbtn">Resources</a>
+                        <div class="dropdown-content">
+                            <a href="#">Input Types</a>
+                            <a href="#">Arrays</a>
+                            <a href="#">Array Lists</a>
+                            <a href="#">Recursion</a>
+                        </div>
+                    </div>
+
+                    <!--MOBILE LINKS OPEN/CLOSE-->
+                    <a href="javascript:void(0);" id="icon" onclick="navButton()">&#9776;</a>
+                </div>
+            </nav>
+            
+            
+            <section id="sidenav">
+                <button><h2>Input</h2></button>
+                <button><h2>Arrays</h2></button>
+                <button><h2>Array Lists</h2></button>
+                <button><h2>Recursion</h2></button>
+                <button><h2>Category</h2></button>
+            </section>
+            
+            
+            <section id="info">
+                
+                    
+                <div id="input" class="category">
+                        
+                    <div class="content-nav">
+                        <button class="content-links" onclick="openSection(event, 'scanner')"><h3>Scanner</h3></button>
+                        <button class="content-links" onclick="openSection(event, 'stream')"><h3>Input Stream</h3></button>
+                        <button class="content-links" onclick="openSection(event, 'reader')"><h3>Buffered Reader</h3></button>
+                    </div>
+                    
+                    <div id="scanner" class="content">
+                        <h3>Scanner</h3><br/>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras tempor magna quis risus iaculis, sed mollis mi consectetur. Cras et tortor ut lacus blandit gravida. Praesent eu sodales nulla. Praesent aliquam fringilla dignissim.</p>
+                    </div>
+
+                    <div id="stream" class="content">
+                        <h3>Input Stream</h3>
+                    </div>
+
+                    <div id="reader" class="content">
+                        <h3>Buffered Reader</h3>
+                    </div>
+                </div>
+                
+                
+                
+                <!--<div id="arrays" class="category">
+                        
+                    <div class="content-nav">
+                        <button class="content-links" onclick="openSection(event, 'scanner')"><h3>Scanner</h3></button>
+                        <button class="content-links" onclick="openSection(event, 'stream')"><h3>Input Stream</h3></button>
+                        <button class="content-links" onclick="openSection(event, 'reader')"><h3>Buffered Reader</h3></button>
+                    </div>
+                </div>-->
+            </section>
+            
+            <hr style="height: 25px; border: 0; clear:both;">
+            
+            <section id="sidenav2">
+                <button class="accordion"><h3>Input</h3></button>
+                <div class="panel">
+                    <button class="expanded"><h4>Scanner</h4></button>
+                    <button class="expanded"><h4>Input Stream</h4></button>
+                    <button class="expanded"><h4>Buffered Reader</h4></button>
+                </div>
+                
+                <button class="accordion"><h3>Arrays</h3></button>
+                <div class="panel">
+                    <button class="expanded"><h4>Category</h4></button>
+                    <button class="expanded"><h4>Category</h4></button>
+                    <button class="expanded"><h4>Category</h4></button>
+                </div>
+                
+                <button class="accordion"><h3>Array Lists</h3></button>
+                <div class="panel">
+                    <button class="expanded"><h4>Category</h4></button>
+                    <button class="expanded"><h4>Category</h4></button>
+                    <button class="expanded"><h4>Category</h4></button>
+                </div>
+                
+                <button class="accordion"><h3>Recursion</h3></button>
+                <div class="panel">
+                    <button class="expanded"><h4>Category</h4></button>
+                    <button class="expanded"><h4>Category</h4></button>
+                    <button class="expanded"><h4>Category</h4></button>
+                </div>
+                
+                <button class="accordion"><h3>Category</h3></button>
+                <div class="panel">
+                    <button class="expanded"><h4>Category</h4></button>
+                    <button class="expanded"><h4>Category</h4></button>
+                    <button class="expanded"><h4>Category</h4></button>
+                </div>
+            </section>
+            
+            
+            <section id="info2">
+                <div id="intro">
+                    <h2>Resources</h2><br/>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras tempor magna quis risus iaculis, sed mollis mi consectetur. Cras et tortor ut lacus blandit gravida. Praesent eu sodales nulla. Praesent aliquam fringilla dignissim. Suspendisse euismod, massa at rutrum tempor, nibh tellus efficitur nisl, id porta lectus ligula ac felis. Proin pretium, ex sit amet dapibus malesuada, ante est eleifend erat, vehicula tincidunt diam ex at odio.</p>
+                </div>
+            </section>
+            
+            
+            <hr style="height: 50px; border: 0; clear: both;">
+            
+            <script>
+            /*RESOURCES ACCORDION*/
+var expansions = document.getElementsByClassName("accordion");
+
+for(var x=0; x<expansions.length; x++){
+    expansions[x].onclick = function(){
+        this.classList.toggle("active");
+        
+        var panel = this.nextElementSibling;
+        if(panel.style.display === "block"){
+            panel.style.display = "none";
+        }
+        else {
+            panel.style.display = "block";
+        }
+    }
+}
+            </script>
+            
+            
+            
+            <!--FOOTER-->
+            <footer>
+                <div></div>
+            </footer>
+
+
+            <!--BACK TO TOP BUTTON-->
+            <button onclick="topFunction()" id="topBtn">Top</button>
+
+        </div>
+    </body>
+</html>

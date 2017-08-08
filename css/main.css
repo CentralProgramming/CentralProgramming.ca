@@ -109,6 +109,7 @@ nav {
     position: fixed;
     position: sticky;
     position: -webkit-sticky;
+    top: 0;
     z-index: 95;
     background-color: #000;
     border-bottom: 5px outset #fff;
@@ -180,6 +181,7 @@ nav a#icon {
 /*FOOTER*/
 footer {
     height: 70px;
+    clear: both;
     background-color: #404040;
 }
 footer div {

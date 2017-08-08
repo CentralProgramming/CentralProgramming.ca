@@ -99,3 +99,43 @@ function flipBack(linkElement){
 function flipFront(linkElement){
     linkElement.parentElement.parentElement.className = "contest";
 }
+
+
+
+
+/*RESOURCES ACCORDION*/
+var expansions = document.getElementsByClassName("accordion");
+
+for(var x=0; x<expansions.length; x++){
+    expansions[x].onclick = function(){
+        this.classList.toggle("active");
+        
+        var panel = this.nextElementSibling;
+        if(panel.style.display === "block"){
+            panel.style.display = "none";
+        }
+        else {
+            panel.style.display = "block";
+        }
+    }
+}
+
+/*RESOURCES CONTENT*/
+function openSection(evt, sectionName){
+    var content, contentLinks;
+
+    content = document.getElementsByClassName("content");
+
+    for(var x=0; x<content.length; x++){
+        content[x].style.display = "none";
+    }
+
+    contentLinks = document.getElementsByClassName("content-links");
+
+    for(var x=0; x<contentLinks.length; x++){
+        contentLinks[x].className = contentLinks[x].className.replace(" active", "");
+    }
+        
+    document.getElementById(sectionName).style.display = "block";
+    evt.currentTarget.className += " active";
+}
