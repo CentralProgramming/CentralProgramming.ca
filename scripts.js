@@ -122,6 +122,9 @@ for(var x=0; x<expansions.length; x++){
 
 /*RESOURCES CONTENT*/
 function openSection(evt, sectionName){
+        document.getElementById("intro")
+.style.display = "none";
+    
     var content, contentLinks;
 
     content = document.getElementsByClassName("content");
@@ -130,7 +133,7 @@ function openSection(evt, sectionName){
         content[x].style.display = "none";
     }
 
-    contentLinks = document.getElementsByClassName("content-links");
+    contentLinks = document.getElementsByClassName("expanded");
 
     for(var x=0; x<contentLinks.length; x++){
         contentLinks[x].className = contentLinks[x].className.replace(" active", "");
