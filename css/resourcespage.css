@@ -1,15 +1,18 @@
 /*SIDE NAV*/
 #sidenav {
     width: 20%;
-    min-height: 1px;
+    max-height: 80vh;
     margin: 5%;
     margin-bottom: 10%;
     margin-right: 0;
-    overflow: hidden;
+    overflow-y: scroll;
     float: left;
     position: sticky;
     top: 100px;
     box-shadow: 0 3px 3px #666666;
+}
+#sidenav::-webkit-scrollbar {
+    width: 0;
 }
 button.accordion {
     width: 100%;
