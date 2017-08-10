@@ -6,6 +6,7 @@
     margin-bottom: 10%;
     margin-right: 0;
     overflow-y: scroll;
+    overflow-x: hidden;
     float: left;
     position: sticky;
     top: 100px;
@@ -14,7 +15,7 @@
 #sidenav::-webkit-scrollbar {
     width: 0;
 }
-button.accordion {
+button.accordion, button#btm-active, button#num {
     width: 100%;
     height: 15vh;
     min-height: 75px;
@@ -24,8 +25,8 @@ button.accordion {
     border: 1px solid #ffaa00;
     background-color: #ffcc66;
 }
-button.accordion:hover, button.accordion.active {
-    background-color: #ffdd99;
+button.accordion:hover, button.accordion.active, button#btm-active:hover {
+    background-color: #ffd480;
 }
 button.accordion h3 {
     font-size: 2rem;
@@ -42,6 +43,7 @@ button.expanded {
     width: 100%;
     height: 5%;
     margin-top: 3%;
+    text-indent: 1vw;
     display: block;
     cursor: pointer;
     outline: none;
@@ -55,8 +57,59 @@ button.expanded h4 {
     text-align: left;
     font-size: 1.25rem;
     font-weight: normal;
-    text-indent: 10%;
     color: #805500;
+}
+
+
+
+/*BOTTOM NAV*/
+section#btm-nav {
+    width: 100%;
+    height: 10vh;
+    display: none;
+    position: fixed;
+    bottom: 0;
+    background-color: #ffdd99;
+}
+button#btm-active, button#num {
+    width: 50%;
+    height: 100%;
+    float: left;
+}
+button#btm-active h3 {
+    font-size: 2rem;
+    color: #805500;
+}
+button#num h3 {
+    font-size: 1.5rem;
+    color: #b37700;
+}
+button#num {
+    width: 30%;
+    height: 100%;
+    border-left: none;
+    border-right: none;
+    background-color: #ffdd99;
+}
+button.direc {
+    width: 10%;
+    height: 100%;
+    cursor: pointer;
+    font-size: 2rem;
+    color: #805500;
+    outline: none;
+    border: none;
+    border-top: 1px solid #ffaa00;
+    background-color: #ffdd99;
+}
+button.direc:hover, button#num:hover {
+    background-color: #ffe6b3;
+}
+button.direc#prev {
+    float: left;
+}
+button.direc#next {
+    float: right;
 }
 
 
@@ -76,9 +129,25 @@ section#info {
     margin: 2%;
     text-indent: 50px;
 }
-
 .content {
     display: none;
 }
 
-/*nav - scroll*/
+
+/*MEDIA QUERIES*/
+@media only screen and (max-width: 1024px) {
+    #sidenav {
+        display: none;
+    } 
+    section#btm-nav {
+        display: block;
+    }
+    section#info {
+        width: 90%;
+    }
+    
+    #topBtn {
+        right: 1%;
+        bottom: 12vh;
+    }
+}
