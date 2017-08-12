@@ -129,6 +129,7 @@ function openSection(evt, sectionName){
 
 /*RESOURCES ACCORDIAN*/
 function openCtgy(link){
+    document.getElementById("instruct").style.display = "none";
     var expansions = document.getElementsByClassName("accordion");
 
     for(var x=0; x<expansions.length; x++){

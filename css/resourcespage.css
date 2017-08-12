@@ -1,7 +1,12 @@
+#res-title {
+    margin-top: 30px;
+    margin-bottom: 40px;
+    display: none;
+}
+
 /*SIDE NAV*/
 #sidenav {
     width: 20%;
-    max-height: 80vh;
     margin: 5%;
     margin-bottom: 10%;
     margin-right: 0;
@@ -63,7 +68,20 @@ button.expanded h4 {
     color: #805500;
 }
 
-
+div#instruct {
+    width: 45%;
+    margin: 2%;
+    padding: 2%;
+    padding-top: 10%;
+    padding-bottom: 10%;
+    float: right;
+    border: 2px solid #ffcc66;
+    background-color: #ffeecc;
+}
+div#instruct h3 {
+    font-size: 7vw;
+    color: #805500;
+}
 
 /*CONTENT*/
 section#info {
@@ -88,6 +106,9 @@ section#info {
 
 /*MEDIA QUERIES*/
 @media only screen and (max-width: 1024px) {
+    #res-title {
+        display: block;
+    }
     #sidenav {
         width: 90%;
         position: static;
@@ -98,10 +119,12 @@ section#info {
     button.accordion {
         width: 50%;
         display: inline-block;
+        border: 2px solid #ffaa00;
     }
     div.panel {
         width: 50%;
         float: right;
+        border: 2px solid #ffcc66;
     }
     section#info {
         width: 90%;
@@ -110,7 +133,21 @@ section#info {
 }
 
 @media only screen and (max-width: 500px) {
+    #sidenav {
+        width: 100%;
+        margin-left: 0;
+    }
     button.accordion h3 {
         font-size: 7vw;
+    }
+    section#info {
+        width: 100%;
+        margin: 0;
+    }
+    #info h2 {
+        font-size: 10vw;
+    }
+    .content {
+        padding: 3%;
     }
 }
