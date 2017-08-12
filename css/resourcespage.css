@@ -72,6 +72,7 @@ div#instruct {
     padding-top: 10%;
     padding-bottom: 10%;
     float: right;
+    display: none;
     border: 2px solid #ffcc66;
     background-color: #ffeecc;
 }
@@ -117,6 +118,9 @@ section#info {
         width: 50%;
         display: inline-block;
         border: 2px solid #ffaa00;
+    }
+    div#instruct {
+        display: block;
     }
     div.panel {
         width: 50%;
