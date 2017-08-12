@@ -103,23 +103,6 @@ function flipFront(linkElement){
 
 
 
-/*RESOURCES ACCORDION*/
-var expansions = document.getElementsByClassName("accordion");
-
-for(var x=0; x<expansions.length; x++){
-    expansions[x].onclick = function(){
-        this.classList.toggle("active");
-        
-        var panel = this.nextElementSibling;
-        if(panel.style.display === "block"){
-            panel.style.display = "none";
-        }
-        else {
-            panel.style.display = "block";
-        }
-    }
-}
-
 /*RESOURCES CONTENT*/
 function openSection(evt, sectionName){
         document.getElementById("intro")
@@ -141,4 +124,29 @@ function openSection(evt, sectionName){
         
     document.getElementById(sectionName).style.display = "block";
     evt.currentTarget.className += " active";
+}
+
+
+/*RESOURCES ACCORDIAN*/
+function openCtgy(link){
+    var expansions = document.getElementsByClassName("accordion");
+
+    for(var x=0; x<expansions.length; x++){
+        if (window.matchMedia("(max-width: 1024px)").matches){
+            for(var y=0; y<expansions.length; y++){
+                expansions[y].className = expansions[y].className.replace(" active", "");
+                var panel = expansions[y].nextElementSibling;
+                panel.style.display = "none";
+            }
+        }
+        link.classList.toggle("active");
+
+        var panel = link.nextElementSibling;
+        if(panel.style.display === "block"){
+            panel.style.display = "none";
+        }
+        else {
+            panel.style.display = "block";
+        }
+    }
 }

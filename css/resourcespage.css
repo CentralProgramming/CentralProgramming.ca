@@ -15,7 +15,7 @@
 #sidenav::-webkit-scrollbar {
     width: 0;
 }
-button.accordion, button#btm-active, button#num {
+button.accordion, button.btm-button {
     width: 100%;
     height: 15vh;
     min-height: 75px;
@@ -23,10 +23,13 @@ button.accordion, button#btm-active, button#num {
     cursor: pointer;
     outline: none;
     border: 1px solid #ffaa00;
-    background-color: #ffcc66;
+    background-color: #ffc34d;
 }
-button.accordion:hover, button.accordion.active, button#btm-active:hover {
+button.accordion:hover, button.accordion.active:hover {
     background-color: #ffd480;
+}
+button.accordion.active {
+    background-color: #ffcc66;
 }
 button.accordion h3 {
     font-size: 2rem;
@@ -62,57 +65,6 @@ button.expanded h4 {
 
 
 
-/*BOTTOM NAV*/
-section#btm-nav {
-    width: 100%;
-    height: 10vh;
-    display: none;
-    position: fixed;
-    bottom: 0;
-    background-color: #ffdd99;
-}
-button#btm-active, button#num {
-    width: 50%;
-    height: 100%;
-    float: left;
-}
-button#btm-active h3 {
-    font-size: 2rem;
-    color: #805500;
-}
-button#num h3 {
-    font-size: 1.5rem;
-    color: #b37700;
-}
-button#num {
-    width: 30%;
-    height: 100%;
-    border-left: none;
-    border-right: none;
-    background-color: #ffdd99;
-}
-button.direc {
-    width: 10%;
-    height: 100%;
-    cursor: pointer;
-    font-size: 2rem;
-    color: #805500;
-    outline: none;
-    border: none;
-    border-top: 1px solid #ffaa00;
-    background-color: #ffdd99;
-}
-button.direc:hover, button#num:hover {
-    background-color: #ffe6b3;
-}
-button.direc#prev {
-    float: left;
-}
-button.direc#next {
-    float: right;
-}
-
-
 /*CONTENT*/
 section#info {
     width: 65%;
@@ -137,17 +89,28 @@ section#info {
 /*MEDIA QUERIES*/
 @media only screen and (max-width: 1024px) {
     #sidenav {
-        display: none;
+        width: 90%;
+        position: static;
+        overflow: hidden;
+        float: none;
+        box-shadow: none;
     } 
-    section#btm-nav {
-        display: block;
+    button.accordion {
+        width: 50%;
+        display: inline-block;
+    }
+    div.panel {
+        width: 50%;
+        float: right;
     }
     section#info {
         width: 90%;
+        margin-top: 0;
     }
-    
-    #topBtn {
-        right: 1%;
-        bottom: 12vh;
+}
+
+@media only screen and (max-width: 500px) {
+    button.accordion h3 {
+        font-size: 7vw;
     }
 }

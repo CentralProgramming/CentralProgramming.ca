@@ -82,7 +82,7 @@
         
             <!--SIDE NAVBAR-->
             <section id="sidenav">
-                <button class="accordion"><h3>Input</h3></button>
+                <button class="accordion" onclick="openCtgy(this)"><h3>Input</h3></button>
                 <div class="panel">
                     <button class="expanded" onclick="openSection(event, 'inputIntro')"><h4 style="font-weight: bold;">Introduction</h4></button>
                     <button class="expanded" onclick="openSection(event, 'scanner')"><h4>Scanner</h4></button>
@@ -90,7 +90,7 @@
                     <button class="expanded" onclick="openSection(event, 'reader')"><h4>Buffered Reader</h4></button>
                 </div>
                 
-                <button class="accordion"><h3>Arrays</h3></button>
+                <button class="accordion" onclick="openCtgy(this)"><h3>Arrays</h3></button>
                 <div class="panel">
                     <button class="expanded" onclick="openSection(event, 'cgryIntro')"><h4 style="font-weight: bold;">Introduction</h4></button>
                     <button class="expanded" onclick="openSection(event, 'sec1')"><h4>Section 1</h4></button>
@@ -98,7 +98,7 @@
                     <button class="expanded" onclick="openSection(event, 'sec3')"><h4>Section 3</h4></button>
                 </div>
                 
-                <button class="accordion"><h3>Array Lists</h3></button>
+                <button class="accordion" onclick="openCtgy(this)"><h3>Array Lists</h3></button>
                 <div class="panel">
                     <button class="expanded" onclick="openSection(event, 'cgryIntro')"><h4 style="font-weight: bold;">Introduction</h4></button>
                     <button class="expanded" onclick="openSection(event, 'sec1')"><h4>Section 1</h4></button>
@@ -106,7 +106,7 @@
                     <button class="expanded" onclick="openSection(event, 'sec3')"><h4>Section 3</h4></button>
                 </div>
                 
-                <button class="accordion"><h3>Recursion</h3></button>
+                <button class="accordion" onclick="openCtgy(this)"><h3>Recursion</h3></button>
                 <div class="panel">
                     <button class="expanded" onclick="openSection(event, 'cgryIntro')"><h4 style="font-weight: bold;">Introduction</h4></button>
                     <button class="expanded" onclick="openSection(event, 'sec1')"><h4>Section 1</h4></button>
@@ -114,7 +114,7 @@
                     <button class="expanded" onclick="openSection(event, 'sec3')"><h4>Section 3</h4></button>
                 </div>
                 
-                <button class="accordion"><h3>Category</h3></button>
+                <button class="accordion" onclick="openCtgy(this)"><h3>Category</h3></button>
                 <div class="panel">
                     <button class="expanded" onclick="openSection(event, 'cgryIntro')"><h4 style="font-weight: bold;">Introduction</h4></button>
                     <button class="expanded" onclick="openSection(event, 'sec1')"><h4>Section 1</h4></button>
@@ -123,15 +123,6 @@
                 </div>
             </section>
             
-            
-            
-            <!--BOTTOM NAVBAR-->
-            <section id="btm-nav">
-                <button id="btm-active"><h3>Category</h3></button>
-                <button class="direc" id="prev">&ltrif;</button>
-                <button id="num"><h3>Section</h3></button>
-                <button class="direc" id="next">&rtrif;</button>
-            </section>
             
             
             
@@ -193,31 +184,6 @@
             
             
             <hr style="height: 50px; border: 0; clear: both;">
-            
-            
-            <!--ACCORDION-->
-            <script>
-                var expansions = document.getElementsByClassName("accordion");
-
-                for(var x=0; x<expansions.length; x++){
-                    expansions[x].onclick = function(){
-                        /*for(var y=0; y<expansions.length; y++){
-                            expansions[y].className = expansions[y].className.replace(" active", "");
-                            var panel = expansions[y].nextElementSibling;
-                            panel.style.display = "none";
-                        }*/
-                        this.classList.toggle("active");
-    
-                        var panel = this.nextElementSibling;
-                        if(panel.style.display === "block"){
-                            panel.style.display = "none";
-                        }
-                        else {
-                            panel.style.display = "block";
-                        }
-                    }
-                }
-            </script>
             
             
             
