@@ -10,11 +10,8 @@
     margin: 5%;
     margin-bottom: 10%;
     margin-right: 0;
-    overflow-y: scroll;
-    overflow-x: hidden;
+    overflow: hidden;
     float: left;
-    position: sticky;
-    top: 100px;
     box-shadow: 0 3px 3px #666666;
 }
 #sidenav::-webkit-scrollbar {
