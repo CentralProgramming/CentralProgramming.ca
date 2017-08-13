@@ -129,7 +129,10 @@ nav a {
     border-right: 1px solid #bbb;
     border-left: 1px solid #bbb;
 }
-nav a:hover, .dropdown:hover .dropbtn {
+nav a.nav-active {
+    background-color: #4d4d4d;
+}
+nav a:hover, nav a.nav-active:hover, .dropdown:hover .dropbtn {
     background-color: #fff;
     color: #000;
 }
@@ -248,7 +251,6 @@ input:focus {
     font-size: 1rem; 
     border: 3px outset;
 }
-
 
 
 /*DIVISOR*/
