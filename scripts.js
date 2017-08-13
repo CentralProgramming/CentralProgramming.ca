@@ -172,3 +172,17 @@ function openCtgy(link){
         }
     }
 }
+
+
+/*RESOURCES NAV RESIZE*/
+function fixNav() {
+    if (window.matchMedia("(min-width: 1000px) and (max-width: 1050px)").matches){
+        var expansions = document.getElementsByClassName("accordion");
+
+        for(var y=0; y<expansions.length; y++){
+            expansions[y].className = expansions[y].className.replace(" active", "");
+            var panel = expansions[y].nextElementSibling;
+            panel.style.display = "none";
+        }
+    }
+}

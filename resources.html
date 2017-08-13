@@ -22,7 +22,7 @@
         <script src="scripts.js"></script>
     </head>
     
-    <body id="body" onresize="resize()" onload="setCtgy()">
+    <body id="body" onresize="resize(); fixNav()" onload="setCtgy()">
         <div id="container">
             
             <!--HEADER IMAGE AND TITLE-->
@@ -51,7 +51,7 @@
                     
                     <!--RESOURCES SECTION (MOBILE)-->
                     <div class="resources">
-                        <a href="resources.html">Resources</a>
+                        <a class="nav-active" href="resources.html">Resources</a>
                         <div class="resources-content">
                             <a onclick="window.location.reload()" href="resources.html#sec_input">Input Types</a>
                             <a onclick="window.location.reload()" href="resources.html#sec_arrays">Arrays</a>
@@ -62,7 +62,7 @@
                     
                     <!--RESOURCES SECTION (DROPDOWN)-->
                     <div class="dropdown">
-                        <a href="resources.html" class="dropbtn">Resources</a>
+                        <a class="nav-active" href="resources.html" class="dropbtn">Resources</a>
                         <div class="dropdown-content">
                             <a onclick="window.location.reload()" href="#sec_input">Input Types</a>
                             <a onclick="window.location.reload()" href="#sec_arrays">Arrays</a>
