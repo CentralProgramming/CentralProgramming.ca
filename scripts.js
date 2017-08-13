@@ -103,6 +103,27 @@ function flipFront(linkElement){
 
 
 
+/*RESOURCE SET CATEGORY*/
+function setCtgy(){
+    if (location.hash == "#sec_input"){
+        openSection(event, 'inputIntro')
+        openCtgy(input);
+    }
+    else if(location.hash == "#sec_arrays") {
+        openSection(event, 'arrayIntro')
+        openCtgy(arrays);
+    }
+    else if(location.hash == "#sec_arraylists") {
+        openSection(event, 'arrayListsIntro')
+        openCtgy(arrayLists);
+    }
+    else if(location.hash == "#sec_recursion") {
+        openSection(event, 'recursionIntro')
+        openCtgy(recursion);
+    }
+}
+                
+
 /*RESOURCES CONTENT*/
 function openSection(evt, sectionName){
         document.getElementById("intro")
