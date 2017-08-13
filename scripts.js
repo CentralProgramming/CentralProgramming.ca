@@ -31,6 +31,7 @@ function resize() {
         document.getElementById("navbar").style.height = "auto";
         document.getElementById("navbar").style.position = "sticky";
         document.getElementById("navbar").style.position = "-webkit-sticky";
+        document.getElementById("navbar").style.zIndex = "95";
         document.getElementById("body").style.overflow = "auto";
         stopBodyScrolling(false);
     }
@@ -44,6 +45,7 @@ function navButton() {
         if(window.matchMedia("(max-width: 800px), (max-height: 500px)").matches) {
             document.getElementById("navbar").style.height = "100%";
             document.getElementById("navbar").style.position = "fixed";
+            document.getElementById("navbar").style.zIndex = "99";
             document.getElementById("body").style.overflow = "hidden";
             stopBodyScrolling(true);
         }
@@ -56,6 +58,7 @@ function navButton() {
         document.getElementById("navbar").style.height = "auto";
         document.getElementById("navbar").style.position = "sticky";
         document.getElementById("navbar").style.position = "-webkit-sticky";
+        document.getElementById("navbar").style.zIndex = "95";
         document.getElementById("body").style.overflow = "auto";
         stopBodyScrolling(false);
     }
