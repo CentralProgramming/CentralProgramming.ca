@@ -83,7 +83,7 @@ window.onscroll = function() {scrollFunction()};
 
 function scrollFunction(){
     if(document.body.scrollTop > 50 || document.documentElement.scrollTop > 50){
-        document.getElementById("topBtn").style.display = "block";
+        document.getElementById("topBtn").style.display = "none";
     }
     else{
         document.getElementById("topBtn").style.display = "none";
