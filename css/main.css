@@ -354,4 +354,51 @@ div#strip {
         float: left;
         margin: 1%;
     }
+    
+    /*FOOTER*/
+    .foot-colmn {
+        width: 50%;
+    }
+    .meeting {
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #github {
+        float: right;
+    }
+    #foot-lists {
+        margin-top: 200px;
+        margin-bottom: 2%;
+        overflow: hidden;
+    }
+}
+
+@media only screen and (max-width: 400px){
+    /*FOOTER*/
+    .foot-colmn {
+        width: 100%;
+        margin-top: 35px;
+    }
+    footer h3, footer ul {
+        margin-left: 0;
+        text-align: center;
+    }
+    .meeting {
+        width: 100%;
+        margin-top: 25px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #github {
+        float: right;
+    }
+    #foot-lists {
+        margin-top: 375px;
+        margin-bottom: 30px;;
+        overflow: hidden;
+    }
+    p#copyright {
+        text-align: center;
+    }
 }
