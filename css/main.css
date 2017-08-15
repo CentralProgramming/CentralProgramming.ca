@@ -107,8 +107,10 @@ p#timer {
 /*NAVIGATION*/
 nav {
     width: 100%;
+    position: fixed;
     position: sticky;
     position: -webkit-sticky;
+    top: 0;
     z-index: 95;
     background-color: #000;
     border-bottom: 5px outset #fff;
