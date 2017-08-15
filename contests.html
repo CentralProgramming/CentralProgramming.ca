@@ -1,0 +1,269 @@
+<!DOCTYPE HTML>
+<html lang="en">
+    
+    <head>
+        <!--META DATA-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="UTF-8">
+        <meta name="keywords" content="central programming club, programming club, central secondary, lcss, central clubs, london central">
+        <meta name="description" content="London Central Secondary School's Programming Club.">
+        <meta name="author" content="Central Programming">
+        
+        <!--FONTS-->
+        <link href="https://fonts.googleapis.com/css?family=Monoton|Patua+One|Graduate|Nunito:400,700" rel="stylesheet">
+        
+        <!--TAB TITLE AND ICON-->
+        <title>Central Programming</title>
+        <link rel="shortcut icon" href="http://www.tvdsb.ca/pix/logos/21.png">
+        
+        <!--STYLESHEET AND JAVASCRIPT LINKS-->
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/contestspage.css">
+        <script src="scripts.js"></script>
+    </head>
+    
+    <body id="body" onresize="resize()">
+        <div id="container">
+            
+            <!--HEADER IMAGE AND TITLE-->
+            <header>
+                <div class="parallax" style="background-image: url(images/header.jpg);">
+                <hr style="height: 150px; border: 0;">
+                <div class="centered"><h1 id="title">Central<br/>Coding<br/>Club</h1></div>
+                </div>
+            </header>
+
+            
+            <!--COUNTDOWN TIMER-->
+            <div id="countdown">
+                <h3>First meeting in:</h3>
+                <p id="timer"></p>
+                <span class="closebtn" style="cursor: pointer;" onclick="hideCountdown()">&times;</span>
+            </div>
+
+            
+            <!--NAVIGATION-->
+            <nav id="navbar">
+                <div id="nav" class="topNav">
+                    <a href="index.html" id="home">Home</a>
+                    <a href="problems.html">Weekly Problems</a>
+                    <a href="#">Contests</a>
+                    
+                    <!--RESOURCES SECTION (MOBILE)-->
+                    <div class="resources">
+                        <a href="#">Resources</a>
+                        <div class="resources-content">
+                            <a href="#">Input Types</a>
+                            <a href="#">Arrays</a>
+                            <a href="#">Array Lists</a>
+                            <a href="#">Recursion</a>
+                        </div>
+                    </div>
+                    
+                    <!--RESOURCES SECTION (DROPDOWN)-->
+                    <div class="dropdown">
+                        <a href="javascript:void(0)" class="dropbtn">Resources</a>
+                        <div class="dropdown-content">
+                            <a href="#">Input Types</a>
+                            <a href="#">Arrays</a>
+                            <a href="#">Array Lists</a>
+                            <a href="#">Recursion</a>
+                        </div>
+                    </div>
+
+                    <!--MOBILE LINKS OPEN/CLOSE-->
+                    <a href="javascript:void(0);" id="icon" onclick="navButton()">&#9776;</a>
+                </div>
+            </nav>
+            
+            
+            <hr style="height: 50px; border: 0;">
+            
+            <section id="upcoming">
+                <h2>Upcoming Contests</h2>
+                    <div class="none">
+                        <hr style="height: 25%; border: 0;">
+                        <h3>Nothing Upcoming</h3>
+                    </div>
+            </section>
+            
+            <hr style="height: 50px; border: 0;">
+            
+            
+            <section id="future">
+                <h2>Future Contests</h2>
+                
+                <div class="column">
+                        <div id="container">
+                            <div class="contest">
+                                
+                                <div class="front" style="background-image: url(https://cdn.pixabay.com/photo/2015/12/04/14/05/code-1076536_960_720.jpg)">
+                                    <p class="date">11/?/18</p>
+                                    <hr style="height: 20%; border: 0;">
+                                    <h3>Central #1</h3>
+                                    <div class="info" onclick="flipBack(this)">More info</div>
+                                </div>
+
+                                <div class="back">
+                                    <span class="turn" onclick="flipFront(this)">&orarr;</span>
+                                    <h3>Central #1</h3>
+                                    <ul>
+                                        <li><b>Date: </b> November 2017</li>
+                                        <li><b>Type: </b> Solo</li>
+                                        <li><b>Location: </b> Online, in room 117</li>
+                                        <li><b>Organizer: </b> Central Programming Club</li>
+                                    </ul>
+                                    <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras tempor magna quis risus iaculis, sed mollis mi consectetur. Cras et tortor ut lacus blandit gravida. Praesent eu sodales nulla. Praesent aliquam fringilla dignissim.</p>
+                                    <a href="https://dmoj.ca/problems/" class="block" target="_blank">Practice</a>
+                                </div>
+                            
+                        </div>
+                    </div>
+                </div>
+                
+                
+                <div class="column">
+                    <div id="container">
+                        <div class="contest">
+
+                            <div class="front">
+                                <p class="date">2/?/18</p>
+                                <hr style="height: 20%; border: 0;">
+                                <h3>Central #2</h3>
+                                <div class="info" onclick="flipBack(this)">More info</div>
+                            </div>
+
+                            <div class="back">
+                                    <span class="turn" onclick="flipFront(this)">&orarr;</span>
+                                    <h3>Central #2</h3>
+                                    <ul>
+                                        <li><b>Date: </b> February 2017</li>
+                                        <li><b>Type: </b> Solo</li>
+                                        <li><b>Location: </b> Online, in room 117</li>
+                                        <li><b>Organizer: </b> Central Programming Club</li>
+                                    </ul>
+                                    <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras tempor magna quis risus iaculis, sed mollis mi consectetur. Cras et tortor ut lacus blandit gravida. Praesent eu sodales nulla. Praesent aliquam fringilla dignissim.</p>
+                                    <a href="http://www.cemc.uwaterloo.ca/contests/past_contests.html#ccc" class="block" target="_blank">Sample Problems</a>
+                                </div>
+                            
+                        </div>
+                    </div>
+                </div>
+                
+                
+                 <div class="column">
+                    <div id="container">
+                        <div class="contest">
+                            
+                            <div class="front">
+                                <p class="date">2/14/18</p>
+                                <hr style="height: 20%; border: 0;">
+                                <h3>CCC</h3>
+                                <div class="info" onclick="flipBack(this)">More info</div>
+                            </div>
+
+                            <div class="back">
+                                <span class="turn" onclick="flipFront(this)">&orarr;</span>
+                                <h3>CCC</h3>
+                                <ul>
+                                    <li><b>Date: </b> February 14, 2018</li>
+                                    <li><b>Type: </b> Solo</li>
+                                    <li><b>Location: </b> Online, in room 117</li>
+                                    <li><b>Organizer: </b> University of Waterloo</li>
+                                </ul>
+                                <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras tempor magna quis risus iaculis, sed mollis mi consectetur. Cras et tortor ut lacus blandit gravida. Praesent eu sodales nulla. Praesent aliquam fringilla dignissim.</p>
+                                <a href="http://www.cemc.uwaterloo.ca/contests/computing.html" class="block" target="_blank">Website</a>
+                                <a href="http://www.cemc.uwaterloo.ca/contests/past_contests.html#ccc" class="block" target="_blank">Sample Problems</a>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            
+            
+            <hr style="height: 50px; border: 0;">
+            
+            
+            
+            <section id="past">
+                <h2>Past Contests</h2>
+                
+                <div class="column">
+                        <div id="container">
+                            <div class="contest">
+                                
+                                <div class="front">
+                                    <p class="date">M/D/Y</p>
+                                    <hr style="height: 20%; border: 0;">
+                                    <h3>Contest</h3>
+                                    <div class="info" onclick="flipBack(this)">More info</div>
+                                </div>
+
+                                <div class="back">
+                                    <span class="turn" onclick="flipFront(this)">&orarr;</span>
+                                    <h3>Central #1</h3>
+                                    <ul>
+                                        <li><b>Date: </b> </li>
+                                        <li><b>Type: </b> </li>
+                                        <li><b>Location: </b> </li>
+                                        <li><b>Organizer: </b> </li>
+                                    </ul>
+                                    <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras tempor magna quis risus iaculis, sed mollis mi consectetur. Cras et tortor ut lacus blandit gravida. Praesent eu sodales nulla. Praesent aliquam fringilla dignissim.</p>
+                                    <a href="#" class="block">Results</a>
+                                </div>
+                            
+                        </div>
+                    </div>
+                </div>
+                
+            </section>
+            
+            
+            <!--<hr style="height: 50px; border: 0;">
+            <hr class="divisor">
+            <hr style="height: 75px; border: 0;">-->
+            <hr style="height: 100px; border: 0;">
+            
+            
+            <section id="contact">
+                
+                <div id="text">
+                    <h2>Know about a contest not listed here?</h2>
+                    <hr style="height: 75px; border: 0;">
+                    <h2 style="color: #ffaa00;">Let us know</h2>
+                </div>
+                <hr style="height: 25px; border: 0;">
+                
+                <div class="form">
+                    <form>
+                        <h3><span class="required">*</span> Name of contest:</h3>
+                        <input type="text" name="name">
+                        <br/><br/>
+                        
+                        <h3><span class="required">*</span> Contest website:</h3>
+                        <input type="url" name="site">
+                        <br/><br/>
+                        
+                        <input type="submit" value="Submit" id="submit">
+                    </form>
+                </div>
+            </section>
+            
+            
+             <hr style="height: 50px; border: 0;">
+            
+            
+            <!--FOOTER-->
+            <footer>
+                <div></div>
+            </footer>
+
+
+            <!--BACK TO TOP BUTTON-->
+            <button onclick="topFunction()" id="topBtn">Top</button>
+
+        </div>
+    </body>
+</html>

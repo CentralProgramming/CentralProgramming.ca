@@ -93,3 +93,12 @@ function topFunction(){
     document.body.scrollTop = 0;
     document.documentElement.scrollTop = 0;
     }
+
+
+/*CONTEST CARD FLIP*/
+function flipBack(linkElement){
+   linkElement.parentElement.parentElement.className += " flipped";
+}
+function flipFront(linkElement){
+    linkElement.parentElement.parentElement.className = "contest";
+}
