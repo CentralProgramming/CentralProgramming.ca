@@ -11,8 +11,6 @@ var x = setInterval(function() {
 
     document.getElementById("timer").innerHTML = days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
     
-    document.getElementById("countdown").style.display = "inline-block";
-    
     if (distance < 0) {
         clearInterval(x);
         document.getElementById("timer").innerHTML = "already passed"
@@ -27,6 +25,7 @@ function hideCountdown() {
 
 /*NAVIGATION*/
 function navJS() {
+    document.getElementById("countdown").style.display = "inline-block";
     document.getElementById("navbar").className = "jsEnabled";   
 }
 
