@@ -399,6 +399,7 @@ input:focus {
         overflow: scroll;
     }
     nav.jsEnabled a, nav.jsEnabled .dropdown {
+        width: auto;
         display: none;
         border: none;
         padding-left: 4%;
