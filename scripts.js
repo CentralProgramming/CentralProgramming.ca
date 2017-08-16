@@ -10,7 +10,9 @@ var x = setInterval(function() {
     var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
     document.getElementById("timer").innerHTML = days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
-
+    
+    document.getElementById("countdown").style.display = "inline-block";
+    
     if (distance < 0) {
         clearInterval(x);
         document.getElementById("timer").innerHTML = "already passed"
@@ -24,41 +26,37 @@ function hideCountdown() {
 
 
 /*NAVIGATION*/
+function navJS() {
+    document.getElementById("navbar").className = "jsEnabled";   
+}
+
 function resize() {
     if (window.matchMedia("(min-width: 651px)").matches) {
         document.getElementById("nav").className = "topNav";
 
-        document.getElementById("navbar").style.height = "auto";
-        document.getElementById("navbar").style.position = "sticky";
-        document.getElementById("navbar").style.position = "-webkit-sticky";
-        document.getElementById("navbar").style.zIndex = "95";
+        document.getElementById("navbar").className = "jsEnabled";
         document.getElementById("body").style.overflow = "auto";
         stopBodyScrolling(false);
     }
 }
 
 function navButton() {
-    var x = document.getElementById("nav");
+    var m = document.getElementById("nav");
 
-    if(x.className === "topNav") {
-        x.className += " responsive";
+    if(m.className === "topNav") {
+        m.className += " responsive";
         if(window.matchMedia("(max-width: 650px), (max-height: 500px)").matches) {
-            document.getElementById("navbar").style.height = "100%";
-            document.getElementById("navbar").style.position = "fixed";
-            document.getElementById("navbar").style.zIndex = "99";
+            document.getElementById("navbar").className += " open";
             document.getElementById("body").style.overflow = "hidden";
             stopBodyScrolling(true);
         }
         if(window.matchMedia("(max-width: 650px) and (max-height: 430px)").matches){
-            x.className += " reduced"
+            m.className += " reduced"
         }
     }
     else {
-        x.className = "topNav";
-        document.getElementById("navbar").style.height = "auto";
-        document.getElementById("navbar").style.position = "sticky";
-        document.getElementById("navbar").style.position = "-webkit-sticky";
-        document.getElementById("navbar").style.zIndex = "95";
+        m.className = "topNav";
+        document.getElementById("navbar").className = "jsEnabled";
         document.getElementById("body").style.overflow = "auto";
         stopBodyScrolling(false);
     }
@@ -96,6 +94,17 @@ function topFunction(){
 
 
 /*CONTEST CARD FLIP*/
+function jsEnabled() {
+    var front = document.getElementsByClassName("front");
+    for(var x=0; x<front.length; x++){
+        front[x].className += " js";
+    }
+    var back = document.getElementsByClassName("back");
+    for(var x=0; x<back.length; x++){
+        back[x].className += " js";
+    }
+}
+
 function flipBack(linkElement){
    linkElement.parentElement.parentElement.className += " flipped";
 }

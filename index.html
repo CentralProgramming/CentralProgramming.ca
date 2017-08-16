@@ -22,7 +22,7 @@
         <script src="scripts.js"></script>
     </head>
     
-    <body id="body" onresize="resize()">
+    <body id="body" onresize="resize()" onload="navJS()">
         <div id="container">
             
             <!--HEADER IMAGE AND TITLE-->
@@ -40,7 +40,7 @@
                 <p id="timer"></p>
                 <span class="closebtn" style="cursor: pointer;" onclick="hideCountdown()">&times;</span>
             </div>
-
+            
             
             <!--NAVIGATION-->
             <nav id="navbar">

@@ -7,7 +7,7 @@
 .container {
     position: relative;
     perspective: 800px;
-    -webkit-perspective:
+    -webkit-perspective: 800px;
 }    
 .contest {
     min-height: 500px;
@@ -28,12 +28,24 @@
     height: 100%;
     margin: 0;
     position: absolute;
+}
+.front.js, .back.js {
+    display: block;
     backface-visibility: hidden;
     -webkit-backface-visibility: hidden;
 }
+.back.js {
+    transform: rotateY(180deg);
+    -webkit-transform: rotateY(180deg);
+}
+.back.js .turn{
+    display: block;
+}
+
 
     /*FRONT CONTENT*/
     .front { 
+        display: none;
         background-color: #666666;
         background-position: center;
         background-repeat: no-repeat;
@@ -71,8 +83,6 @@
     /*BACK CONTENT*/
     .back {
         background-color: #f2f2f2;
-        transform: rotateY(180deg);
-        -webkit-transform: rotateY(180deg);
     }
     .back h3 {
         padding-top: 2%;
@@ -86,6 +96,7 @@
     .turn {
         margin-right: 3%;
         float: right;
+        display: none;
         font-size: 2rem;
         color: #666666;
         cursor: pointer;
