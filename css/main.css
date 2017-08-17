@@ -179,7 +179,7 @@ nav a#icon {
 
 
 
-/*FOOTER*/
+/*FOOTER 1*/
 div#content {
     width: 100%;
     padding: 5%;
@@ -244,7 +244,30 @@ div#strip {
     padding: 1%;
     background-color: #404040;
 }
-
+/*FOOTER 2*/
+footer#foot2 div#content {
+    padding: 2%;
+    padding-bottom: 1%;
+}
+footer#foot2 .foot-colmn {
+    width: 42.5%;
+}
+footer#foot2 #github {
+    width: 15%;
+}
+footer#foot2 ul {
+    padding-top: 64px;
+}
+footer#foot2 li a {
+    float: left;
+    display: inline-block;
+}
+footer#foot2 p#copyright {
+    text-align: center;
+}
+footer#foot2 #strip {
+    padding-bottom: .5%;
+}
 
 /*TOP*/
 #topBtn {
@@ -371,6 +394,8 @@ input:focus {
     /*NAV*/
     nav a {
         width: 50%;
+        padding: 10px;
+        font-size: 5vw;
         border: 1px solid #666;
         border-bottom: none;
     }
@@ -401,6 +426,8 @@ input:focus {
     nav.jsEnabled a, nav.jsEnabled .dropdown {
         width: auto;
         display: none;
+        padding: 20px;
+        font-size: 3.9vw;
         border: none;
         padding-left: 4%;
     }
