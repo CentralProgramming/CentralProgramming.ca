@@ -25,7 +25,9 @@ function hideCountdown() {
 
 /*NAVIGATION*/
 function navJS() {
-    document.getElementById("countdown").style.display = "inline-block";
+    if(window.matchMedia("(min-width: 651px)").matches) {
+        document.getElementById("countdown").style.display = "inline-block";
+    }
     document.getElementById("navbar").className = "jsEnabled";   
 }
 
