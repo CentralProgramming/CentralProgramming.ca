@@ -1,0 +1,111 @@
+<!DOCTYPE HTML>
+<html lang="en">
+    
+    <head>
+        <!--META DATA-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="UTF-8">
+        <meta name="keywords" content="central programming club, programming club, central secondary, lcss, central clubs, london central">
+        <meta name="description" content="London Central Secondary School's Programming Club.">
+        <meta name="author" content="Central Programming">
+        
+        <!--FONTS-->
+        <link href="https://fonts.googleapis.com/css?family=Monoton|Patua+One|Graduate|Nunito:400,700" rel="stylesheet">
+        
+        <!--TAB TITLE AND ICON-->
+        <title>Central Programming</title>
+        <link rel="shortcut icon" href="http://www.tvdsb.ca/pix/logos/21.png">
+        
+        <!--STYLESHEET AND JAVASCRIPT LINKS-->
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/calendarpage.css">
+        <script src="scripts.js"></script>
+    </head>
+    
+    <body id="body" onresize="resize()" onload="jsEnabled(); navJS()">
+        <div id="container">
+            
+            <!--HEADER IMAGE AND TITLE-->
+            <header>
+                <div class="parallax" style="background-image: url(images/header.jpg);">
+                <hr style="height: 150px; border: 0;">
+                <div class="centered"><h1 id="title">Central<br/>Programming<br/>Club</h1></div>
+                </div>
+            </header>
+
+            
+            <!--COUNTDOWN TIMER-->
+            <div id="countdown">
+                <h3>First meeting in:</h3>
+                <p id="timer"></p>
+                <span class="closebtn" style="cursor: pointer;" onclick="hideCountdown()">&times;</span>
+            </div>
+
+            
+            <!--NAVIGATION-->
+            <nav id="navbar">
+                <div id="nav" class="topNav">
+                    <a href="index.html" id="home">Home</a>
+                    <a href="problems.html">Weekly Problems</a>
+                    <a href="contests.html">Contests</a>
+                    
+                    <!--RESOURCES SECTION (MOBILE)-->
+                    <div class="resources">
+                        <a href="#">Resources</a>
+                        <div class="resources-content">
+                            <a href="#">Input Types</a>
+                            <a href="#">Arrays</a>
+                            <a href="#">Array Lists</a>
+                            <a href="#">Recursion</a>
+                        </div>
+                    </div>
+                    
+                    <!--RESOURCES SECTION (DROPDOWN)-->
+                    <div class="dropdown">
+                        <a href="javascript:void(0)" class="dropbtn">Resources</a>
+                        <div class="dropdown-content">
+                            <a href="#">Input Types</a>
+                            <a href="#">Arrays</a>
+                            <a href="#">Array Lists</a>
+                            <a href="#">Recursion</a>
+                        </div>
+                    </div>
+
+                    <!--MOBILE LINKS OPEN/CLOSE-->
+                    <a href="javascript:void(0);" id="icon" onclick="navButton()">&#9776;</a>
+                </div>
+            </nav>
+            
+            <noscript>
+                <div class="alert">
+                    <h3>This site works best with JavaScript Enabled</h3>
+                </div>
+            </noscript>
+            
+            <hr style="height: 25px; border: 0;">
+            
+            <section id="calendar">
+                <h2>Calendar</h2>
+                <iframe id="gcal" src="https://calendar.google.com/calendar/embed?showTitle=0&amp;showPrint=0&amp;showTabs=0&amp;showCalendars=0&amp;showTz=0&amp;height=600&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;ctz=America%2FNew_York" scrolling="no"></iframe>            
+            </section>
+            
+            <section id="events">
+                <h2>Upcoming Events</h2>
+                <iframe id="gevents" src="https://calendar.google.com/calendar/embed?showTitle=0&amp;showNav=0&amp;showDate=0&amp;showPrint=0&amp;showTabs=0&amp;showCalendars=0&amp;showTz=0&amp;mode=AGENDA&amp;height=600&amp;wkst=1&amp;bgcolor=%23ffffff&amp;ctz=America%2FNew_York" scrolling="yes"></iframe>
+            </section>
+            
+            <hr style="height: 50px; border: 0;">
+            
+            
+            <!--FOOTER-->
+            <footer>
+                <div></div>
+            </footer>
+
+
+            <!--BACK TO TOP BUTTON-->
+            <button onclick="topFunction()" id="topBtn">Top</button>
+
+        </div>
+    </body>
+</html>
