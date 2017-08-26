@@ -22,14 +22,14 @@
         <script src="scripts.js"></script>
     </head>
     
-    <body id="body" onresize="resize()">
+    <body id="body" onresize="resize()" onload="jsEnabled(); navJS()">
         <div id="container">
             
             <!--HEADER IMAGE AND TITLE-->
             <header>
                 <div class="parallax" style="background-image: url(images/header.jpg);">
                 <hr style="height: 150px; border: 0;">
-                <div class="centered"><h1 id="title">Central<br/>Coding<br/>Club</h1></div>
+                <div class="centered"><h1 id="title">Central<br/>Programming<br/>Club</h1></div>
                 </div>
             </header>
 
@@ -48,6 +48,7 @@
                     <a href="index.html" id="home">Home</a>
                     <a href="problems.html">Weekly Problems</a>
                     <a class="nav-active" href="contests.html">Contests</a>
+
                     
                     <!--RESOURCES SECTION (MOBILE)-->
                     <div class="resources">
@@ -76,8 +77,13 @@
                 </div>
             </nav>
             
+            <noscript>
+                <div class="alert">
+                    <h3>This site works best with JavaScript Enabled</h3>
+                </div>
+            </noscript>
             
-            <hr style="height: 50px; border: 0;">
+            <hr style="height: 25px; border: 0;">
             
             <section id="upcoming">
                 <h2>Upcoming Contests</h2>
@@ -94,10 +100,10 @@
                 <h2>Future Contests</h2>
                 
                 <div class="column">
-                        <div id="container">
-                            <div class="contest">
+                        <div class="container">
+                            <div class="contest" id="con-1">
                                 
-                                <div class="front" style="background-image: url(https://cdn.pixabay.com/photo/2015/12/04/14/05/code-1076536_960_720.jpg)">
+                                <div class="front">
                                     <p class="date">11/?/18</p>
                                     <hr style="height: 20%; border: 0;">
                                     <h3>Central #1</h3>
@@ -123,7 +129,7 @@
                 
                 
                 <div class="column">
-                    <div id="container">
+                    <div class="container">
                         <div class="contest">
 
                             <div class="front">
@@ -152,7 +158,7 @@
                 
                 
                  <div class="column">
-                    <div id="container">
+                    <div class="container">
                         <div class="contest">
                             
                             <div class="front">
@@ -191,7 +197,7 @@
                 <h2>Past Contests</h2>
                 
                 <div class="column">
-                        <div id="container">
+                        <div class="container">
                             <div class="contest">
                                 
                                 <div class="front">

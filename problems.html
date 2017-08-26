@@ -22,14 +22,14 @@
         <script src="scripts.js"></script>
     </head>
     
-    <body id="body" onresize="resize()">
+    <body id="body" onresize="resize()" onload="navJS()">
         <div id="container">
             
             <!--HEADER IMAGE AND TITLE-->
             <header>
                 <div class="parallax" style="background-image: url(images/header.jpg);">
                 <hr style="height: 150px; border: 0;">
-                <div class="centered"><h1 id="title">Central<br/>Coding<br/>Club</h1></div>
+                <div class="centered"><h1 id="title">Central<br/>Programming<br/>Club</h1></div>
                 </div>
             </header>
 
@@ -75,6 +75,12 @@
                     <a href="javascript:void(0);" id="icon" onclick="navButton()">&#9776;</a>
                 </div>
             </nav>
+            
+            <noscript>
+                <div class="alert">
+                    <h3>This site works best with JavaScript Enabled</h3>
+                </div>
+            </noscript>
 
             
             <div id="top">
@@ -259,8 +265,36 @@
             
             
             <!--FOOTER-->
-            <footer>
-                <div></div>
+            <footer id="foot2">
+                <div id="content">
+                    <div class="foot-colmn">
+                            <ul>
+                                <li><a href="index.html#about">About Us</a></li>
+                                <li><a href="index.html#team">Team</a></li>
+                                <li><a href="index.html#news">News</a></li>
+                                <li><a href="#">Contact</a></li>
+                            </ul>
+                        </div>
+                    
+                    <div class="foot-colmn" id="github">
+                        <a href="https://github.com/CentralProgramming" target="_blank" style="cursor: pointer;"><img src="images/GitHub-Mark.png" alt="GitHub">
+                        <p style="color: #4d3300;">Visit us on GitHub</p></a>
+                    </div>
+                    
+
+                        <div class="foot-colmn">
+                            <ul>
+                                <li><a href="https://dmoj.ca/organization/LCSS/users" target="_blank">DMOJ</a></li>
+                                <li><a href="problems.html">Problems</a></li>
+                                <li><a href="#">Contests</a></li>
+                                <li><a href="#">Calendar</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                
+                <div id="strip">
+                    <p id="copyright">&copy; <script>document.write(new Date().getFullYear())</script> Central Programming</p>
+                </div>
             </footer>
 
 
