@@ -9,27 +9,29 @@ div#container {
     width: 100%;
 }
 h1 {
+    font-size: 6vw;
+    font-family: "Monoton", Impact, sans-serif;
+    letter-spacing: 0.2rem;
+    line-height: 1.0;
     text-align: center;
-    font-family: "Graduate";
     color: #e69900;
     text-shadow: 2px 4px #000;
-    line-height: 1.2;
 }
 h2 {
-    font-family: "Graduate";
+    font-family: "Graduate", "Arial Black", sans-serif;
     font-size: 2.5rem;
     text-align: center;
     color: #ffcc66;
     text-shadow: 2px 4px #000;
 }
 h3 {
-    font-family: "Nunito";
+    font-family: "Nunito", "Palatino Linotype", serif;
     font-size: 1.125rem;
     color: #333333;
     text-align: center;
 }
 p {
-    font-family: "Nunito";
+    font-family: "Nunito", "Palatino Linotype", serif;
     font-size: 1rem;
 }
 a {
@@ -62,12 +64,6 @@ p span {
 /*HEADER*/
 header {
     text-align: center;
-}
-h1#title {
-    font-size: 6vw;
-    font-family: "Monoton";
-    letter-spacing: 0.2rem;
-    line-height: 1.0;
 }
 .centered {
     margin-left: auto;
@@ -120,7 +116,7 @@ div#nav {
     display: inline-block;
 }
 nav a {
-    font-family: "Patua One";
+    font-family: "Patua One", Tahoma, sans-serif;
     float: left;
     display: block;
     padding: 20px;

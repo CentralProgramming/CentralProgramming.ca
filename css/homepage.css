@@ -123,7 +123,7 @@ section#about {
 .container h3 {
     color: #ffcc66;
     font-size: 40px;
-    font-family: "Patua One";
+    font-family: "Patua One", Tahoma, sans-serif;
     text-shadow: 2px 2px #4d3300;
 }
 .container::after, .row::after {
@@ -153,7 +153,7 @@ a.contact {
     cursor: pointer;
     width: 100%;
     font-size: 20px;
-    font-family: "Nunito";
+    font-family: "Nunito", "Palatino Linotype", serif;
     color: #000;
 }
 a.contact:hover {
