@@ -112,3 +112,90 @@ function flipBack(linkElement){
 function flipFront(linkElement){
     linkElement.parentElement.parentElement.className = "contest";
 }
+
+
+
+
+/*RESOURCE SET CATEGORY*/
+function setCtgy(){
+    if (location.hash == "#sec_input"){
+        openSection(event, 'inputIntro')
+        openCtgy(input);
+    }
+    else if(location.hash == "#sec_arrays") {
+        openSection(event, 'arrayIntro')
+        openCtgy(arrays);
+    }
+    else if(location.hash == "#sec_arraylists") {
+        openSection(event, 'arrayListsIntro')
+        openCtgy(arrayLists);
+    }
+    else if(location.hash == "#sec_recursion") {
+        openSection(event, 'recursionIntro')
+        openCtgy(recursion);
+    }
+}
+                
+
+/*RESOURCES CONTENT*/
+function openSection(evt, sectionName){
+        document.getElementById("intro")
+.style.display = "none";
+    
+    var content, contentLinks;
+
+    content = document.getElementsByClassName("content");
+
+    for(var x=0; x<content.length; x++){
+        content[x].style.display = "none";
+    }
+
+    contentLinks = document.getElementsByClassName("expanded");
+
+    for(var x=0; x<contentLinks.length; x++){
+        contentLinks[x].className = contentLinks[x].className.replace(" active", "");
+    }
+        
+    document.getElementById(sectionName).style.display = "block";
+    evt.currentTarget.className += " active";
+}
+
+
+/*RESOURCES ACCORDIAN*/
+function openCtgy(link){
+    document.getElementById("instruct").style.display = "none";
+    var expansions = document.getElementsByClassName("accordion");
+
+    for(var x=0; x<expansions.length; x++){
+        if (window.matchMedia("(max-width: 1024px)").matches){
+            for(var y=0; y<expansions.length; y++){
+                expansions[y].className = expansions[y].className.replace(" active", "");
+                var panel = expansions[y].nextElementSibling;
+                panel.style.display = "none";
+            }
+        }
+        link.classList.toggle("active");
+
+        var panel = link.nextElementSibling;
+        if(panel.style.display === "block"){
+            panel.style.display = "none";
+        }
+        else {
+            panel.style.display = "block";
+        }
+    }
+}
+
+
+/*RESOURCES NAV RESIZE*/
+function fixNav() {
+    if (window.matchMedia("(min-width: 1000px) and (max-width: 1050px)").matches){
+        var expansions = document.getElementsByClassName("accordion");
+
+        for(var y=0; y<expansions.length; y++){
+            expansions[y].className = expansions[y].className.replace(" active", "");
+            var panel = expansions[y].nextElementSibling;
+            panel.style.display = "none";
+        }
+    }
+}

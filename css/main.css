@@ -126,7 +126,10 @@ nav a {
     border-right: 1px solid #bbb;
     border-left: 1px solid #bbb;
 }
-nav a:hover, .dropdown:hover .dropbtn {
+nav a.nav-active {
+    background-color: #4d4d4d;
+}
+nav a:hover, nav a.nav-active:hover, .dropdown:hover .dropbtn {
     background-color: #fff;
     color: #000;
 }
@@ -175,7 +178,8 @@ nav a#icon {
 
 
 
-/*FOOTER 1*/
+
+/*FOOTER*/
 div#content {
     width: 100%;
     padding: 5%;
@@ -339,7 +343,6 @@ input:focus {
     background-color: #c2f0c2;
     border-left: 6px solid #5cd65c;
 }
-
 
 
 /*DIVISOR*/
