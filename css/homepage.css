@@ -31,8 +31,7 @@ div.center {
     box-shadow: 0 5px 5px #666666;
     font-size: 1rem;
     line-height: 2;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto;
 }
 section#intro h2#news:after {  
         content: "Weekly Announcements";
@@ -48,8 +47,7 @@ div.rounded {
     border-top-left-radius: 0px;
     border-bottom-right-radius: 0px;
     box-shadow: 0 5px 5px #666666;
-    margin-left: auto;
-    margin-right: auto;  
+    margin: 0 auto; 
 }
 #rounded-content {
     margin: 2%;
@@ -97,8 +95,7 @@ section#about {
 /*TEAM*/
 .row {
     width: 80%;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto;
 }
 .column {
     display: table-cell;

@@ -1,15 +1,12 @@
 #res-title {
-    margin-top: 30px;
-    margin-bottom: 40px;
+    margin: 30px 0 40px;
     display: none;
 }
 
 /*SIDE NAV*/
 #sidenav {
     width: 20%;
-    margin: 5%;
-    margin-bottom: 10%;
-    margin-right: 0;
+    margin: 5% 0 10% 5%;
     overflow: hidden;
     float: left;
     box-shadow: 0 3px 3px #666666;
@@ -85,9 +82,7 @@ div#instruct h3 {
 section#info {
     width: 65%;
     min-height: 75vh;
-    margin: 5%;
-    margin-left: 0;
-    margin-bottom: 0;
+    margin: 5% 5% 0 0;
     padding: 2%;
     float: right;
     box-shadow: 0 5px 5px #666666;
