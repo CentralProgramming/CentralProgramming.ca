@@ -41,11 +41,15 @@ a {
 li {
     list-style: square;
 }
-p span {
+span.strong {
     text-shadow: 1px 1px #000;
     font-size: 1.15rem;
     font-variant: small-caps;
     font-weight: bolder;
+}
+span.light {
+    color: #999;
+    font-weight: 3200;
 }
 
 
@@ -116,7 +120,7 @@ nav a {
     border-left: 1px solid #bbb;
 }
 nav a.nav-active {
-    background-color: #4d4d4d;
+    background-color: #400080;
 }
 nav a:hover, nav a.nav-active:hover, .dropdown:hover .dropbtn {
     background-color: #fff;

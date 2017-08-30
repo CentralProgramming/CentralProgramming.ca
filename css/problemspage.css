@@ -30,6 +30,9 @@
     padding: 4%;
     background-color: #ffe6b3;
 }
+#about-content p {   
+    line-height: 1.5;
+}
 
 
 /*THIS WEEK'S PEOBLEMS*/

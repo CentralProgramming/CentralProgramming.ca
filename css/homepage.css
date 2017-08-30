@@ -17,7 +17,7 @@ h2#welcome {
     color: #fff;
     font-size: 3.75rem;
 }
-section#intro h3 {
+#introbox h3 {
     font-size: 2.5rem;
 }
 div.center {
@@ -34,7 +34,7 @@ div.center {
     margin: 0 auto;
 }
 section#intro h2#news:after {  
-        content: "Weekly Announcements";
+        content: "Announcements";
     }
 div.rounded {
     width: 55%;
@@ -51,12 +51,44 @@ div.rounded {
 }
 #rounded-content {
     margin: 2%;
-    padding: 2%;
+    padding: 3%;
     height: 80%;
     background-color: #fff7e6;
 }
+#rounded-content h3 {
+    text-align: left;
+    font-size: 1.5rem;
+}
+iframe {
+    width: 100%;
+    border: 0;
+    box-shadow: 0 0 5px #808080;
+}
+iframe#gevents {
+    height: 200px;
+}
+iframe#gform {
+    height: 400px;
+}
+p#cal {
+    margin-top: 2%;
+    text-align: center;
+}
 
 
+/*CALENDAR
+section#calendar {
+    text-align: center;
+}
+section#calendar h2 {
+    margin-bottom: 25px;
+}
+iframe#gcal{
+    width: 90%;
+    height: 50vw;
+    box-shadow: none;
+}
+*/
 
 /*ABOUT*/
 section#about {
@@ -101,17 +133,13 @@ section#about {
     display: table-cell;
     float: left;
     width: 33.3%;
-    margin-bottom: 2%;
-    padding: 0 1%;
+    margin-bottom: 3%;
+    padding: 0 2%;
 }
 .card {
-    min-height: 500px;
+    min-height: 300px;
     background-color: #f2f2f2;
-    box-shadow: 0 0 10px #666666;
-}
-.card img {
-    width: 100%;
-    height: 200px;
+    box-shadow: 0 0 7px #666;
 }
 .container {
     text-align: left;
@@ -192,7 +220,7 @@ a.contact:hover {
 @media only screen and (max-width: 650px) {
    /*INTRO*/
     section#intro h2#news:after {  
-        content: "Weekly News";
+        content: "News";
     }
     h2#welcome {
         font-size: 2.75rem;
