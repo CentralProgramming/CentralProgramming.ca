@@ -76,50 +76,62 @@ p#cal {
 }
 
 
-/*CALENDAR
-section#calendar {
-    text-align: center;
-}
-section#calendar h2 {
-    margin-bottom: 25px;
-}
-iframe#gcal{
-    width: 90%;
-    height: 50vw;
-    box-shadow: none;
-}
-*/
 
-/*ABOUT*/
-section#about {
+/*CLUB INFO*/
+section#club-info {
     display: flex;
+    background-color: #404040;
 }
-#about-img {
+#info-img {
     width: 50%;
     min-height: 500px;
     float: left;
-    background-image: url(../images/about.jpg);
+}
+.hide {
+    position: absolute!important;
+    height: 0!important;
+    min-height: 0!important;
+    opacity: 0!important;
+}
+#about-img, #learn-img {
+    min-height: 750px;
+    height: 100%;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    -webkit-transition: opacity 1s ease-out;
+    transition: opacity 1s ease-out;
 }
-#about-img img {
-    max-width: 100%;
-    height: auto;
+#about-img {
+    background-image: url(../images/about.jpg);
+    opacity: 1;
 }
-#about-text {
-    float: right;
-    min-height: 500px;
+#learn-img { 
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/c/c0/Ada_Lovelace_Chalon_portrait.jpg);
+}
+#info-text {
     width: 50%;
+    min-height: 500px;
+    float: right;
     background-color: #404040;
 }
-#about-text h2 {
+#info-text h2 {
     color: #fff;
 }
-#about-text p {
+#info-text p {
     color: #d9d9d9;
     margin: 40px;
     line-height: 30px;
+    text-align: justify;
+}
+a.info-change {
+    color: #bb99ff;
+    font-weight: 700;
+}
+div#learn-text, div#about-text {
+    position: static;
+    -webkit-transition: opacity 1s ease-out;
+    transition: opacity 1s ease-out;
 }
 
 
@@ -197,14 +209,14 @@ a.contact:hover {
         width: 80%;
     }
     
-    /*ABOUT*/
-    section#about {
-        display: inline-block;
+    /*CLUB INFO*/
+    section#club-info {
+        display: block;
     }
-    #about-img {
+    #info-img {
        width: 100%;
     }
-    #about-text {
+    #info-text {
         width: 100%;
     }
     

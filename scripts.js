@@ -94,6 +94,29 @@ function topFunction(){
     }
 
 
+/*CLUB INFO*/
+function changeAbout(n){
+    var abtImg = document.getElementById("about-img");
+    var lrnImg = document.getElementById("learn-img");
+    var about = document.getElementById("about-text");
+    var learn = document.getElementById("learn-text");
+    
+    if(n==1){
+        abtImg.classList.toggle("hide");
+        about.classList.toggle("hide");
+        lrnImg.classList.toggle("hide");
+        learn.classList.toggle("hide");
+    }
+    if(n==0){
+        lrnImg.classList.toggle("hide");
+        learn.classList.toggle("hide");
+        abtImg.classList.toggle("hide");
+        
+        about.classList.toggle("hide");
+    }
+}
+
+
 /*CONTEST CARD FLIP*/
 function jsEnabled() {
     var front = document.getElementsByClassName("front");
