@@ -2,20 +2,18 @@ section#calendar, section#events {
     margin-top: 50px;
     text-align: center;
 }
-section#calendar h2 {
-    width: 80%;
-    margin: 0 auto 25px auto;
-    font-size: 3rem;
-}
-iframe#gcal {
-    width: 80%;
-    border: 0;
-}
 
 
 /*CALENDAR*/
+section#calendar h2 {
+    width: 80%;
+    margin: 0 auto 25px auto;
+    font-size: 3.25rem;
+}
 iframe#gcal {
+    width: 80%;
     height: 50vw;
+    border: 0;
 }
 
 
