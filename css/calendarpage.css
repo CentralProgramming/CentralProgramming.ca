@@ -2,17 +2,16 @@ section#calendar, section#events {
     margin-top: 50px;
     text-align: center;
 }
-h2 {
+section#calendar h2 {
     width: 80%;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 25px;
-    text-align: left;
+    margin: 0 auto 25px auto;
+    font-size: 3rem;
 }
-iframe#gcal, iframe#gevents {
+iframe#gcal {
     width: 80%;
     border: 0;
 }
+
 
 /*CALENDAR*/
 iframe#gcal {
@@ -21,14 +20,65 @@ iframe#gcal {
 
 
 /*EVENTS*/
-iframe#gevents {
-    height: 200px;
+section#events h2 {
+    font-size: 3rem;
+}
+.event {
+    width: 70%;
+    min-height: 200px;
+    margin: 10px auto 50px;
+    padding: 25px;
+    background-color: #ffd480;
+    box-shadow: 0 0 10px #b37700;
+}
+.event h3 {
+    font-size: 1.75rem;
+    text-align: left;
+    color: #664400;
+}
+.event-info {
+    min-height: 100px;
+    margin-top: 20px;
+    background-color: #fff7e6;
+    box-shadow: 2px 2px 5px #b37700;
+}
+.event-info p {
+    padding: 15px;
+    text-align: left; 
+    line-height: 1.5;
+    color: #996600;
+}
+.tag {
+    width: 150px;
+    height: 50px;
+    margin-top: 20px;
+    position: relative;
+    box-shadow: 2px 2px 10px #b37700;
+    background-color: #ffe6b3;
+}
+.tag:after {
+    width: 0;
+    height: 0;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 100%;
+    border-width: 25px;
+    border-style: solid;
+    border-color: transparent;
+    border-left-color: #ffe6b3;
+}
+.tag h4 {
+    margin: 15px;
+    line-height: 50px;
+    font-family: "Nunito";
+    color: #805500;
 }
 
 
 /*MEDIA QUERIES*/
 @media only screen and (max-width: 1000px) {
-    iframe#gcal, iframe#gevents {
+    iframe#gcal, .event {
         width: 90%;
     }
     iframe#gcal {
@@ -36,7 +86,7 @@ iframe#gevents {
     }
 }
 @media only screen and (max-width: 550px) {
-    iframe#gcal, iframe#gevents {
+    iframe#gcal, .event {
         width: 100%;
     }
     iframe#gcal {
