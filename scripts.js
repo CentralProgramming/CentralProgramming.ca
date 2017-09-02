@@ -111,7 +111,6 @@ function changeAbout(n){
         lrnImg.classList.toggle("hide");
         learn.classList.toggle("hide");
         abtImg.classList.toggle("hide");
-        
         about.classList.toggle("hide");
     }
 }
@@ -220,5 +219,34 @@ function fixNav() {
             var panel = expansions[y].nextElementSibling;
             panel.style.display = "none";
         }
+    }
+}
+
+
+
+/*CALENDAR BACK*/
+function setBack(){
+    var backLink =  document.getElementById("page-from");
+    var backPage =  document.getElementById("back-page");
+    
+    if (location.hash == "#from_home"){
+        backLink.setAttribute("href","index.html");
+        backPage.innerHTML = "Home";
+    }
+    else if (location.hash == "#from_news"){
+        backLink.setAttribute("href","index.html#announcements");
+        backPage.innerHTML = "Announcements";
+    }
+    else if (location.hash == "#from_problems"){
+        backLink.setAttribute("href","problems.html");
+        backPage.innerHTML = "Weekly Problems";
+    }
+    else if (location.hash == "#from_contests"){
+        backLink.setAttribute("href","contests.html");
+        backPage.innerHTML = "Contests";
+    }
+    else if (location.hash == "#from_resources"){
+        backLink.setAttribute("href","resources.html");
+        backPage.innerHTML = "Resources";
     }
 }

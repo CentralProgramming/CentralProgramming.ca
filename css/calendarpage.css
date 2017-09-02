@@ -4,11 +4,27 @@ section#calendar, section#events {
 }
 
 
+/*BACK LINK*/
+#back-link {
+    width: 80%;
+    margin: 0 auto;
+}
+#page-from {
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: #805500;
+    box-shadow: 2px 2px 2px #b37700;
+    background-color: #ffe6b3;
+}
+#back-page {
+    color: #4c00e6;
+}
+
+
 /*CALENDAR*/
 section#calendar h2 {
-    width: 80%;
-    margin: 0 auto 25px auto;
     font-size: 3.25rem;
+    margin-bottom: 25px;
 }
 iframe#gcal {
     width: 80%;
@@ -76,7 +92,7 @@ section#events h2 {
 
 /*MEDIA QUERIES*/
 @media only screen and (max-width: 1000px) {
-    iframe#gcal, .event {
+    iframe#gcal, .event, #back-link {
         width: 90%;
     }
     iframe#gcal {
@@ -84,10 +100,13 @@ section#events h2 {
     }
 }
 @media only screen and (max-width: 550px) {
-    iframe#gcal, .event {
+    iframe#gcal, .event, #back-link {
         width: 100%;
     }
     iframe#gcal {
         height: 80vh;
+    }
+    .event h3 {
+        font-size: 1.5rem;
     }
 }
