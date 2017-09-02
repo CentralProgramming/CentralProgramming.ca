@@ -225,6 +225,12 @@ footer li a {
 #github {
     text-align: center;
 }
+p#report {
+    cursor: pointer; 
+    color: #996600; 
+    font-size: 0.95rem; 
+    text-decoration: underline;
+}
 p#copyright {
     text-align: right;
     color: #999999;
