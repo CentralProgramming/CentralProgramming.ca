@@ -82,9 +82,10 @@
                 </div>
             </noscript>
             
-            
-            <hr style="height: 50px; border: 0;">
-            <p id="back-link"><a id="page-from">&laquo; Back to <span id="back-page"></span></a></p>
+            <div id="back-link">
+                <hr style="height: 50px; border: 0;">
+                <p><a id="page-from">&laquo; Back to <span id="back-page"></span></a></p>
+            </div>
             
             <section id="calendar">
                 <h2>Calendar</h2>
@@ -103,7 +104,7 @@
                     <div class="event-info">
                         <p>The first meeting of Central's Programming Club where we will be introducing the club and coding problems, discussing future meetings, filling out the Google Form, and signing up for DMOJ.</p>
                     </div>
-                    <div class="tag"><h4># Meetings</h4></div>
+                    <div class="tag"><h4><a># Meetings</a></h4></div>
                 </div>
                 
                 <div class="event">
@@ -111,7 +112,7 @@
                     <div class="event-info">
                         <p>"The Canadian Computing Competition (CCC) is a fun challenge for secondary school students with an interest in programming. It is an opportunity for students to test their ability in designing, understanding and implementing algorithms." &nbsp; &mdash;<a href="http://www.cemc.uwaterloo.ca/contests/computing.html" target="_blank">CEMC</a>.</p>
                     </div>
-                    <a href="contests.html"><div class="tag"><h4># Contests</h4></div></a>
+                    <div class="tag"><h4><a href="contests.html"># Contests</a></h4></div>
                 </div>
                 
                 <div class="event">
@@ -120,7 +121,7 @@
                         <p>"The contest takes place in three rounds: 
                             the board-wide contest, the regional contest, and the province-wide contest. A team consists of 4 students and one computer. In order to compete effectively, work must be divided efficiently among the team members." &nbsp; &mdash;<a href="http://ecoocs.org/" target="_blank">ECOO</a>.</p>
                     </div>
-                    <a href="contests.html"><div class="tag"><h4># Contests</h4></div></a>
+                    <div class="tag"><h4><a href="contests.html"># Contests</a></h4></div>
                 </div>
             </section>
             
@@ -128,8 +129,36 @@
             
             
             <!--FOOTER-->
-            <footer>
-                <div></div>
+            <footer id="foot2">
+                <div id="content">
+                    <div class="foot-colmn">
+                            <ul>
+                                <li><a href="index.html#about">About Us</a></li>
+                                <li><a href="index.html#team">Team</a></li>
+                                <li><a href="index.html#news">News</a></li>
+                                <li><a href="#">Contact</a></li>
+                            </ul>
+                        </div>
+                    
+                    <div class="foot-colmn" id="github">
+                        <a href="https://github.com/CentralProgramming" target="_blank" style="cursor: pointer;"><img src="images/GitHub-Mark.png" alt="GitHub">
+                        <p style="color: #4d3300;">Visit us on GitHub</p></a>
+                    </div>
+                    
+
+                        <div class="foot-colmn">
+                            <ul>
+                                <li><a href="https://dmoj.ca/organization/LCSS/users" target="_blank">DMOJ</a></li>
+                                <li><a href="problems.html">Problems</a></li>
+                                <li><a href="#">Contests</a></li>
+                                <li><a href="calendar.html#from_problems">Calendar</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                
+                <div id="strip">
+                    <p id="copyright">&copy; <script>document.write(new Date().getFullYear())</script> Central Programming</p>
+                </div>
             </footer>
 
 

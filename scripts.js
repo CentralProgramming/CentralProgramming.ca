@@ -1,5 +1,5 @@
 /*COUNTDOWN*/
-var countDownDate = new Date("Sep 5, 2017 10:55:00").getTime();
+var countDownDate = new Date("Sep 14, 2017 10:55:00").getTime();
 var x = setInterval(function() {
     var now = new Date().getTime();
     var distance = countDownDate - now;
@@ -229,24 +229,27 @@ function setBack(){
     var backLink =  document.getElementById("page-from");
     var backPage =  document.getElementById("back-page");
     
-    if (location.hash == "#from_home"){
-        backLink.setAttribute("href","index.html");
-        backPage.innerHTML = "Home";
-    }
-    else if (location.hash == "#from_news"){
-        backLink.setAttribute("href","index.html#announcements");
-        backPage.innerHTML = "Announcements";
-    }
-    else if (location.hash == "#from_problems"){
-        backLink.setAttribute("href","problems.html");
-        backPage.innerHTML = "Weekly Problems";
-    }
-    else if (location.hash == "#from_contests"){
-        backLink.setAttribute("href","contests.html");
-        backPage.innerHTML = "Contests";
-    }
-    else if (location.hash == "#from_resources"){
-        backLink.setAttribute("href","resources.html");
-        backPage.innerHTML = "Resources";
+    if (location.hash != ""){
+        if (location.hash == "#from_home"){
+            backLink.setAttribute("href","index.html");
+            backPage.innerHTML = "Home";
+        }
+        else if (location.hash == "#from_news"){
+            backLink.setAttribute("href","index.html#announcements");
+            backPage.innerHTML = "Announcements";
+        }
+        else if (location.hash == "#from_problems"){
+            backLink.setAttribute("href","problems.html");
+            backPage.innerHTML = "Weekly Problems";
+        }
+        else if (location.hash == "#from_contests"){
+            backLink.setAttribute("href","contests.html");
+            backPage.innerHTML = "Contests";
+        }
+        else if (location.hash == "#from_resources"){
+            backLink.setAttribute("href","resources.html");
+            backPage.innerHTML = "Resources";
+        }
+        document.getElementById("back-link").style.display = "block";
     }
 }

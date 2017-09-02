@@ -8,6 +8,7 @@ section#calendar, section#events {
 #back-link {
     width: 80%;
     margin: 0 auto;
+    display: none;
 }
 #page-from {
     padding: 10px 20px;
@@ -79,10 +80,9 @@ section#events h2 {
     left: 100%;
     border-width: 25px;
     border-style: solid;
-    border-color: transparent;
-    border-left-color: #ffe6b3;
+    border-color: transparent transparent transparent #ffe6b3;
 }
-.tag h4 {
+.tag h4 a {
     margin: 15px;
     line-height: 50px;
     font-family: "Nunito";
