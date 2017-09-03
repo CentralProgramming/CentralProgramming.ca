@@ -1,3 +1,15 @@
+/*COMING SOON*/
+section#soon {
+    width: 80%;
+    margin: 100px auto 100px;
+    text-align: center;
+}
+img#soon {
+    width: 50%;
+    margin-bottom: 25px;
+}
+
+
 #res-title {
     margin: 30px 0 40px;
     display: none;
