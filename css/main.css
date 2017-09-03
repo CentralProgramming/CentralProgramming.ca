@@ -13,9 +13,9 @@ h1 {
     font-family: "Monoton", Impact, sans-serif;
     letter-spacing: 0.2rem;
     line-height: 1.0;
-    text-align: center;
-    color: #e69900;
-    text-shadow: 2px 4px #000;
+    text-align: left;
+    color: #e6ac00;
+    text-shadow: 2px 4px #fff7e6;
 }
 h2 {
     font-family: "Graduate", "Arial Black", sans-serif;
@@ -53,7 +53,6 @@ span.light {
 }
 
 
-
 /*PARALLAX*/
 .parallax {
     height: 500px;
@@ -62,6 +61,28 @@ span.light {
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+
+/*HEADER*/
+.parallax#header-image {
+    position: relative;
+    background-image: url(../images/header2.jpg); 
+}
+img#logo {
+    width: 25%;
+    position: absolute;
+    top: 10%;
+    left: 5%;
+}
+#title {
+    position: absolute;
+    top: 20%;
+    right: 5%;
+}
+span.purple {
+    color: #9120c5;
+}
+
 
 
 /*COUNTDOWN*/
@@ -311,8 +332,18 @@ input:focus {
 }
 @media only screen and (max-width: 1024px) {
     /*HEADER*/
-    h1#title {
-        font-size: 8vw;
+    img#logo {
+        top: 30%;
+        left: 70%;
+        z-index: 1;
+    }
+    #title {
+        top: 30%;
+        left: 5%;
+        z-index: 80;
+    }
+    #title h1 {
+        font-size: 7vw;
     }
     .parallax {
         background-attachment: scroll;
@@ -332,9 +363,24 @@ input:focus {
 }
 @media only screen and (max-width: 650px) {
     /*HEADER*/
+    img#logo {
+        width: 40%;
+        top: 5%;
+        left: 30%;
+    }
+    #title {
+        top: 60%;
+        left: 15%;
+    }
+    h1#central, h1#club, span.purple {
+        font-size: 10vw;
+    }
+    
+    /*COUNTDOWN*/
     div#countdown {
         display: none;
     }
+    
     /*NAV*/
     nav a {
         width: 50%;
@@ -452,6 +498,19 @@ input:focus {
 }
 
 @media only screen and (max-width: 400px){
+   /*HEADER*/
+    img#logo {
+        width: 60%;
+        left: 20%;
+    }
+    #title {
+        top: 57%;
+        left: 10%;
+    }
+    h1#central, h1#club, span.purple {
+        font-size: 15vw;
+    }
+    
     /*FOOTER*/
     .foot-colmn {
         width: 100%;

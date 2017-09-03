@@ -147,7 +147,7 @@ div#about-text, dov#learn-text {
     padding: 0 2%;
 }
 .card {
-    min-height: 500px;
+    min-height: 525px;
     position: relative;
     background-color: #f2f2f2;
     box-shadow: 2px 2px 7px #666;
@@ -176,8 +176,10 @@ p.title {
 p.email {
     font-style: italic;
     color: #737373;
-    padding-top: 15px;
-    padding-bottom: 25px;
+    padding: 15px 0 25px;
+    position: absolute;
+    bottom: 65px; 
+    left: 5%;
     word-wrap: break-word;
 }
 a.contact {
