@@ -19,6 +19,9 @@
     transition: transform 1s;
     -webkit-transition: transform 1s;
 }
+.contest:hover {
+    box-shadow: 0 10px 20px #666666;
+}
 .contest.flipped {
     -webkit-transform: rotateY(180deg);
 }
@@ -76,6 +79,10 @@
         border: 5px solid #fff;
         border-radius: 10px;
         background-color: rgba(255, 255, 255, 0.8);
+    }
+    .info:hover {
+        box-shadow: 0 5px 10px #666666;
+        background-color: rgba(255, 255, 255, 0.9);
     }
          
     /*BACK CONTENT*/
@@ -225,12 +232,16 @@ input {
     .contest {
         min-height: 550px;
     }
+    .date {
+        width: 30%;
+    }
     #future, #upcoming, #past {
         width: 100%;
         padding-bottom: 4%;
     }
     .none {
         width: 90%;
+        margin: 4%;
     }
     #text h2 {
     font-size: 2rem;
