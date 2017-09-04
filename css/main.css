@@ -203,6 +203,9 @@ div#content {
 .foot-colmn {
     width: 42.5%;
     float: left;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
 }
 #github {
     width: 15%;
