@@ -196,50 +196,70 @@ nav a#icon {
 /*FOOTER*/
 div#content {
     width: 100%;
-    padding: 3% 2% 1.5%;
+    padding: 3% 2% 0;
     overflow: hidden;
+    position: relative;
+    z-index: 97;
     background-color: #ffcc66;
 }
 .foot-colmn {
     width: 42.5%;
     float: left;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
 }
 #github {
     width: 15%;
     text-align: center;
 }
-p#error a {
-    cursor: pointer;
-    color: #330099;
-}
 footer ul {
+    width: 90%;
     padding: 0;
     padding-top: 64px;
-    margin: 0 auto 0 25%;
-    margin-right: auto;
+    margin: 0 auto 0;
     font-family: "Nunito";
 }
 footer li {
     list-style: none;
 }
 footer li a {
-    margin-right: 10px;
-    float: left;
-    display: inline-block;
+    width: 100px;
+    margin-bottom: 20px;;
+    float: right;
     cursor: pointer;
     color: #330099;
-}
-p#copyright {
     text-align: center;
-    color: #999999;
+}
+.foot-colmn:first-child li a {
+    float: left;
 }
 #strip {
-    min-height: 25px;
-    padding: 1% 0 .5%;
+    min-height: 60px;
+    padding: 1% 0 4%;
+    position: relative;
+    z-index: 97;
     background-color: #404040;
+}
+#foot-top a {
+    padding: 0.5%;
+    position: absolute;
+    bottom: 20%;
+    left: 48%;
+    cursor: pointer;
+    color: #b3b3b3; 
+    text-align: center;
+    border: 2px solid #808080;
+    background-color: #595959;
+}
+p#error a {
+    margin: 1% 6% 0 0;
+    float: right;
+    cursor: pointer;
+    color: #999999;
+    border-bottom: 3px dotted #808080;
+}
+p#copyright {
+    margin: 1% 0 0 4%;
+    float: left;
+    color: #999999;
 }
 
 /*TOP*/
@@ -248,7 +268,7 @@ p#copyright {
     position: fixed;
     bottom: 30px;
     right: 30px;
-    z-index: 98;
+    z-index: 96;
     padding: 10px;
     border: none;
     outline: none;
@@ -360,6 +380,14 @@ input:focus {
         margin-top: 70px;
     }
     
+    /*FOOTER*/
+    #foot-top a {
+        margin-right: 6%;
+        position: static;
+        float: right;
+    }
+    
+    /*ALERT*/
     .alert {
         width: 70%;
     }
@@ -480,21 +508,28 @@ input:focus {
     }
     
     /*FOOTER*/
-    .foot-colmn {
-        width: 50%;
-    }
-    .meeting {
-        width: 50%;
-        margin: 0 auto;
+    footer ul {
+        padding-top: 10%;
     }
     #github {
-        float: right;
+        margin: 5% 0;
     }
-    #foot-lists {
-        margin: 200px 0 2%;
-        overflow: hidden;
+    #strip {
+        padding: 4% 0 1%;
     }
-    
+    p#error, p#error a, p#copyright {
+        margin: 0 0 4%;
+        float: none;
+        text-align: center;
+    }
+    p#error {
+        padding-bottom: 70px;
+    }
+    p#foot-top a {
+        position: absolute;
+        bottom: 15%;
+    }
+    /*ALERT*/
     .alert {
         width: 90%;
     }
@@ -512,29 +547,5 @@ input:focus {
     }
     h1#central, h1#club, span.purple {
         font-size: 15vw;
-    }
-    
-    /*FOOTER*/
-    .foot-colmn {
-        width: 100%;
-        margin-top: 35px;
-    }
-    footer h3, footer ul {
-        margin-left: 0;
-        text-align: center;
-    }
-    .meeting {
-        width: 100%;
-        margin-top: 25px auto 25px;
-    }
-    #github {
-        float: right;
-    }
-    #foot-lists {
-        margin-top: 400px 0 30px;
-        overflow: hidden;
-    }
-    p#copyright {
-        text-align: center;
     }
 }
