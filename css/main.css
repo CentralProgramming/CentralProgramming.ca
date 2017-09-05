@@ -153,10 +153,11 @@ nav a#icon {
 
 .resources {
     display: none;
-    background-color: #333333;
-    border-top: 3px solid #808080;
+    /*background-color: #333333;
+    border-top: 3px solid #808080;*/
 }
 .resources-content a {
+    /*TEMP*/display: none!important;
     font-size: 1rem;
     background-color: #666666;
 }
@@ -187,7 +188,7 @@ nav a#icon {
     background-color: #e6e6e6;
 }
 .dropdown:hover .dropdown-content {
-    display: block;
+    /*display: block;*/
 }
 
 
