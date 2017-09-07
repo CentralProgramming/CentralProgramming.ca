@@ -37,7 +37,7 @@
                                      else if(basename($_SERVER['PHP_SELF']) == 'resources.php'){
                                         echo 'resources';
                                      }
-                                     ?>">">Calendar</a></li>
+                                     ?>">Calendar</a></li>
                             </ul>
                         </div>
                     </div>
