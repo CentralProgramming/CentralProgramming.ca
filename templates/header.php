@@ -19,7 +19,7 @@
         <!--STYLESHEET AND JAVASCRIPT LINKS-->
         <link rel="stylesheet" href="css/main.css">
         <link rel="stylesheet" href="css/<?php
-                                     if (basename($_SERVER['PHP_SELF']) == 'index.php' || basename($_SERVER['PHP_SELF']) == 'team-test.php'){
+                                     if (basename($_SERVER['PHP_SELF']) == 'index.php'){
                                         echo 'home';
                                      }
                                      else if(basename($_SERVER['PHP_SELF']) == 'problems.php'){
@@ -35,7 +35,7 @@
                                         echo 'calendar';
                                      }
                                      ?>page.css">
-        <script src="scripts.js"></script>
+        <script src="scripts/scripts.js"></script>
     </head>
     
     <body id="body" onresize="resize()" onload="navJS()">

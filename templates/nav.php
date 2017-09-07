@@ -1,4 +1,4 @@
-<!--NAVIGATION-->
+            <!--NAVIGATION-->
             <nav id="navbar">
                 <div id="nav" class="topNav">
                     <a class="nav-active" href="index.php" id="home">Home</a>

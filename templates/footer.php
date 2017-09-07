@@ -6,7 +6,7 @@
                                 <li><a href="index.html#about">About Us</a></li>
                                 <li><a href="index.html#team">Team</a></li>
                                 <li><a href="index.html#news">News</a></li>
-                                <li><a href="#">Contact</a></li>
+                                <li><a href="contact.php">Contact</a></li>
                             </ul>
                         </div>
                     
@@ -21,7 +21,23 @@
                                 <li><a href="https://dmoj.ca/organization/LCSS/users" target="_blank">DMOJ</a></li>
                                 <li><a href="problems.html">Problems</a></li>
                                 <li><a href="contests.html">Contests</a></li>
-                                <li><a href="calendar.html#from_home">Calendar</a></li>
+                                <li><a href="calendar.html#from_<?php
+                                     if (basename($_SERVER['PHP_SELF']) == 'index.php'){
+                                        echo 'home';
+                                     }
+                                     else if(basename($_SERVER['PHP_SELF']) == 'index.php#announcements'){
+                                        echo 'news';
+                                     }
+                                     else if(basename($_SERVER['PHP_SELF']) == 'problems.php'){
+                                        echo 'problems';
+                                     }
+                                     else if(basename($_SERVER['PHP_SELF']) == 'contests.php'){
+                                        echo 'contests';
+                                     }
+                                     else if(basename($_SERVER['PHP_SELF']) == 'resources.php'){
+                                        echo 'resources';
+                                     }
+                                     ?>">">Calendar</a></li>
                             </ul>
                         </div>
                     </div>
@@ -29,7 +45,7 @@
                 <div id="strip">
                     <p id="copyright">&copy; <script>document.write(new Date().getFullYear())</script> Central Programming</p>
                     <p id="foot-top"><a onclick="topFunction()">Top</a></p>
-                    <p id="error"><a href="#">Report an Error</a></p>
+                    <p id="error"><a href="contact.php?type=site">Report an Error</a></p>
                 </div>
             </footer>
 
