@@ -1,13 +1,13 @@
             <!--NAVIGATION-->
             <nav id="navbar">
                 <div id="nav" class="topNav">
-                    <a class="nav-active" href="index.php" id="home">Home</a>
-                    <a href="problems.php">Weekly Problems</a>
-                    <a href="contests.php">Contests</a>
+                    <a <?php if (basename($_SERVER['PHP_SELF']) == 'index.php'){echo 'class="nav-active"';}?> href="index.php" id="home">Home</a>
+                    <a <?php if (basename($_SERVER['PHP_SELF']) == 'problems.php'){echo 'class="nav-active"';}?> href="problems.php">Weekly Problems</a>
+                    <a <?php if (basename($_SERVER['PHP_SELF']) == 'contests.php'){echo 'class="nav-active"';}?> href="contests.php">Contests</a>
                     
                     <!--RESOURCES SECTION (MOBILE)-->
                     <div class="resources">
-                        <a href="resources.php">Resources</a>
+                        <a <?php if (basename($_SERVER['PHP_SELF']) == 'resources.php'){echo 'class="nav-active"';}?> href="resources.php">Resources</a>
                         <div class="resources-content">
                             <a href="resources.php#sec_input">Input Types</a>
                             <a href="resources.php#sec_arrays">Arrays</a>
@@ -18,7 +18,7 @@
                     
                     <!--RESOURCES SECTION (DROPDOWN)-->
                     <div class="dropdown">
-                        <a href="resources.php" class="dropbtn">Resources</a>
+                        <a <?php if (basename($_SERVER['PHP_SELF']) == 'resources.php'){echo 'class="nav-active"';}?> href="resources.php" class="dropbtn">Resources</a>
                         <div class="dropdown-content">
                             <a href="resources.php#sec_input">Input Types</a>
                             <a href="resources.php#sec_arrays">Arrays</a>

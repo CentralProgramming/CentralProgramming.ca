@@ -5,6 +5,10 @@
 <?php require_once "templates/nav.php"; ?>  
 
             
+<!--FORM SCRIPT-->
+<?php require_once "scripts/contestscript.php"; ?>
+
+
             
             <hr style="height: 25px; border: 0;">
             
