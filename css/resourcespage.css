@@ -161,4 +161,9 @@ section#info {
     .content {
         padding: 3%;
     }
+    
+    
+    img#soon {
+        width: 70%;
+    }
 }

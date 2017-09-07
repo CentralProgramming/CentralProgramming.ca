@@ -1,92 +1,10 @@
-<!DOCTYPE HTML>
-<html lang="en">
-    
-    <head>
-        <!--META DATA-->
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta charset="UTF-8">
-        <meta name="keywords" content="central programming club, programming club, central secondary, lcss, central clubs, london central">
-        <meta name="description" content="London Central Secondary School's Programming Club.">
-        <meta name="author" content="Central Programming">
-        
-        <!--FONTS-->
-        <link href="https://fonts.googleapis.com/css?family=Monoton%7CPatua+One%7CGraduate%7CNunito:300,400,700" rel="stylesheet">
-        
-        <!--TAB TITLE AND ICON-->
-        <title>Central Programming</title>
-        <link rel="shortcut icon" href="http://www.tvdsb.ca/pix/logos/21.png">
-        
-        <!--STYLESHEET AND JAVASCRIPT LINKS-->
-        <link rel="stylesheet" href="css/main.css">
-        <link rel="stylesheet" href="css/contestspage.css">
-        <script src="scripts.js"></script>
-    </head>
-    
-    <body id="body" onresize="resize()" onload="jsEnabled(); navJS()">
-        <div id="container">
+<!--HEAD & HEADER-->
+<?php require_once "templates/header.php"; ?>
             
-            <!--HEADER IMAGE AND TITLE-->
-            <header>
-                <div class="parallax" id="header-image">
-                <hr style="height: 150px; border: 0;">
-                    <img id="logo" src="images/logo-TEMP.png">
-                    <div id="title">
-                        <h1 id="central"><span class="purple">C</span>entral</h1>
-                        <h1 id="programming"><span class="purple">P</span>rogramming</h1>
-                        <h1 id="club"><span class="purple">C</span>lub</h1>
-                        </div>
-                </div>
-            </header>
+<!--NAV & ALERT-->
+<?php require_once "templates/nav.php"; ?>  
 
             
-            <!--COUNTDOWN TIMER-->
-            <div id="countdown">
-                <h3>First meeting in:</h3>
-                <p id="timer"></p>
-                <span class="closebtn" style="cursor: pointer;" onclick="hideCountdown()">&times;</span>
-            </div>
-
-            
-            <!--NAVIGATION-->
-            <nav id="navbar">
-                <div id="nav" class="topNav">
-                    <a href="index.html" id="home">Home</a>
-                    <a href="problems.html">Weekly Problems</a>
-                    <a class="nav-active" href="contests.html">Contests</a>
-
-                    
-                    <!--RESOURCES SECTION (MOBILE)-->
-                    <div class="resources">
-                        <a href="resources.html">Resources</a>
-                        <div class="resources-content">
-                            <a href="resources.html#sec_input">Input Types</a>
-                            <a href="resources.html#sec_arrays">Arrays</a>
-                            <a href="resources.html#sec_arraylists">Array Lists</a>
-                            <a href="resources.html#sec_recursion">Recursion</a>
-                        </div>
-                    </div>
-                    
-                    <!--RESOURCES SECTION (DROPDOWN)-->
-                    <div class="dropdown">
-                        <a href="resources.html" class="dropbtn">Resources</a>
-                        <div class="dropdown-content">
-                            <a href="resources.html#sec_input">Input Types</a>
-                            <a href="resources.html#sec_arrays">Arrays</a>
-                            <a href="resources.html#sec_arraylists">Array Lists</a>
-                            <a href="resources.html#sec_recursion">Recursion</a>
-                        </div>
-                    </div>
-
-                    <!--MOBILE LINKS OPEN/CLOSE-->
-                    <a href="javascript:void(0);" id="icon" onclick="navButton()">&#9776;</a>
-                </div>
-            </nav>
-            
-            <noscript>
-                <div class="alert">
-                    <h3>This site works best with JavaScript Enabled</h3>
-                </div>
-            </noscript>
             
             <hr style="height: 25px; border: 0;">
             
@@ -234,7 +152,7 @@
 
                             <div class="back">
                                     <span class="turn" onclick="flipFront(this)">&orarr;</span>
-                                    <h3>ECOO Round 1</h3>
+                                    <h3>ECOO</h3>
                                     <ul>
                                         <li><b>Date: </b> April 2018</li>
                                         <li><b>Type: </b> Group</li>
@@ -326,45 +244,6 @@
              <hr style="height: 50px; border: 0;">
             
             
-            <!--FOOTER-->
-            <footer>
-                <div id="content">
-                    <div class="foot-colmn">
-                            <ul>
-                                <li><a href="index.html#about">About Us</a></li>
-                                <li><a href="index.html#team">Team</a></li>
-                                <li><a href="index.html#news">News</a></li>
-                                <li><a href="#">Contact</a></li>
-                            </ul>
-                        </div>
-                    
-                    <div class="foot-colmn" id="github">
-                        <a href="https://github.com/CentralProgramming" target="_blank" style="cursor: pointer;"><img src="images/GitHub-Mark.png" alt="GitHub">
-                        <p style="color: #4d3300;">Visit us on GitHub</p></a>
-                    </div>
-                    
-
-                        <div class="foot-colmn">
-                            <ul>
-                                <li><a href="https://dmoj.ca/organization/LCSS/users" target="_blank">DMOJ</a></li>
-                                <li><a href="problems.html">Problems</a></li>
-                                <li><a href="contests.html">Contests</a></li>
-                                <li><a href="calendar.html#from_home">Calendar</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                
-                <div id="strip">
-                    <p id="copyright">&copy; <script>document.write(new Date().getFullYear())</script> Central Programming</p>
-                    <p id="foot-top"><a onclick="topFunction()">Top</a></p>
-                    <p id="error"><a href="#">Report an Error</a></p>
-                </div>
-            </footer>
-
-
-            <!--BACK TO TOP BUTTON-->
-            <button onclick="topFunction()" id="topBtn">Top</button>
-
-        </div>
-    </body>
-</html>
+            
+<!--FOOTER & TOP BUTTON-->
+<?php require_once "templates/footer.php"; ?>    
