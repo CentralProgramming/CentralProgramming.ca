@@ -34,6 +34,9 @@
                                      else if(basename($_SERVER['PHP_SELF']) == 'calendar.php'){
                                         echo 'calendar';
                                      }
+                                     else if(basename($_SERVER['PHP_SELF']) == 'contact.php'){
+                                        echo 'contact';
+                                     }
                                      ?>page.css">
         <script src="scripts/scripts.js"></script>
     </head>
