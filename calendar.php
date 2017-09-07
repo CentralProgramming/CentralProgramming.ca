@@ -36,7 +36,7 @@
                     <div class="event-info">
                         <p>"The Canadian Computing Competition (CCC) is a fun challenge for secondary school students with an interest in programming. It is an opportunity for students to test their ability in designing, understanding and implementing algorithms." &nbsp; &mdash;<a href="http://www.cemc.uwaterloo.ca/contests/computing.html" target="_blank">CEMC</a>.</p>
                     </div>
-                    <div class="tag"><h4><a href="contests.html"># Contests</a></h4></div>
+                    <div class="tag"><h4><a href="contests.php"># Contests</a></h4></div>
                 </div>
                 
                 <div class="event">
@@ -45,7 +45,7 @@
                         <p>"The contest takes place in three rounds: 
                             the board-wide contest, the regional contest, and the province-wide contest. A team consists of 4 students and one computer. In order to compete effectively, work must be divided efficiently among the team members." &nbsp; &mdash;<a href="http://ecoocs.org/" target="_blank">ECOO</a>.</p>
                     </div>
-                    <div class="tag"><h4><a href="contests.html"># Contests</a></h4></div>
+                    <div class="tag"><h4><a href="contests.php"># Contests</a></h4></div>
                 </div>
             </section>
             

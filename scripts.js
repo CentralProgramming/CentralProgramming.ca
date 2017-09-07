@@ -231,23 +231,23 @@ function setBack(){
     
     if (location.hash != ""){
         if (location.hash == "#from_home"){
-            backLink.setAttribute("href","index.html");
+            backLink.setAttribute("href","index.php");
             backPage.innerHTML = "Home";
         }
         else if (location.hash == "#from_news"){
-            backLink.setAttribute("href","index.html#announcements");
+            backLink.setAttribute("href","index.php#announcements");
             backPage.innerHTML = "Announcements";
         }
         else if (location.hash == "#from_problems"){
-            backLink.setAttribute("href","problems.html");
+            backLink.setAttribute("href","problems.php");
             backPage.innerHTML = "Weekly Problems";
         }
         else if (location.hash == "#from_contests"){
-            backLink.setAttribute("href","contests.html");
+            backLink.setAttribute("href","contests.php");
             backPage.innerHTML = "Contests";
         }
         else if (location.hash == "#from_resources"){
-            backLink.setAttribute("href","resources.html");
+            backLink.setAttribute("href","resources.php");
             backPage.innerHTML = "Resources";
         }
         document.getElementById("back-link").style.display = "block";

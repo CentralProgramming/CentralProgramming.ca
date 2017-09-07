@@ -51,7 +51,7 @@
                             </ul>
                             <br/>
                             <iframe id="gform" src="https://docs.google.com/forms/d/e/1FAIpQLSc-Pvt9iQ2IkwTI5sSFkP3pQlCyu507v2rTMYk5nY--gYjf7w/viewform?embedded=true">Loading...</iframe>
-                            <p style="margin-top: 20px;"><a href="calendar.html#from_news">View full calendar</a></p>
+                            <p style="margin-top: 20px;"><a href="calendar.php#from_news">View full calendar</a></p>
                         </div>
                     </div>
             </section>
