@@ -120,7 +120,7 @@
                             <h3><b>Amy</b></h3>
                             <p class="title">Co-President</p>
                             <p class="description">To Amy, programming is all about creating something out of nothing. With a few lines of code and the desire to discover and explore, she finds herself solving questions that are otherwise impossible. Amy loves to challenge herself with computer contests that push her thinking to the next level.</p>
-                            <p class="email">amy@centralprogramming.ca</p>
+                            <p class="email"><a href="mailto:amy@centralprogramming.ca">amy@centralprogramming.ca</a></p>
                             <a class="contact" href="contact.php?check=amy">Contact</a>
                         </div>
 
@@ -130,7 +130,7 @@
                             <h3><b>Angela</b></h3>
                             <p class="title">Co-President</p>
                             <p class="description">What first prompted Angela’s interest in programming was the goal of achieving a greater understanding of IT. At first she was a little overwhelmed, but later found that programming is not too complicated, and it's fun as it is involves problem solving skills. Angela hopes to pursue engineering in the future.</p>
-                            <p class="email">angela@centralprogramming.ca</p>
+                            <p class="email"><a href="mailto:angela@centralprogramming.ca">angela@centralprogramming.ca</a></p>
                             <a class="contact" href="contact.php?check=angela">Contact</a>
                         </div>
 
@@ -142,7 +142,7 @@
                             <div class="desc-container"></div>
                             <p class="description">Ashley’s favourite and least favourite part of programming is spending hours trying to figure out why it isn’t working (only for it to be a typo). The satisfaction of finally solving a difficult problem is one of the reason she enjoys contests so much. Ashley’s main interest is in software and game design.
                             </p>
-                            <p class="email">ashley@centralprogramming.ca</p>
+                            <p class="email"><a href="mailto:ashley@centralprogramming.ca">ashley@centralprogramming.ca</a></p>
                             <a class="contact" href="contact.php?check=ashley">Contact</a>
                         </div>
                         
@@ -153,7 +153,7 @@
                             <p class="title">Co-President</p>
                             <p class="description">What first brought Fay into programming was her desire to figure out what codes mean. It turned out that they aren't as complicated as they seem, and are everywhere in our lives, so she kept learning. Fay wishes to continue pursuing programming as her hobby and skill in the future.
                             </p>
-                            <p class="email">fay@centralprogramming.ca</p>
+                            <p class="email"><a href="mailto:fay@centralprogramming.ca">fay@centralprogramming.ca</a></p>
                             <a class="contact" href="contact.php?check=fay">Contact</a>
                         </div>
 

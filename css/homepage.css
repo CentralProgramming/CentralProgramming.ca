@@ -191,7 +191,7 @@ p.title {
 p.description {
     margin-bottom: 125px;
 }
-p.email {
+p.email a {
     padding: 15px 0 25px;
     position: absolute;
     bottom: 60px;
