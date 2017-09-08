@@ -14,7 +14,7 @@
             <?php
                 foreach($errors as $x => $alert){
                     if($alert!=""){
-                        echo "<div class='alert'><h3>Error: " . $alert . "</h3></div>";
+                        echo "<div class='alert' id='error'><h3>Error: " . $alert . "</h3></div>";
                     }
                 }
                 if($messageSent == true){
@@ -48,7 +48,7 @@
                         }
                     ?>
                 </h2>
-                <div id="form">
+                <div class="form">
                     <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
                         
                         <h3>Name <span class="required">*</span></h3>

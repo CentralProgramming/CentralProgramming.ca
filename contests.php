@@ -9,6 +9,18 @@
 <?php require_once "scripts/contestscript.php"; ?>
 
 
+            <!--ERRORS-->
+            <?php
+                foreach($errors as $x => $alert){
+                    if($alert!=""){
+                        echo "<div class='alert' id='error'><h3>Error: " . $alert . "</h3></div>";
+                    }
+                }
+                if($messageSent == true){
+                    echo "<div class='alert' id='success'><h3>Your message has been sent. Thank you for your feedback.</h3></div>";
+                }    
+            ?>
+
             
             <hr style="height: 25px; border: 0;">
             

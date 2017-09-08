@@ -5,75 +5,18 @@ section#contact {
     margin-left: auto;
     margin-right: auto;
 }
-div#form {
-    padding: 4%;
+div.form {
     margin-top: 20px;
-    box-shadow: 0 2px 5px #666666;
     background-color: #f2f2f2;
 }
-#contact form {
-    width: 80%;
-    margin-left: auto;
-    margin-right: auto;
-}
-#contact form h3 {
-    padding: 2%;
-    padding-left: 0;
-    text-align: left;
-}
-.required {
-    color: #ff0000;
-}
 input  {
-    width: 200px;
-    height: 30px;
     border: 3px inset;
     font-family: "Nunito", "Palatino Linotype", serif;
     font-size: 1rem;
 }
-textarea {
-    font-family: "Nunito", "Palatino Linotype", serif;
-    font-size: 1rem;
-}
-#submit {
-    height: 50px; 
-    padding: 2%; 
-    font-size: 1rem; 
-    border: 3px outset;
-}
-.question {
-    position: relative;
-    display: inline-block;
-    border-bottom: 1px dotted #000;
-}
-.answer {
-    width: 300px;
-    padding: 10px 20px;
-    margin-left: -150px;
-    visibility: hidden;
-    position: absolute;
-    bottom: 150%;
-    left: 50%;
-    z-index: 1;
-    font-size: 0.8rem;
-    color: #805500;
-    border-radius: 15px;
-    box-shadow: 2px 2px 5px #b37700;
-    background-color: #ffd480;
-}
-.answer:after {
-    margin-left: -5px;
-    content: "";
-    position: absolute;
-    top: 100%;
-    left: 50%;
-    border-width: 15px;
-    border-style: solid;
-    border-color: #ffd480 transparent transparent transparent;
-}
-.question:hover .answer {
-    visibility: visible;
-}
+
+
+/*TOGGLE*/
 .person {
     width: 150px;
     height: 50px;
@@ -109,17 +52,46 @@ textarea {
 input:checked + span:after{
     content: "\2713";
 }
+
+
+/*POP-UP*/
+.question {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted #000;
+}
+.answer {
+    width: 300px;
+    padding: 10px 20px;
+    margin-left: -150px;
+    visibility: hidden;
+    position: absolute;
+    bottom: 150%;
+    left: 50%;
+    z-index: 1;
+    font-size: 0.8rem;
+    color: #805500;
+    border-radius: 15px;
+    box-shadow: 2px 2px 5px #b37700;
+    background-color: #ffd480;
+}
+.answer:after {
+    margin-left: -5px;
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    border-width: 15px;
+    border-style: solid;
+    border-color: #ffd480 transparent transparent transparent;
+}
+.question:hover .answer {
+    visibility: visible;
+}
+
+
+/*ALERT*/
 .alert {
     width: 50%;
     padding: 2%;
-    margin: 20px;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: left;
-    background-color: #ffb3b3;
-    border-left: 6px solid #ff3333;
-}
-.alert#success {
-    background-color: #c2f0c2;
-    border-left: 6px solid #5cd65c;
 }

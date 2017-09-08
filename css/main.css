@@ -309,7 +309,11 @@ input  {
     height: 30px;
     padding: 5%;
     font-size: 0.85rem;
+    font-family: "Nunito", "Palatino Linotype", serif;
     border: 3px inset;
+}
+textarea {
+    font-size: 1rem;
 }
 input:focus, textarea:focus {
     outline: 5px solid rgba(0, 0, 0, 0.1);
@@ -330,9 +334,15 @@ input:focus, textarea:focus {
 .alert h3 {
     color: #fff;
 }
+.alert#error {
+    color: #800000;
+    border-left: 6px solid #ff3333;
+    background-color: #ffb3b3;
+}
 .alert#success {
-    background-color: #c2f0c2;
+    color: #196719;
     border-left: 6px solid #5cd65c;
+    background-color: #c2f0c2;
 }
 
 

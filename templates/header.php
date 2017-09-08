@@ -41,7 +41,17 @@
         <script src="scripts/scripts.js"></script>
     </head>
     
-    <body id="body" onresize="resize()" onload="navJS()">
+    <body id="body" onresize="resize()<?php if(basename($_SERVER['PHP_SELF']) == 'resources.php'){echo '; fixNav()';}?>" onload="navJS()<?php 
+                                                if(basename($_SERVER['PHP_SELF']) == 'calendar.php'){
+                                                    echo '; setBack()';
+                                                }
+                                                else if(basename($_SERVER['PHP_SELF']) == 'contests.php'){
+                                                    echo '; jsEnabled()';
+                                                }
+                                                else if(basename($_SERVER['PHP_SELF']) == 'resources.php'){
+                                                    echo '; setCtgy()';
+                                                }
+                                                ?>">
         <div id="container">
             
             <!--HEADER IMAGE AND TITLE-->
