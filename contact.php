@@ -65,14 +65,14 @@
                         <div id="recipients">
                             <div class="person" id="Amy">
                                 <label class="toggle" for="toggle-01">
-                                    <input type="checkbox" name="sendTo[]" value="email1@example.com" id="toggle-01" 
+                                    <input type="checkbox" name="sendTo[]" value="amy@centralprogramming.ca" id="toggle-01" 
                                            <?php 
                                                if($check == "amy"){
                                                    echo "checked";
                                                }
                                                else if (is_array($recip) || is_object($recip)){
                                                     foreach($recip as $reciever){
-                                                        if($reciever == "email1@example.com"){
+                                                        if($reciever == "amy@centralprogramming.ca"){
                                                             echo "checked";
                                                         }
                                                     }
@@ -85,14 +85,14 @@
                             
                             <div class="person" id="Angela">
                                 <label class="toggle" for="toggle-02">
-                                    <input type="checkbox" name="sendTo[]" value="email2@example.com" id="toggle-02" 
+                                    <input type="checkbox" name="sendTo[]" value="angela@centralprogramming.ca" id="toggle-02" 
                                            <?php 
                                                if($check == "angela"){
                                                    echo "checked";
                                                }
                                                else if (is_array($recip) || is_object($recip)){
                                                     foreach($recip as $reciever){
-                                                        if($reciever == "email2@example.com"){
+                                                        if($reciever == "angela@centralprogramming.ca"){
                                                             echo "checked";
                                                         }
                                                     }
@@ -105,7 +105,7 @@
                             
                             <div class="person" id="Ashley">
                                 <label class="toggle" for="toggle-03">
-                                    <input type="checkbox" name="sendTo[]" value="email3@example.com" id="toggle-03" 
+                                    <input type="checkbox" name="sendTo[]" value="ashley@centralprogramming.ca" id="toggle-03" 
                                            <?php 
                                                if($type == "site"){
                                                    echo "checked";
@@ -115,7 +115,7 @@
                                                }
                                                else if (is_array($recip) || is_object($recip)){
                                                     foreach($recip as $reciever){
-                                                        if($reciever == "email3@example.com"){
+                                                        if($reciever == "ashley@centralprogramming.ca"){
                                                             echo "checked";
                                                         }
                                                     }
@@ -128,14 +128,14 @@
                             
                             <div class="person" id="Fay">
                                 <label class="toggle" for="toggle-04">
-                                    <input type="checkbox" name="sendTo[]" value="email4@example.com" id="toggle-04" 
+                                    <input type="checkbox" name="sendTo[]" value="fay@centralprogramming.ca" id="toggle-04" 
                                            <?php 
                                                if($check == "fay"){
                                                    echo "checked";
                                                }
                                                else if (is_array($recip) || is_object($recip)){
                                                     foreach($recip as $reciever){
-                                                        if($reciever == "email4@example.com"){
+                                                        if($reciever == "fay@centralprogramming.ca"){
                                                             echo "checked";
                                                         }
                                                     }

@@ -33,7 +33,7 @@
         }
 
         if($sendMessage == true){
-            $send_to = "email@example.com";
+            $send_to = "ashley@centralprogramming.ca";
             
             $subject = "Central Programming Contest Submission";   
 
@@ -44,7 +44,7 @@ Contest name: $name
 Contest website: $site";
 
 
-            //mail($send_to, $subject, $message);
+            mail($send_to, $subject, $message);
 
             $messageSent = true;
         }

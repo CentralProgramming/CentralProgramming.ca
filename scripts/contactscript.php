@@ -80,7 +80,7 @@ Email: $email
 Comment: $comment";
 
 
-            //mail($send_to, $subject, $message);
+            mail($send_to, $subject, $message);
 
             $messageSent = true;
         }
