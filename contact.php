@@ -58,11 +58,13 @@
                         
                         <h3>
                             <div class="question"><span style="cursor: pointer;">Send to:</span>
-                                <div class="answer">For questions/concerns regarding the website, please send to Ashley. If the question is general, send to all.</div>
+                                <div class="answer">For questions/concerns regarding the website, please send to Ashley.</div>
                             </div> 
-                            
                             <span class="required">*</span></h3>
+                        
+                        
                         <div id="recipients">
+            
                             <div class="person" id="Amy">
                                 <label class="toggle" for="toggle-01">
                                     <input type="checkbox" name="sendTo[]" value="amy@centralprogramming.ca" id="toggle-01" 
@@ -144,6 +146,23 @@
                                     <span class="check"></span>
                                 </label>
                                 <p>Fay</p>
+                            </div>
+                            
+                            <div class="person" id="na">
+                                <label class="toggle" for="toggle-05">
+                                    <input type="checkbox" name="sendTo[]" value="contact@centralprogramming.ca" id="toggle-0" 
+                                           <?php 
+                                               if (is_array($recip) || is_object($recip)){
+                                                    foreach($recip as $reciever){
+                                                        if($reciever == "contact@centralprogramming.ca"){
+                                                            echo "checked";
+                                                        }
+                                                    }
+                                                }
+                                           ?>>
+                                    <span class="check"></span>
+                                </label>
+                                <p>N/A</p>
                             </div>
                         </div>
                         <br/>

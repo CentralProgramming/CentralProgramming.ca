@@ -71,6 +71,12 @@ Error:";
             else{
                 $subject = "Central Programming Contact Form";   
             }
+            if($email == ""){
+                $headers = "From: contact@centralprogramming.ca";
+            }
+            else{
+                $headers = "From: " . $email;
+            }
 
             $message = 
 "You are recieving this email in response to a comment made on centralprogramming.ca.
@@ -80,7 +86,7 @@ Email: $email
 Comment: $comment";
 
 
-            mail($send_to, $subject, $message);
+            mail($send_to, $subject, $message, $headers);
 
             $messageSent = true;
         }

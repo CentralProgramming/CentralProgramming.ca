@@ -3,9 +3,9 @@
                 <div id="content">
                     <div class="foot-colmn">
                             <ul>
-                                <li><a href="index.html#about">About Us</a></li>
-                                <li><a href="index.html#team">Team</a></li>
-                                <li><a href="index.html#news">News</a></li>
+                                <li><a href="index.php#about">About Us</a></li>
+                                <li><a href="index.php#team">Team</a></li>
+                                <li><a href="index.php#news">News</a></li>
                                 <li><a href="contact.php">Contact</a></li>
                             </ul>
                         </div>
@@ -19,9 +19,9 @@
                         <div class="foot-colmn">
                             <ul>
                                 <li><a href="https://dmoj.ca/organization/LCSS/users" target="_blank">DMOJ</a></li>
-                                <li><a href="problems.html">Problems</a></li>
-                                <li><a href="contests.html">Contests</a></li>
-                                <li><a href="calendar.html#from_<?php
+                                <li><a href="problems.php">Problems</a></li>
+                                <li><a href="contests.php">Contests</a></li>
+                                <li><a href="calendar.php#from_<?php
                                      if (basename($_SERVER['PHP_SELF']) == 'index.php'){
                                         echo 'home';
                                      }

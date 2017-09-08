@@ -12,7 +12,7 @@
                 <img id="soon" src="images/coming-soon.png">
                 <h3>We're hard at work writing and gathering resources.<br/>
                 In the mean time, if you'd like to submit any, it would really help us out!<br/> 
-                <a href="mailto:ashley@centralprogramming.ca">Send us an email.</a></h3>
+                <a href="mailto:contact@centralprogramming.ca">Send us an email.</a></h3>
             </section>
             
             
