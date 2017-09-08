@@ -24,7 +24,7 @@
                                 <li>&#9642; Discussions</li>
                                 <li>&#9642; Projects</li>
                             </ul>
-                            <li>Available for practice, homework help, and work space every xday</li>
+                            <li>Available for practice, homework help, and workspace every xday</li>
                             <li>Prior programming experience not required to join</li>
                         </ul>
                     </div>
@@ -39,7 +39,7 @@
                         
                         <!--ANOUNCEMENTS-->
                         <div id="rounded-content">
-                            <h3>September 14 (date to change)</h3>
+                            <h3>September 20 (date to change)</h3>
                             <ul>
                                 <li><p>First meeting</p></li>
                                 <ul>

@@ -24,12 +24,6 @@ function hideCountdown() {
 
 
 /*NAVIGATION*/
-function navJS() {
-    if(window.matchMedia("(min-width: 651px)").matches) {
-        document.getElementById("countdown").style.display = "inline-block";
-    }
-    document.getElementById("navbar").className = "jsEnabled";   
-}
 
 function resize() {
     if (window.matchMedia("(min-width: 651px)").matches) {

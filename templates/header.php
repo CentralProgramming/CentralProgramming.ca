@@ -52,13 +52,23 @@
                                                     echo '; setCtgy()';
                                                 }
                                                 ?>">
+        <script>
+            function navJS() {
+                if(window.matchMedia("(min-width: 651px)").matches) {
+                    document.getElementById("countdown").style.display = "inline-block";
+                }
+                document.getElementById("navbar").className = "jsEnabled";   
+            }
+        </script>
+        
+        
         <div id="container">
             
             <!--HEADER IMAGE AND TITLE-->
             <header>
                 <div class="parallax" id="header-image">
                 <hr style="height: 150px; border: 0;">
-                    <img id="logo" src="images/logo-TEMP.png">
+                    <img id="logo" src="images/logo.png">
                     <div id="title">
                         <h1 id="central"><span class="purple">C</span>entral</h1>
                         <h1 id="programming"><span class="purple">P</span>rogramming</h1>

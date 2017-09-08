@@ -66,7 +66,7 @@ span.light {
 /*HEADER*/
 .parallax#header-image {
     position: relative;
-    background-image: url(../images/header2.jpg); 
+    background-image: url(../images/header.jpg); 
 }
 img#logo {
     width: 25%;
@@ -335,12 +335,12 @@ input:focus, textarea:focus {
     color: #fff;
 }
 .alert#error {
-    color: #800000;
+    color: #800000!important;
     border-left: 6px solid #ff3333;
     background-color: #ffb3b3;
 }
 .alert#success {
-    color: #196719;
+    color: #196719!important;
     border-left: 6px solid #5cd65c;
     background-color: #c2f0c2;
 }

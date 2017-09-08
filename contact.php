@@ -150,7 +150,7 @@
                             
                             <div class="person" id="na">
                                 <label class="toggle" for="toggle-05">
-                                    <input type="checkbox" name="sendTo[]" value="contact@centralprogramming.ca" id="toggle-0" 
+                                    <input type="checkbox" name="sendTo[]" value="contact@centralprogramming.ca" id="toggle-05" 
                                            <?php 
                                                if (is_array($recip) || is_object($recip)){
                                                     foreach($recip as $reciever){
