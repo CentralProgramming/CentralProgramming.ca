@@ -244,11 +244,11 @@
                 <div class="form">
                     <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
                         <h3><span class="required">*</span> Name of contest:</h3>
-                        <input type="text" name="name">
+                        <input type="text" name="name" value="<?php echo $name;?>">
                         <br/><br/>
                         
                         <h3><span class="required">*</span> Contest website:</h3>
-                        <input type="url" name="site">
+                        <input type="url" name="site" value="<?php echo $site;?>">
                         <br/><br/>
                         
                         <input type="submit" value="Submit" id="submit">

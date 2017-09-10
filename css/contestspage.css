@@ -181,7 +181,6 @@ section#contact {
     padding-top: 0;
     float: left;
 }
-
 .form {
     width: 35%;
     min-height: 300px;
@@ -196,8 +195,13 @@ form h3 {
 input {
     width: 85%;
 }
+.alert {
+    width: 50%;
+    padding: 2%;
+}
 
 
+/*MEDIA QUERIES*/
 @media only screen and (max-width: 950px){
     .column {
         width: 100%;
