@@ -242,7 +242,7 @@
                 <hr style="height: 25px; border: 0;">
                 
                 <div class="form">
-                    <form>
+                    <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
                         <h3><span class="required">*</span> Name of contest:</h3>
                         <input type="text" name="name">
                         <br/><br/>

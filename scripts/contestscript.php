@@ -33,10 +33,12 @@
         }
 
         if($sendMessage == true){
-            $send_to = "ashley@centralprogramming.ca";
+            $send_to = "contact@centralprogramming.ca";
             
             $subject = "Central Programming Contest Submission";   
 
+            $headers = "From: contact@centralprogramming.ca";
+            
             $message = 
 "You are recieving this email in response to a contest submission made on centralprogramming.ca.
 
@@ -44,7 +46,7 @@ Contest name: $name
 Contest website: $site";
 
 
-            mail($send_to, $subject, $message);
+            mail($send_to, $subject, $message, $headers);
 
             $messageSent = true;
         }
