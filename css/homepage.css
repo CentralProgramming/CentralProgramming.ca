@@ -44,6 +44,9 @@ div#introtext {
 section#intro h2#news:after {  
         content: "Announcements";
     }
+h2#news {
+    font-size: 2.75rem;
+}
 div.rounded {
     width: 55%;
     min-height: 150px;
@@ -143,6 +146,9 @@ div#about-text, dov#learn-text {
 
 
 /*TEAM*/
+section#team h2 {
+    font-size: 2.75rem;
+}
 #team-two-row, #team-one-row {
     display: none;
 }

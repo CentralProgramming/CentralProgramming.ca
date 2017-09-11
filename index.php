@@ -56,7 +56,7 @@
                     </div>
             </section>
             
-            <hr id="about_sec" style="height: 100px; border: 0;">
+            <hr id="about_sec" style="height: 150px; border: 0;">
 
             
             <!--CLUB INFO SECTION-->
@@ -103,7 +103,7 @@
                 
             </section>
 
-            <hr id="team_sec" style="height: 100px; border: 0;">
+            <hr id="team_sec" style="height: 125px; border: 0;">
             
             
             

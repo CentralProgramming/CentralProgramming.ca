@@ -240,7 +240,7 @@ footer li a {
     background-color: #404040;
 }
 #foot-top a {
-    padding: 0.5%;
+    padding: 0.25% 0.5%;
     position: absolute;
     bottom: 20%;
     left: 48%;
