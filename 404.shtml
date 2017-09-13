@@ -36,12 +36,12 @@
             <header>
                 <div class="parallax" id="header-image">
                 <hr style="height: 150px; border: 0;">
-                    <img id="logo" src="images/logo-TEMP.png">
+                    <a href="index.php"><img id="logo" src="images/central-programming-club-logo.png" alt="Central Programming Club's Logo">
                     <div id="title">
                         <h1 id="central"><span class="purple">C</span>entral</h1>
                         <h1 id="programming"><span class="purple">P</span>rogramming</h1>
                         <h1 id="club"><span class="purple">C</span>lub</h1>
-                        </div>
+                    </div></a>
                 </div>
             </header>
 
