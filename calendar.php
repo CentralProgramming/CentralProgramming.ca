@@ -24,7 +24,7 @@
                 <hr style="height: 20px; border: 0;">
                 
                 <div class="event">
-                    <h3>First Meeting - 9/20/17 (date to change)</h3>
+                    <h3>First Meeting - 9/22/17 (date to change)</h3>
                     <div class="event-info">
                         <p>The first meeting of Central's Programming Club where we will be introducing the club and coding problems, discussing future meetings, filling out the Google Form, and signing up for DMOJ.</p>
                     </div>

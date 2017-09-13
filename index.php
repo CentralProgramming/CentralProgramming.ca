@@ -39,7 +39,7 @@
                         
                         <!--ANOUNCEMENTS-->
                         <div id="rounded-content">
-                            <h3>September 20 (date to change)</h3>
+                            <h3>September 22 (date to change)</h3>
                             <ul>
                                 <li><p>First meeting</p></li>
                                 <ul>
