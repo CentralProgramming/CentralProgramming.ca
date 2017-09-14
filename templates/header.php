@@ -27,6 +27,7 @@
                                      }
                                      ?>">
         <meta name="author" content="Central Programming">
+        <link rel="author" href="humans.txt">
         
         <!--FONTS-->
         <link href="https://fonts.googleapis.com/css?family=Monoton%7CPatua+One%7CGraduate%7CNunito:300,400,700%7C" rel="stylesheet">
