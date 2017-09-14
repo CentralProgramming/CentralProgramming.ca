@@ -9,13 +9,39 @@
         
             <!--COMING SOON-->
             <section id="soon">
-                <img id="soon" src="images/coming-soon.png">
+                <img id="soon" src="images/coming-soon.png" alt="Coming Soon">
                 <h3>We're hard at work writing and gathering resources.<br/>
                 In the mean time, if you'd like to submit any, it would really help us out!<br/> 
                 <a href="mailto:contact@centralprogramming.ca">Send us an email.</a></h3>
             </section>
             
-            
+
+
+            <section id="other">
+                <h2>Other Resources</h2>
+                
+                <div id="siteholder">
+                    <div class="website">
+                        <h3><a href="https://www.codecademy.com/learn/all" target="_blank">Codeacademy</a></h3>
+                        <p>Interactive lesions on a variety of subjects, including web development, data management, application design, and programming languages.</p>
+                    </div>
+
+                    <div class="website">
+                        <h3><a href="https://open.cs.uwaterloo.ca/" target="_blank">CEMC Courseware</a></h3>
+                        <p>Covers Python, HTML, CSS, JavaScript, and language independent lessons. A good place to learn basic programming concepts.</p>
+                    </div>
+
+                    <div class="website">
+                        <h3><a href="https://www.khanacademy.org/computing/computer-programming" target="_blank">Khan Academy</a></h3>
+                        <p>Videos and lessons on JavaScript, HTML, CSS, and SQL, including applications in animation and games.</p>
+                    </div>
+                    
+                    <div class="website">
+                        <h3><a href="https://www.w3schools.com/" target="_blank">W3Schools</a></h3>
+                        <p>Tutorials on all aspects of web development, from HTML and CSS, to JavaScript and server side languages.</p>
+                    </div>
+                </div>
+            </section>
             
             <!--<h2 id="res-title">Resources</h2>
             
@@ -134,10 +160,10 @@
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras tempor magna quis risus iaculis, sed mollis mi consectetur. Cras et tortor ut lacus blandit gravida. Praesent eu sodales nulla. Praesent aliquam fringilla dignissim.</p>
                 </div>
             </section>
-
+            -->
             
             <hr style="height: 50px; border: 0; clear: both;">
-            -->
+           
             
     
             

@@ -10,6 +10,40 @@ img#soon {
 }
 
 
+/*OTHER RESOURCES*/
+section#other {
+    width: 80%;
+    margin: 0 auto;
+}
+#siteholder {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    flex-wrap: wrap;
+}
+div.website {
+    width: 27.3%;
+    margin: 3%;
+    padding: 15px;
+    float: left;
+    flex-wrap: wrap;
+    box-shadow: 0 3px 3px #666666;
+    background-color: #ffeecc;
+}
+.website h3 {
+    width: 100%;
+    font-size: 1.5rem;
+    color: #664400;
+}
+.website p {
+    padding: 5%;
+    margin: 6% 2% 3%;
+    color: #996600;
+    background-color: #fff7e6;
+}
+
+
+
 #res-title {
     margin: 30px 0 40px;
     display: none;
