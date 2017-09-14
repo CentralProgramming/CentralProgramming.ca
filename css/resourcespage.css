@@ -12,10 +12,11 @@ img#soon {
 
 /*OTHER RESOURCES*/
 section#other {
-    width: 80%;
     margin: 0 auto;
 }
 #siteholder {
+    width: 80%;
+    margin: 0 auto;
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
@@ -23,17 +24,18 @@ section#other {
 }
 div.website {
     width: 27.3%;
-    margin: 3%;
+    margin: 4% 3% 3% 3%;
     padding: 15px;
     float: left;
     flex-wrap: wrap;
     box-shadow: 0 3px 3px #666666;
     background-color: #ffeecc;
 }
-.website h3 {
+.website h3 a {
     width: 100%;
     font-size: 1.5rem;
     color: #664400;
+    border-bottom: 2px solid #996600;
 }
 .website p {
     padding: 5%;
@@ -172,6 +174,18 @@ section#info {
         width: 90%;
         margin-top: 0;
     }
+    
+    /*COMING SOON*/
+    div.website {
+        width: 44%;
+    }
+}
+
+@media only screen and (max-width: 650px) {
+    /*COMING SOON*/
+    div.website {
+        width: 100%;
+    }
 }
 
 @media only screen and (max-width: 500px) {
@@ -199,5 +213,9 @@ section#info {
     /*COMING SOON*/
     img#soon {
         width: 95%;
+    }
+    #siteholder {
+        width: 100%;
+        margin-top: 5%;
     }
 }
