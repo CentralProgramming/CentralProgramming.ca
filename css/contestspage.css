@@ -220,11 +220,10 @@ input {
 }
 @media only screen and (max-width: 750px){
     .none {
-        margin: 0 auto;
+        margin: 4% auto 2%;
     }
     #upcoming h2, #future h2, #past h2 {
         text-align: center;
-        font-size: 2.rem;
     }
 }
 @media only screen and (max-width: 500px){

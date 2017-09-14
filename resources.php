@@ -9,7 +9,7 @@
         
             <!--COMING SOON-->
             <section id="soon">
-                <img id="soon" src="images/coming-soon.png" alt="Coming Soon">
+                <img id="soonimg" src="images/coming-soon.png" alt="Coming Soon">
                 <h3>We're hard at work writing and gathering resources.<br/>
                 In the mean time, if you'd like to submit any, it would really help us out!<br/> 
                 <a href="mailto:contact@centralprogramming.ca">Send us an email.</a></h3>
@@ -95,17 +95,17 @@
             
             
             
-            <!--CONTENT
+            CONTENT
             <section id="info">
                 
-                <!--INTRO CONTENT
+                INTRO CONTENT
                 <div id="intro">
                     <h2>Java Resources</h2><br/>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras tempor magna quis risus iaculis, sed mollis mi consectetur. Cras et tortor ut lacus blandit gravida. Praesent eu sodales nulla. Praesent aliquam fringilla dignissim. Suspendisse euismod, massa at rutrum tempor, nibh tellus efficitur nisl, id porta lectus ligula ac felis. Proin pretium, ex sit amet dapibus malesuada, ante est eleifend erat, vehicula tincidunt diam ex at odio.</p>
                 </div>
             
             
-                <!--INPUT CONTENT
+                INPUT CONTENT
                 <div id="inputIntro" class="content">
                     <h2>Introduction to Input</h2>
                 </div>
@@ -132,7 +132,7 @@
                 </div>
 
 
-                <!--INTROS [PLACEHOLDER]
+                INTROS [PLACEHOLDER]
                 <div id="arrayIntro" class="content">
                     <h2>Introduction to Arrays</h2>
                 </div>
@@ -143,7 +143,7 @@
                     <h2>Introduction to Recursion</h2>
                 </div>
                 
-                <!--PLACEHOLDER CONTENT
+                PLACEHOLDER CONTENT
                 <div id="cgryIntro" class="content">
                     <h2>Introduction</h2>
                 </div>

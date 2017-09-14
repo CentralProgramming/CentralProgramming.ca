@@ -4,7 +4,7 @@ section#soon {
     margin: 100px auto 100px;
     text-align: center;
 }
-img#soon {
+img#soonimg {
     width: 50%;
     margin-bottom: 25px;
 }
@@ -176,6 +176,9 @@ section#info {
     }
     
     /*COMING SOON*/
+    img#soonimg {
+        width: 75%;
+    }
     div.website {
         width: 44%;
     }
@@ -211,7 +214,7 @@ section#info {
     }
     
     /*COMING SOON*/
-    img#soon {
+    img#soonimg {
         width: 95%;
     }
     #siteholder {

@@ -3,9 +3,9 @@
                 <div id="content">
                     <div class="foot-colmn">
                             <ul>
-                                <li><a href="index.php#about">About Us</a></li>
-                                <li><a href="index.php#team">Team</a></li>
-                                <li><a href="index.php#news">News</a></li>
+                                <li><a href="index.php#info_top">About Us</a></li>
+                                <li><a href="index.php#team_sec">Team</a></li>
+                                <li><a href="index.php#announcements">News</a></li>
                                 <li><a href="contact.php">Contact</a></li>
                             </ul>
                         </div>

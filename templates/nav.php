@@ -18,7 +18,7 @@
                     
                     <!--RESOURCES SECTION (DROPDOWN)-->
                     <div class="dropdown">
-                        <a <?php if (basename($_SERVER['PHP_SELF']) == 'resources.php'){echo 'class="nav-active"';}?> href="resources.php" class="dropbtn">Resources</a>
+                        <a href="resources.php" class="dropbtn<?php if (basename($_SERVER['PHP_SELF']) == 'resources.php'){echo ' nav-active';}?> ">Resources</a>
                         <div class="dropdown-content">
                             <a href="resources.php#sec_input">Input Types</a>
                             <a href="resources.php#sec_arrays">Arrays</a>

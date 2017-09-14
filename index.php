@@ -18,12 +18,13 @@
                     <!--WELCOME TEXT-->
                     <div id="introtext">
                         <ul>
-                            <li>Meeting every first xday of the month (meeting date pending)</li>
-                            <ul id="sub">
-                                <li>&#9642; Workshops</li>
-                                <li>&#9642; Discussions</li>
-                                <li>&#9642; Projects</li>
-                            </ul>
+                            <li>Meeting every first xday of the month (meeting date pending)
+                                <ul id="sub">
+                                    <li>&#9642; Workshops</li>
+                                    <li>&#9642; Discussions</li>
+                                    <li>&#9642; Projects</li>
+                                </ul>
+                            </li>
                             <li>Available for practice, homework help, and workspace every xday</li>
                             <li>Prior programming experience not required to join</li>
                         </ul>
@@ -39,18 +40,19 @@
                         
                         <!--ANOUNCEMENTS-->
                         <div id="rounded-content">
-                            <h3>September 22 (date to change)</h3>
+                            <h3>September 22</h3>
                             <ul>
-                                <li><p>First meeting</p></li>
-                                <ul>
-                                    <li><p>Introducing the club and coding problems</p></li>
-                                    <li><p>Discussing future meetings</p></li>
-                                    <li><p>Filling out the <a href="https://goo.gl/forms/qHRZu7HGEt1hHn292" target="_blank">Google Form</a></p></li>
-                                    <li><p>Signing  up for <a href="https://dmoj.ca/"target="_blank">DMOJ</a></p></li>
-                                </ul>
+                                <li><p>First meeting</p>
+                                    <ul>
+                                        <li><p>Introducing the club and coding problems</p></li>
+                                        <li><p>Discussing future meetings</p></li>
+                                        <li><p>Filling out the <a href="https://goo.gl/forms/qHRZu7HGEt1hHn292" target="_blank">Google Form</a></p></li>
+                                        <li><p>Signing  up for <a href="https://dmoj.ca/" target="_blank">DMOJ</a></p></li>
+                                    </ul>
+                                </li>
                             </ul>
                             <br/>
-                            <iframe id="gform" src="https://docs.google.com/forms/d/e/1FAIpQLSc-Pvt9iQ2IkwTI5sSFkP3pQlCyu507v2rTMYk5nY--gYjf7w/viewform?embedded=true">Loading...</iframe>
+                            <iframe id="gform" src="https://docs.google.com/forms/d/e/1FAIpQLSc-Pvt9iQ2IkwTI5sSFkP3pQlCyu507v2rTMYk5nY--gYjf7w/viewform?embedded=true"></iframe>
                             <p style="margin-top: 20px;"><a href="calendar.php#from_news">View full calendar</a></p>
                         </div>
                     </div>
