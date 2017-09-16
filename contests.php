@@ -37,153 +37,144 @@
             
             <section id="future">
                 <h2>Future Contests</h2>
+                <div class="contest-container">
                 
-                <div class="column">
-                        <div class="container">
-                            <div class="contest" id="con-1">
-                                
-                                <div class="front" style="background-image: url(images/com1.jpeg);">
-                                    <p class="date">11/?/18</p>
-                                    <hr style="height: 20%; border: 0;">
-                                    <h3>Central #1</h3>
-                                    <div class="info" onclick="flipBack(this)">More info</div>
-                                </div>
+                    <div class="column">
+                        <div class="contest" id="con-1">
 
-                                <div class="back">
-                                    <span class="turn" onclick="flipFront(this)">&orarr;</span>
-                                    <h3>Central #1</h3>
-                                    <ul>
-                                        <li><b>Date: </b> November 2017</li>
-                                        <li><b>Type: </b> Solo</li>
-                                        <li><b>Location: </b> Online, in room 117</li>
-                                        <li><b>Organizer: </b> Central Programming Club</li>
-                                    </ul>
-                                    <p class="description">This contest is to serve as an introduction to programming contests. We will be holding two levels, each suited to the knowledge acquired in each grade at that time. More information will be available closer to the event.</p>
-                                    <a href="https://dmoj.ca/problems/" class="block" target="_blank">Practice</a>
-                                </div>
-                            
-                        </div>
-                    </div>
-                </div>
-                
-                
-                <div class="column">
-                    <div class="container">
-                        <div class="contest">
-
-                            <div class="front" style="background-image: url(images/com2.jpeg);">
-                                <p class="date">2/?/18</p>
+                            <div class="front" style="background-image: url(images/com1.jpeg);">
+                                <p class="date">11/?/18</p>
                                 <hr style="height: 20%; border: 0;">
-                                <h3>Central #2</h3>
-                                <div class="info" onclick="flipBack(this)">More info</div>
-                            </div>
-
-                            <div class="back">
-                                    <span class="turn" onclick="flipFront(this)">&orarr;</span>
-                                    <h3>Central #2</h3>
-                                    <ul>
-                                        <li><b>Date: </b> February 2017</li>
-                                        <li><b>Type: </b> Solo</li>
-                                        <li><b>Location: </b> Online, in room 117</li>
-                                        <li><b>Organizer: </b> Central Programming Club</li>
-                                    </ul>
-                                    <p class="description">This contest is to serve as practice for the upcomming Canadian Computing Competition held by the CEMC. The format and questions will be modeled after the CCC. More information will be available closer to the event.</p>
-                                    <a href="http://www.cemc.uwaterloo.ca/contests/past_contests.html#ccc" class="block" target="_blank">Sample Problems</a>
-                                </div>
-                            
-                        </div>
-                    </div>
-                </div>
-                
-                
-                 <div class="column">
-                    <div class="container">
-                        <div class="contest">
-                            
-                            <div class="front" style="background-image: url(images/uow.JPG);">
-                                <p class="date">2/14/18</p>
-                                <hr style="height: 20%; border: 0;">
-                                <h3>CCC</h3>
+                                <h3>Central #1</h3>
                                 <div class="info" onclick="flipBack(this)">More info</div>
                             </div>
 
                             <div class="back">
                                 <span class="turn" onclick="flipFront(this)">&orarr;</span>
-                                <h3>CCC</h3>
+                                <h3>Central #1</h3>
                                 <ul>
-                                    <li><b>Date: </b> February 14, 2018</li>
+                                    <li><b>Date: </b> November 2017</li>
                                     <li><b>Type: </b> Solo</li>
                                     <li><b>Location: </b> Online, in room 117</li>
-                                    <li><b>Organizer: </b> University of Waterloo</li>
+                                    <li><b>Organizer: </b> Central Programming Club</li>
                                 </ul>
-                                <p class="description">The Canadian Computing Competition (CCC) is run at two levels: junior and senior. It is hosted online through the <a href="http://www.cemc.uwaterloo.ca/index.html" target="_blank">CEMC website</a>, and will be written during class time in room 117. More information about registration will be available closer to the event.</p>
-                                <a href="http://www.cemc.uwaterloo.ca/contests/computing.html" class="block" target="_blank">Website</a>
+                                <p class="description">This contest is to serve as an introduction to programming contests. We will be holding two levels, each suited to the knowledge acquired in each grade at that time. More information will be available closer to the event.</p>
+                                <a href="https://dmoj.ca/problems/" class="block" target="_blank">Practice</a>
+                            </div>
+
+                    </div>
+                </div>
+
+
+                <div class="column">
+                    <div class="contest">
+
+                        <div class="front" style="background-image: url(images/com2.jpeg);">
+                            <p class="date">2/?/18</p>
+                            <hr style="height: 20%; border: 0;">
+                            <h3>Central #2</h3>
+                            <div class="info" onclick="flipBack(this)">More info</div>
+                        </div>
+
+                        <div class="back">
+                                <span class="turn" onclick="flipFront(this)">&orarr;</span>
+                                <h3>Central #2</h3>
+                                <ul>
+                                    <li><b>Date: </b> February 2017</li>
+                                    <li><b>Type: </b> Solo</li>
+                                    <li><b>Location: </b> Online, in room 117</li>
+                                    <li><b>Organizer: </b> Central Programming Club</li>
+                                </ul>
+                                <p class="description">This contest is to serve as practice for the upcomming Canadian Computing Competition held by the CEMC. The format and questions will be modeled after the CCC. More information will be available closer to the event.</p>
                                 <a href="http://www.cemc.uwaterloo.ca/contests/past_contests.html#ccc" class="block" target="_blank">Sample Problems</a>
                             </div>
-                            
                         </div>
                     </div>
-                </div>
-                
-                
-                <div class="column">
-                    <div class="container">
-                        <div class="contest">
 
-                            <div class="front" style="background-image: url(images/com3.jpeg);">
-                                <p class="date">4/?/18</p>
-                                <hr style="height: 20%; border: 0;">
+
+                <div class="column">
+                    <div class="contest">
+
+                        <div class="front" style="background-image: url(images/uow.JPG);">
+                            <p class="date">2/14/18</p>
+                            <hr style="height: 20%; border: 0;">
+                            <h3>CCC</h3>
+                            <div class="info" onclick="flipBack(this)">More info</div>
+                        </div>
+
+                        <div class="back">
+                            <span class="turn" onclick="flipFront(this)">&orarr;</span>
+                            <h3>CCC</h3>
+                            <ul>
+                                <li><b>Date: </b> February 14, 2018</li>
+                                <li><b>Type: </b> Solo</li>
+                                <li><b>Location: </b> Online, in room 117</li>
+                                <li><b>Organizer: </b> University of Waterloo</li>
+                            </ul>
+                            <p class="description">The Canadian Computing Competition (CCC) is run at two levels: junior and senior. It is hosted online through the <a href="http://www.cemc.uwaterloo.ca/index.html" target="_blank">CEMC website</a>, and will be written during class time in room 117. More information about registration will be available closer to the event.</p>
+                            <a href="http://www.cemc.uwaterloo.ca/contests/computing.html" class="block" target="_blank">Website</a>
+                            <a href="http://www.cemc.uwaterloo.ca/contests/past_contests.html#ccc" class="block" target="_blank">Sample Problems</a>
+                        </div>
+
+                    </div>
+                </div>
+
+
+                <div class="column">
+                    <div class="contest">
+
+                        <div class="front" style="background-image: url(images/com3.jpeg);">
+                            <p class="date">4/?/18</p>
+                            <hr style="height: 20%; border: 0;">
+                            <h3>Central #3</h3>
+                            <div class="info" onclick="flipBack(this)">More info</div>
+                        </div>
+
+                        <div class="back">
+                                <span class="turn" onclick="flipFront(this)">&orarr;</span>
                                 <h3>Central #3</h3>
-                                <div class="info" onclick="flipBack(this)">More info</div>
+                                <ul>
+                                    <li><b>Date: </b> April 2018</li>
+                                    <li><b>Type: </b> Group</li>
+                                    <li><b>Location: </b> Online, in room 117</li>
+                                    <li><b>Organizer: </b> Central Programming Club</li>
+                                </ul>
+                                <p class="description">This contest is to serve as practice for the upcomming ECOO Programming Contest and introduce group contests. The format and questions will be modeled after the ECOO, with teams of up to four. More information will be available closer to the event.</p>
+                                <a href="http://ecoocs.org/problems.php" class="block" target="_blank">Sample Problems</a>
                             </div>
-
-                            <div class="back">
-                                    <span class="turn" onclick="flipFront(this)">&orarr;</span>
-                                    <h3>Central #3</h3>
-                                    <ul>
-                                        <li><b>Date: </b> April 2018</li>
-                                        <li><b>Type: </b> Group</li>
-                                        <li><b>Location: </b> Online, in room 117</li>
-                                        <li><b>Organizer: </b> Central Programming Club</li>
-                                    </ul>
-                                    <p class="description">This contest is to serve as practice for the upcomming ECOO Programming Contest and introduce group contests. The format and questions will be modeled after the ECOO, with teams of up to four. More information will be available closer to the event.</p>
-                                    <a href="http://ecoocs.org/problems.php" class="block" target="_blank">Sample Problems</a>
-                                </div>
-                            
-                        </div>
+                        
                     </div>
                 </div>
-                
-                
+
+
                 <div class="column">
-                    <div class="container">
-                        <div class="contest">
+                    <div class="contest">
 
-                            <div class="front" style="background-image: url(images/uwo.jpg);">
-                                <p class="date">4/?/18</p>
-                                <hr style="height: 20%; border: 0;">
+                        <div class="front" style="background-image: url(images/uwo.jpg);">
+                            <p class="date">4/?/18</p>
+                            <hr style="height: 20%; border: 0;">
+                            <h3>ECOO</h3>
+                            <div class="info" onclick="flipBack(this)">More info</div>
+                        </div>
+
+                        <div class="back">
+                                <span class="turn" onclick="flipFront(this)">&orarr;</span>
                                 <h3>ECOO</h3>
-                                <div class="info" onclick="flipBack(this)">More info</div>
+                                <ul>
+                                    <li><b>Date: </b> April 2018</li>
+                                    <li><b>Type: </b> Group</li>
+                                    <li><b>Location: </b> TBA</li>
+                                    <li><b>Organizer: </b> Educational Computing Organization of Ontario</li>
+                                </ul>
+                                <p class="description">The ECOO Programming Contest is a group contest in three rounds. Teams of four work on one computer to solve problems. Only a few teams per school are allowed. More information will be available closer to the event.</p>
+                                <a href="http://ecoocs.org/" class="block" target="_blank">Website</a>
+                                <a href="http://ecoocs.org/problems.php" class="block" target="_blank">Sample Problems</a>
                             </div>
 
-                            <div class="back">
-                                    <span class="turn" onclick="flipFront(this)">&orarr;</span>
-                                    <h3>ECOO</h3>
-                                    <ul>
-                                        <li><b>Date: </b> April 2018</li>
-                                        <li><b>Type: </b> Group</li>
-                                        <li><b>Location: </b> TBA</li>
-                                        <li><b>Organizer: </b> Educational Computing Organization of Ontario</li>
-                                    </ul>
-                                    <p class="description">The ECOO Programming Contest is a group contest in three rounds. Teams of four work on one computer to solve problems. Only a few teams per school are allowed. More information will be available closer to the event.</p>
-                                    <a href="http://ecoocs.org/" class="block" target="_blank">Website</a>
-                                    <a href="http://ecoocs.org/problems.php" class="block" target="_blank">Sample Problems</a>
-                                </div>
-                            
-                        </div>
                     </div>
                 </div>
                 
+                </div>
             </section>
             
             
@@ -196,30 +187,28 @@
                 <h2>Past Contests</h2>
                 
                 <div class="column">
-                        <div class="container">
-                            <div class="contest">
-                                
-                                <div class="front">
-                                    <p class="date">M/D/Y</p>
-                                    <hr style="height: 20%; border: 0;">
-                                    <h3>Contest</h3>
-                                    <div class="info" onclick="flipBack(this)">More info</div>
-                                </div>
+                    <div class="contest">
 
-                                <div class="back">
-                                    <span class="turn" onclick="flipFront(this)">&orarr;</span>
-                                    <h3>Central #1</h3>
-                                    <ul>
-                                        <li><b>Date: </b> </li>
-                                        <li><b>Type: </b> </li>
-                                        <li><b>Location: </b> </li>
-                                        <li><b>Organizer: </b> </li>
-                                    </ul>
-                                    <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras tempor magna quis risus iaculis, sed mollis mi consectetur. Cras et tortor ut lacus blandit gravida. Praesent eu sodales nulla. Praesent aliquam fringilla dignissim.</p>
-                                    <a href="#" class="block">Results</a>
-                                </div>
-                            
+                        <div class="front">
+                            <p class="date">M/D/Y</p>
+                            <hr style="height: 20%; border: 0;">
+                            <h3>Contest</h3>
+                            <div class="info" onclick="flipBack(this)">More info</div>
                         </div>
+
+                        <div class="back">
+                            <span class="turn" onclick="flipFront(this)">&orarr;</span>
+                            <h3>Central #1</h3>
+                            <ul>
+                                <li><b>Date: </b> </li>
+                                <li><b>Type: </b> </li>
+                                <li><b>Location: </b> </li>
+                                <li><b>Organizer: </b> </li>
+                            </ul>
+                            <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras tempor magna quis risus iaculis, sed mollis mi consectetur. Cras et tortor ut lacus blandit gravida. Praesent eu sodales nulla. Praesent aliquam fringilla dignissim.</p>
+                            <a href="#" class="block">Results</a>
+                        </div>
+
                     </div>
                 </div>
                 

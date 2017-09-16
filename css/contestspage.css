@@ -1,10 +1,12 @@
 /*CONTEST CARD*/
+.contest-container {
+    display: flex;
+    flex-wrap: wrap;
+}
 .column {
-    float: left;
     width: 50%;
     padding: 2%;
-}
-.container {
+    float: left;
     position: relative;
     perspective: 800px;
     -webkit-perspective: 800px;
@@ -87,6 +89,7 @@
          
     /*BACK CONTENT*/
     .back {
+        padding-bottom: 1%;
         background-color: #f2f2f2;
     }
     .back h3 {
@@ -232,9 +235,6 @@ input {
         padding-bottom: 5%;
         padding-top: 5%;
     }
-    .contest {
-        min-height: 575px;
-    }
     .date {
         width: 30%;
     }
@@ -247,6 +247,6 @@ input {
         margin: 4%;
     }
     #text h2 {
-    font-size: 2rem;
+        font-size: 2rem;
     }
 }
