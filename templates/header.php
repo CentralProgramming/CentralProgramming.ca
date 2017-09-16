@@ -30,13 +30,13 @@
         <link rel="author" href="humans.txt">
         
         <!--FONTS-->
-        <link href="https://fonts.googleapis.com/css?family=Monoton%7CPatua+One%7CGraduate%7CNunito:300,400,700%7C" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Monoton%7CPatua+One%7CGraduate%7CNunito:300,400,700%7CBowlby One" rel="stylesheet">
         
         <!--TAB TITLE AND ICON-->
         <title>
             <?php
                 if(basename($_SERVER['PHP_SELF']) == 'problems.php'){
-                    echo 'Weekly Porblems';
+                    echo 'Weekly Problems';
                  }
                  else if(basename($_SERVER['PHP_SELF']) == 'contests.php'){
                     echo 'Computer Contests';
@@ -45,7 +45,7 @@
                     echo 'Programming Resources';
                  }
                  else if(basename($_SERVER['PHP_SELF']) == 'calendar.php'){
-                    echo 'Calander';
+                    echo 'Calendar';
                  }
                  else if(basename($_SERVER['PHP_SELF']) == 'contact.php'){
                     echo 'Contact Form';

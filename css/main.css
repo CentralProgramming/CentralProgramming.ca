@@ -10,7 +10,7 @@ div#container {
 }
 h1 {
     font-size: 6vw;
-    font-family: "Monoton", Impact, sans-serif;
+    font-family: "Bowlby One", Impact, sans-serif;
     letter-spacing: 0.2rem;
     line-height: 1.0;
     text-align: left;
@@ -48,7 +48,7 @@ span.strong {
     font-weight: bolder;
 }
 span.light {
-    color: #cc8800;
+    color: #666;
     font-weight: 300;
 }
 
@@ -77,7 +77,7 @@ img#logo {
 #title {
     position: absolute;
     top: 20%;
-    right: 5%;
+    right: 10%;
 }
 span.purple {
     color: #9120c5;
