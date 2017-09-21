@@ -18,14 +18,14 @@
                     <!--WELCOME TEXT-->
                     <div id="introtext">
                         <ul>
-                            <li>Meeting every first xday of the month (meeting date pending)
+                            <li>Meeting every first &nbsp;__day of the month (meeting date pending)
                                 <ul id="sub">
                                     <li>&#9642; Workshops</li>
                                     <li>&#9642; Discussions</li>
                                     <li>&#9642; Projects</li>
                                 </ul>
                             </li>
-                            <li>Available for practice, homework help, and workspace every xday</li>
+                            <li>Available for practice, homework help, and workspace every &nbsp;__day</li>
                             <li>Prior programming experience not required to join</li>
                         </ul>
                     </div>
@@ -90,16 +90,20 @@
 
                         <p>No prior coding experience is required to join! We can point you towards resources to help you learn, and we're always available to answer any questions you may have. We strive to provide resources&mdash;including homework help&mdash;in order to assist everyone in reaching their goals.</p>
 
-                        <!--<p><a href="#info_top" class="info-change" onclick="changeAbout(1)">Why learn programming?</a></p>-->
+                        <p><a href="#info_top" class="info-change" onclick="changeAbout(1)">Why learn programming?</a></p>
                     </div>
 
 
                     <!--LEARN TO CODE TEXT-->
                     <div class="hide" id="learn-text">
                         <h2>Why Learn to Code?</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed congue laoreet est. Donec sapien lacus, lacinia in condimentum sit amet, dictum at libero. Phasellus congue orci ultricies urna pharetra venenatis. Suspendisse sit amet lacus sed diam tempus scelerisque commodo eget justo. Etiam dignissim sed ipsum a blandit. Aliquam mollis eros ut posuere accumsan. Nunc eros erat, condimentum ut dolor in, auctor maximus dolor. Aenean sit amet ligula condimentum metus cursus condimentum. Duis nec eros ac purus auctor malesuada.</p>
+                        <p>Programming gives you the ability to     translate your ideas into reality and create something you can be proud of. Whether you want to design the next big app or game, make a useful piece of software, create a stunning website, or change the world, the power of programming allows you to accomplish your dreams. The possibilities are endless.</p>
 
-                        <p><a href="javascript:void(0);" class="info-change" onclick="changeAbout(0)">About the CPC</a></p>
+                        <p>Anyone can learn code. You don’t need to be a math genius or a science whiz. Creative thinking and problem solving skills are the key to coding success. Programming exercises and strengthens these skills (along with critical and alternative thinking) which can then be applied in a multitude of disciples. Not interested in pursuing computer science? Learning to code can still help you gain transferable skills that are useful no matter what your future may hold. Plus, it's a lot of fun, too! <p/>
+
+                        <p>Programming isn't difficult to learn; with a little time and patience, anyone can code, and _____.</p>
+
+                        <p><a href="#info_top" class="info-change" onclick="changeAbout(0)">About the CPC</a></p>
                     </div>
                 </div>
                 

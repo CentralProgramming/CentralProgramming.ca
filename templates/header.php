@@ -5,7 +5,7 @@
         <!--META DATA-->
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta charset="UTF-8">
-        <meta name="keywords" content="central programming club, london central, lcss, london ontario">
+        <meta name="keywords" content="central programming club, london central, lcss, programming club, coding club">
         <meta name="description" content="<?php
                                      if (basename($_SERVER['PHP_SELF']) == 'index.php'){
                                         echo 'London Central Secondary School&apos;s Programming Club.';

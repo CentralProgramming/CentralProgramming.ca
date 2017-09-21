@@ -55,7 +55,6 @@ span.light {
 
 /*PARALLAX*/
 .parallax {
-    height: 500px;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -65,6 +64,7 @@ span.light {
 
 /*HEADER*/
 .parallax#header-image {
+    height: 500px;
     position: relative;
     background-image: url(../images/header.jpg); 
 }
@@ -117,6 +117,7 @@ p#timer {
 /*NAVIGATION*/
 nav {
     width: 100%;
+    height: 90px;
     position: fixed;
     position: sticky;
     position: -webkit-sticky;
@@ -127,9 +128,11 @@ nav {
     text-align: center;
 }
 div#nav {
+    height: 100%;
     display: inline-block;
 }
 nav a {
+    height: 100%;
     font-family: "Patua One", Tahoma, sans-serif;
     float: left;
     display: block;
@@ -405,17 +408,35 @@ input:focus, textarea:focus {
 }
 @media only screen and (max-width: 650px) {
     /*HEADER*/
+    .parallax#header-image {
+        height: 550px;
+    }
     img#logo {
         width: 40%;
         top: 5%;
         left: 30%;
     }
-    #title {
-        top: 60%;
+      #title {
+        top: 55%;
         left: 15%;
+        transform: scale(1,1.5);
+        -webkit-transform: scale(1,1.5);
+        -moz-transform: scale(1,1.5);
+        -ms-transform: scale(1,1.5);
+        -o-transform: scale(1,1.5);
     }
     h1#central, h1#club, span.purple {
         font-size: 10vw;
+        text-shadow: 2px 2px #fff7e6;
+    }
+    h1#programming {
+        margin: 1px 0 15px;
+        text-shadow: 2px 2px #fff7e6;
+        transform: scale(1,1.4);
+        -webkit-transform: scale(1,1.4);
+        -moz-transform: scale(1,1.4);
+        -ms-transform: scale(1,1.4);
+        -o-transform: scale(1,1.4);
     }
     
     /*COUNTDOWN*/
@@ -548,6 +569,9 @@ input:focus, textarea:focus {
 
 @media only screen and (max-width: 400px){
    /*HEADER*/
+    .parallax#header-image {
+        height: 650px;
+    }
     img#logo {
         width: 60%;
         left: 20%;

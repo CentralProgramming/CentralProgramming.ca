@@ -22,14 +22,14 @@
                     <section id="this-week">
                         <h2>This Week's Problem</h2>
                         <div class="prob">
-                            <h3 style="margin-top: 10%; color: #332200; text-align: center;">Check back for a new problem once the club gets started!</h3>
-                            <!--<h3><a href="https://dmoj.ca/problems/">Problem Name &raquo;</a></h3>
+                            <h3><a href="https://dmoj.ca/problem/ccc02j1" target="_blank">CCC '02 J1 - 0123456789
+ &raquo;</a></h3>
                             <ul>
-                                <li><b>Points:</b> #</li>
-                                <li><b>Time limit:</b> #s</li>
-                                <li><b>Author:</b> name</li>
+                                <li><b>Points:</b> 5</li>
+                                <li><b>Time limit:</b> 2.0s</li>
+                                <li><b>Author:</b> CCC</li>
                             </ul>
-                            <br/><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras tempor magna quis risus iaculis, sed mollis mi consectetur.</p>-->
+                            <br/><p>From input of a number from 0-9, output the digit using asterisks.</p>
                         </div>
                     </section>
                 </div>
