@@ -387,7 +387,7 @@ input:focus, textarea:focus {
     }
     /*NAV*/
     nav a {
-        font-size: 3.9vw;
+        font-size: 3.8vw;
     }
     .dropdown-content {
         min-width: 22.5vw;
@@ -409,7 +409,7 @@ input:focus, textarea:focus {
 @media only screen and (max-width: 650px) {
     /*HEADER*/
     .parallax#header-image {
-        height: 550px;
+        height: 100vw;
     }
     img#logo {
         width: 40%;
@@ -478,6 +478,7 @@ input:focus, textarea:focus {
     }
     nav.jsEnabled a, nav.jsEnabled .dropdown {
         width: auto;
+        height: auto;
         display: none;
         padding: 20px;
         font-size: 3.9vw;
@@ -578,9 +579,12 @@ input:focus, textarea:focus {
     }
     #title {
         top: 57%;
-        left: 10%;
+        left: 5%;
     }
     h1#central, h1#club, span.purple {
         font-size: 15vw;
+    }
+    h1#programming {
+        font-size: 8.5vw;
     }
 }

@@ -97,11 +97,11 @@
                     <!--LEARN TO CODE TEXT-->
                     <div class="hide" id="learn-text">
                         <h2>Why Learn to Code?</h2>
-                        <p>Programming gives you the ability to     translate your ideas into reality and create something you can be proud of. Whether you want to design the next big app or game, make a useful piece of software, create a stunning website, or change the world, the power of programming allows you to accomplish your dreams. The possibilities are endless.</p>
+                        <p>Programming gives you the ability to translate your ideas into reality and create something you can be proud of. Whether you want to design the next big app or game, make a useful piece of software, create a stunning website, or change the world, the power of programming allows you to accomplish your dreams. The possibilities are endless.</p>
 
                         <p>Anyone can learn code. You don’t need to be a math genius or a science whiz. Creative thinking and problem solving skills are the key to coding success. Programming exercises and strengthens these skills (along with critical and alternative thinking) which can then be applied in a multitude of disciples. Not interested in pursuing computer science? Learning to code can still help you gain transferable skills that are useful no matter what your future may hold. Plus, it's a lot of fun, too! <p/>
 
-                        <p>Programming isn't difficult to learn; with a little time and patience, anyone can code, and _____.</p>
+                        <p>Programming isn't difficult to learn; with a little time and patience, anyone can code, and make something worthwhile.</p>
 
                         <p><a href="#info_top" class="info-change" onclick="changeAbout(0)">About the CPC</a></p>
                     </div>
