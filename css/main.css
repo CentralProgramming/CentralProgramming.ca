@@ -85,7 +85,7 @@ span.purple {
 
 
 
-/*COUNTDOWN*/
+/*COUNTDOWN
 div#countdown {
     display: none;
     position: fixed;
@@ -111,7 +111,7 @@ p#timer {
     float: right;
     padding-right: 10px;
 }
-
+*/
 
 
 /*NAVIGATION*/
@@ -123,6 +123,7 @@ nav {
     position: -webkit-sticky;
     top: 0;
     z-index: 95;
+    overflow: hidden;
     background-color: #000;
     border-bottom: 5px outset #fff;
     text-align: center;
@@ -151,6 +152,7 @@ nav a:hover, nav a.nav-active:hover, .dropdown:hover .dropbtn {
     color: #000;
 }
 nav a#icon {
+    width: 15%;
     display: none;
 }
 
@@ -448,6 +450,7 @@ input:focus, textarea:focus {
     /*NAV*/
     nav a {
         width: 50%;
+        height: 100%;
         padding: 10px;
         font-size: 5vw;
         border: 1px solid #666;
@@ -474,26 +477,20 @@ input:focus, textarea:focus {
      nav.jsEnabled #nav {
         width: 100%;
     }
-    nav.jsEnabled {
-        overflow: scroll;
-    }
     nav.jsEnabled a, nav.jsEnabled .dropdown {
         width: auto;
-        height: auto;
         display: none;
-        padding: 20px;
+        padding: 20px 20px 20px 4%;
         font-size: 3.9vw;
         border: none;
-        padding-left: 4%;
     }
     nav.jsEnabled #home {
         display: block;
     }
     nav.jsEnabled a {
-        padding: 3%;
+        padding: 3% 3% 3% 4%;
         font-size: 1.75rem;
         border: none;
-        padding-left: 4%;
     }
     nav.jsEnabled a#icon {
         float: right;
@@ -502,6 +499,7 @@ input:focus, textarea:focus {
         border: none;
     }
     .topNav.responsive {
+        overflow: scroll;
         position: relative;
         height: 400px;
     }
@@ -510,7 +508,11 @@ input:focus, textarea:focus {
         right: 0;
         top: 0;
     }
+    .topNav.responsive a#home {  
+        width: 85%;
+    }
     .topNav.responsive a {
+        height: auto;
         float: none;
         display: block;
         text-align: left;
