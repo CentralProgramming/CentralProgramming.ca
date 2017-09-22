@@ -120,9 +120,9 @@
             </header>
 
             
-            <!--COUNTDOWN TIMER-->
+            <!--COUNTDOWN TIMER
             <div id="countdown">
                 <h3>First meeting in:</h3>
                 <p id="timer"></p>
                 <span class="closebtn" style="cursor: pointer;" onclick="hideCountdown()">&times;</span>
-            </div>
+            </div>-->
