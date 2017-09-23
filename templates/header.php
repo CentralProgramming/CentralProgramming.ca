@@ -85,20 +85,20 @@
     
     <body id="body" onresize="resize()<?php if(basename($_SERVER['PHP_SELF']) == 'resources.php'){echo '; fixNav()';}?>" onload="navJS()<?php 
                                                 if(basename($_SERVER['PHP_SELF']) == 'calendar.php'){
-                                                    echo '; setBack()';
+                                                    echo '; setBack();';
                                                 }
                                                 else if(basename($_SERVER['PHP_SELF']) == 'contests.php'){
-                                                    echo '; jsEnabled()';
+                                                    echo '; jsEnabled();';
                                                 }
                                                 else if(basename($_SERVER['PHP_SELF']) == 'resources.php'){
-                                                    echo '; setCtgy()';
+                                                    echo '; setCtgy();';
                                                 }
                                                 ?>">
         <script>
             function navJS() {
-                if(window.matchMedia("(min-width: 651px)").matches) {
+                /*if(window.matchMedia("(min-width: 651px)").matches) {
                     document.getElementById("countdown").style.display = "inline-block";
-                }
+                }*/
                 document.getElementById("navbar").className = "jsEnabled";   
             }
         </script>

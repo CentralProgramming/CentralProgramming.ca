@@ -1,4 +1,4 @@
-/*COUNTDOWN*/
+/*COUNTDOWN
 var countDownDate = new Date("Sep 22, 2017 10:55:00").getTime();
 var x = setInterval(function() {
     var now = new Date().getTime();
@@ -20,7 +20,7 @@ var x = setInterval(function() {
 function hideCountdown() {
     document.getElementById("countdown").style.display = "none";
     document.getElementById("countdown").style.padding = "0";
-}
+}*/
 
 
 /*NAVIGATION*/
@@ -123,10 +123,10 @@ function jsEnabled() {
 }
 
 function flipBack(linkElement){
-   linkElement.parentElement.parentElement.className += " flipped";
+   linkElement.parentElement.className += " flipped";
 }
 function flipFront(linkElement){
-    linkElement.parentElement.parentElement.className = "contest";
+    linkElement.parentElement.className = "contest";
 }
 
 
