@@ -40,7 +40,7 @@
                 <section id="leaderboard">
                     <div id="leader-title">
                         <h2>Leaderboard</h2>
-                        <hr style="height: 10px; border: 0;">
+                        <h3>Last Updated: 23/9/17</h3>
                     </div>
                     <table>
                         <tr>
@@ -50,8 +50,8 @@
                         </tr>
                         <tr>
                             <td class="rank">01</td>
-                            <td class="user"></td>
-                            <td class="points"></td>
+                            <td class="user"><a href="https://dmoj.ca/user/_Zaman" target="_blank">_Zaman</a></td>
+                            <td class="points">5</td>
                         </tr>
                         <tr>
                             <td class="rank">02</td>
