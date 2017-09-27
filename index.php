@@ -18,14 +18,14 @@
                     <!--WELCOME TEXT-->
                     <div id="introtext">
                         <ul>
-                            <li>Meeting every first &nbsp;__day of the month (meeting date pending)
+                            <li>Meeting first Friday of every month
                                 <ul id="sub">
                                     <li>&#9642; Workshops</li>
                                     <li>&#9642; Discussions</li>
                                     <li>&#9642; Projects</li>
                                 </ul>
                             </li>
-                            <li>Available for practice, homework help, and workspace every &nbsp;__day</li>
+                            <li>Available for practice, homework help, and workspace every Friday</li>
                             <li>Prior programming experience not required to join</li>
                         </ul>
                     </div>

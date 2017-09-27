@@ -123,10 +123,10 @@ function jsEnabled() {
 }
 
 function flipBack(linkElement){
-   linkElement.parentElement.className += " flipped";
+   linkElement.parentNode.parentNode.className += " flipped";
 }
 function flipFront(linkElement){
-    linkElement.parentElement.className = "contest";
+    linkElement.parentNode.parentNode.className = "contest";
 }
 
 

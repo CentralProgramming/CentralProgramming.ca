@@ -40,7 +40,7 @@
                 <div class="contest-container">
                 
                     <div class="column">
-                        <div class="contest" id="con-1">
+                        <div class="contest">
 
                             <div class="front" style="background-image: url(images/com1.jpeg);">
                                 <p class="date">11/?/18</p>
