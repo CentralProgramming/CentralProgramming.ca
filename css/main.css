@@ -85,7 +85,7 @@ span.purple {
 
 
 
-/*COUNTDOWN
+/*COUNTDOWN*/
 div#countdown {
     display: none;
     position: fixed;
@@ -111,7 +111,7 @@ p#timer {
     float: right;
     padding-right: 10px;
 }
-*/
+
 
 
 /*NAVIGATION*/

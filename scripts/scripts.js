@@ -1,5 +1,5 @@
-/*COUNTDOWN
-var countDownDate = new Date("Sep 22, 2017 10:55:00").getTime();
+/*COUNTDOWN*/
+var countDownDate = new Date("Oct 06, 2017 10:55:00").getTime();
 var x = setInterval(function() {
     var now = new Date().getTime();
     var distance = countDownDate - now;
@@ -20,7 +20,7 @@ var x = setInterval(function() {
 function hideCountdown() {
     document.getElementById("countdown").style.display = "none";
     document.getElementById("countdown").style.padding = "0";
-}*/
+}
 
 
 /*NAVIGATION*/

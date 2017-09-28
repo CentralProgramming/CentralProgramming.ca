@@ -96,9 +96,9 @@
                                                 ?>">
         <script>
             function navJS() {
-                /*if(window.matchMedia("(min-width: 651px)").matches) {
+                if(window.matchMedia("(min-width: 651px)").matches) {
                     document.getElementById("countdown").style.display = "inline-block";
-                }*/
+                }
                 document.getElementById("navbar").className = "jsEnabled";   
             }
         </script>
@@ -120,9 +120,9 @@
             </header>
 
             
-            <!--COUNTDOWN TIMER
+            <!--COUNTDOWN TIMER-->
             <div id="countdown">
-                <h3>First meeting in:</h3>
+                <h3>Next meeting in:</h3>
                 <p id="timer"></p>
                 <span class="closebtn" style="cursor: pointer;" onclick="hideCountdown()">&times;</span>
-            </div>-->
+            </div>
