@@ -40,6 +40,18 @@
                         
                         <!--ANOUNCEMENTS-->
                         <div id="rounded-content">
+                            <h3>October 6</h3>
+                            <ul>
+                                <li><p>Meeting will start at 11:15</p></li>
+                                <li><p>Please eat your lunch before the meeting starts </p>
+                                    <ul>
+                                        <li><p>Food is not allowed in room 117</p></li>
+                                    </ul>
+                                </li>
+                                <li><p>More chairs will be provided this time</p></li>
+                            </ul>
+                            <br/>
+                            
                             <h3>September 22</h3>
                             <ul>
                                 <li><p>First meeting</p>
@@ -53,8 +65,9 @@
                             </ul>
                             <br/>
                             <iframe id="gform" src="https://docs.google.com/forms/d/e/1FAIpQLSc-Pvt9iQ2IkwTI5sSFkP3pQlCyu507v2rTMYk5nY--gYjf7w/viewform?embedded=true"></iframe>
-                            <p style="margin-top: 20px;"><a href="calendar.php#from_news">View full calendar</a></p>
+                            <p style="margin-top: 20px;"></p>
                         </div>
+                        <p><a id="cal" href="calendar.php#from_news">View full calendar</a></p>
                     </div>
             </section>
             

@@ -49,10 +49,8 @@ h2#news {
 }
 div.rounded {
     width: 55%;
-    min-height: 150px;
-    overflow: hidden;
     padding: 10px;
-    text-align: left;
+    text-align: right;
     background-color: #ffeecc;
     border-radius: 50px;
     border-top-left-radius: 0px;
@@ -61,9 +59,11 @@ div.rounded {
     margin: 0 auto; 
 }
 #rounded-content {
+    height: 500px;
     margin: 2%;
     padding: 3%;
-    height: 80%;
+    overflow: scroll;
+    text-align: left;
     background-color: #fff7e6;
 }
 #rounded-content h3 {
@@ -76,7 +76,9 @@ iframe#gform {
     box-shadow: 0 0 5px #808080;
     height: 400px;
 }
-
+div.rounded a#cal {
+    margin: 3% 2%;
+}
 
 
 /*CLUB INFO*/
@@ -149,9 +151,6 @@ div#about-text, dov#learn-text {
 section#team h2 {
     font-size: 2.75rem;
 }
-#team-two-row, #team-one-row {
-    display: none;
-}
 .row {
     width: 90%;
     margin: 0 auto;
@@ -172,12 +171,6 @@ section#team h2 {
 }
 .column:hover {
     box-shadow: 4px 4px 14px #666;
-}
-#team-two-row .column {
-    width: 50%;
-}
-#team-one-row .column {
-    width: 100%;
 }
 .column h3 {
     color: #ffcc66;
