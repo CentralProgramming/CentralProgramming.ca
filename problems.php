@@ -16,7 +16,7 @@
                         <div id="about-content">
                             <h2>Purpose</h2><br/>
                             <p>Programming problems are a great way to prepare for contests, practice your coding skills, and exercise problem solving. With that in mind, a new problem from <a href="https://dmoj.ca/" target="_blank">DMOJ</a> will be posted here every Thursday. By participating in and solving these problems, you will earn points that go towards monthly and year-end prizes. You don't have to make a commitment to participate every week <span class="light">(because who had time for that at Central?)</span>; simply try a problem at home when you have time, or come in during one of our meetings and solve it with the help of your peers.</p><br/>
-                            <!--<p><span class="strong">Last week's top scorer: </span><b><a href="https://dmoj.ca/user/_Zaman" target="_blank"></a></b></p>-->
+                            <!--<p><span class="strong">Last week's top scorer: </span><b><a href="https://dmoj.ca/user/" target="_blank"></a></b></p>-->
                         </div>
                     </section>
 
@@ -25,15 +25,13 @@
                     <section id="this-week">
                         <h2>This Week's Problem</h2>
                         <div class="prob">
-                            <h3><a href="https://dmoj.ca/problem/ccc12j2" target="_blank">CCC '12 J2 - Sounds fishy!
-
- &raquo;</a></h3>
+                            <h3><a href="https://dmoj.ca/problem/ccc04j3" target="_blank">CCC '04 J3 - Smile with Similes &raquo;</a></h3>
                             <ul>
                                 <li><b>Points:</b> 3</li>
                                 <li><b>Time limit:</b> 2.0s</li>
                                 <li><b>Author:</b> CCC</li>
                             </ul>
-                            <br/><p>From input of four "depth readings", determine whether fish are rising, diving, or swimming at a constant depth.</p>
+                            <br/><p>Output all possible similes from a list of adjectives and nouns.</p>
                         </div>
                     </section>
                 </div>
