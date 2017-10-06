@@ -26,6 +26,12 @@
                                 </ul>
                             </li>
                             <li>Available for practice, homework help, and workspace every Friday</li>
+                            <li>Meetings will start at 11:15 
+                                <ul>
+                                    <li>Please eat your lunch prior to the meeting</li>
+                                    <li>Food is not allowed in room 117</li>
+                                </ul>
+                            </li>
                             <li>Prior programming experience not required to join</li>
                         </ul>
                     </div>
@@ -40,15 +46,26 @@
                         
                         <!--ANOUNCEMENTS-->
                         <div id="rounded-content">
+                            <h3>October 13</h3>
+                            <ul>
+                                <li><p>Beginners introduction to code</p>
+                                    <ul>
+                                        <li><p>Learn on your own and ask questions, or listen to our explainations</p></li>
+                                        <li><p>Lesson will cover basic concepts that can be applied to any language</p></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <br/>
+                                    
                             <h3>October 6</h3>
                             <ul>
+                                <li><p><a href="https://play.kahoot.it/#/?quizId=4e22a881-3546-409f-8fe2-62b7d5727aff&gameMode=ghost&startTime=1507303453555&hostId=17c45c2c-c8f1-49b6-a5c2-f6744457c624" target="_blank">Kahoot</a> and recursion example</p></li>
                                 <li><p>Meeting will start at 11:15</p></li>
                                 <li><p>Please eat your lunch before the meeting starts </p>
                                     <ul>
                                         <li><p>Food is not allowed in room 117</p></li>
                                     </ul>
                                 </li>
-                                <li><p>More chairs will be provided this time</p></li>
                             </ul>
                             <br/>
                             
@@ -148,7 +165,7 @@
                             <!--ANGELA TEXT-->
                             <h3><b>Angela</b></h3>
                             <p class="title">Co-President</p>
-                            <p class="description">What first prompted Angela’s interest in programming was the goal of achieving a greater understanding of IT. At first she was a little overwhelmed, but later found that programming is not too complicated, and it's fun as it is involves problem solving skills. Angela hopes to pursue engineering in the future.</p>
+                            <p class="description">What first prompted Angela’s interest in programming was the goal of achieving a greater understanding of IT. At first she was a little overwhelmed, but later found that programming is not too complicated, and it's fun as it involves problem solving skills. Angela hopes to pursue engineering in the future.</p>
                             <p class="email"><a href="mailto:angela@centralprogramming.ca">angela@centralprogramming.ca</a></p>
                             <a class="contact" href="contact.php?check=angela">Contact</a>
                         </div>
@@ -159,7 +176,7 @@
                             <h3><b>Ashley</b></h3>
                             <p class="title">Co-President</p>
                             <div class="desc-container"></div>
-                            <p class="description">Ashley’s favourite and least favourite part of programming is spending hours trying to figure out why it isn’t working (only for it to be a typo). The satisfaction of finally solving a difficult problem is one of the reason she enjoys contests so much. Ashley’s main interest is in software and game design.
+                            <p class="description">Ashley’s favourite and least favourite part of programming is spending hours trying to figure out why it isn’t working (only for it to be a typo). The satisfaction of finally solving a difficult problem is one of the reasons she enjoys contests so much. Ashley’s main interest is in software and game design.
                             </p>
                             <p class="email"><a href="mailto:ashley@centralprogramming.ca">ashley@centralprogramming.ca</a></p>
                             <a class="contact" href="contact.php?check=ashley">Contact</a>

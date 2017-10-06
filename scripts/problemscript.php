@@ -1,5 +1,5 @@
 <?php
-require_once "../../private/sql-bits.php";
+require_once "../private/sql-bits.php";
 
 $conn = new mysqli($servername, $username, $password, $dbname);
 
