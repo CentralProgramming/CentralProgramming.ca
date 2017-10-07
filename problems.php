@@ -25,13 +25,13 @@
                     <section id="this-week">
                         <h2>This Week's Problem</h2>
                         <div class="prob">
-                            <h3><a href="https://dmoj.ca/problem/ccc04j3" target="_blank">CCC '04 J3 - Smile with Similes &raquo;</a></h3>
+                            <h3><a href="https://dmoj.ca/problem/<?php echo $url[0]; ?>" target="_blank"><?php echo $name[0]; ?> &raquo;</a></h3>
                             <ul>
-                                <li><b>Points:</b> 3</li>
-                                <li><b>Time limit:</b> 2.0s</li>
-                                <li><b>Author:</b> CCC</li>
+                                <li><b>Points:</b> <?php echo $points[0]; ?></li>
+                                <li><b>Time limit:</b> <?php echo number_format($limit[0], 1); ?></li>
+                                <li><b>Author:</b> <?php echo $author[0]; ?></li>
                             </ul>
-                            <br/><p>Output all possible similes from a list of adjectives and nouns.</p>
+                            <br/><p><?php echo $description[0]; ?></p>
                         </div>
                     </section>
                 </div>
@@ -82,16 +82,16 @@
             <section id="past-probs">
                 <div class="row">
                     <?php
-                        for($x=0; $x<count($name); $x++){
+                        for($x=0; $x<count($name)-1; $x++){
                             echo '<div class="prob">
-                            <p class="date"><b>Date: </b>' . $date[$x] . '</p><br/>
-                            <h3><a href="https://dmoj.ca/problem/' . $url[$x] . '" target="_blank">' . $name[$x] . ' &raquo;</a></h3>
+                            <p class="date"><b>Date: </b>' . $date[$x+1] . '</p><br/>
+                            <h3><a href="https://dmoj.ca/problem/' . $url[$x+1] . '" target="_blank">' . $name[$x+1] . ' &raquo;</a></h3>
                             <ul>
-                                <li><b>Points:</b> ' . $points[$x] . '</li>
-                                <li><b>Time limit:</b> ' . number_format($limit[$x], 1) . '</li>
-                                <li><b>Author:</b> ' . $author[$x] . '</li>
+                                <li><b>Points:</b> ' . $points[$x+1] . '</li>
+                                <li><b>Time limit:</b> ' . number_format($limit[$x+1], 1) . '</li>
+                                <li><b>Author:</b> ' . $author[$x+1] . '</li>
                             </ul>
-                            <br/><p>' . $description[$x] . '</p>' . /*'<br/>
+                            <br/><p>' . $description[$x+1] . '</p>' . /*'<br/>
                             <p class="top-score"><b>Top Score: </b><a href="https://dmoj.ca/user/' . $top[$x] . '" target="_blank">' . $top[$x] . '</a></p>*/
                         '</div>';
         }
