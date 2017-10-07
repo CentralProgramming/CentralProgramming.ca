@@ -13,7 +13,7 @@
         <link href="https://fonts.googleapis.com/css?family=Monoton%7CPatua+One%7CGraduate%7CNunito:300,400,700%7CBowlby One" rel="stylesheet">
         
         <!--TAB TITLE AND ICON-->
-        <title>Central Programming</title>
+        <title>Page not Found | Central Programming</title>
         <link rel="shortcut icon" href="images/central-logo.png">
         
         <!--STYLESHEET AND JAVASCRIPT LINKS-->
@@ -30,6 +30,15 @@
     </head>
     
     <body id="body" onresize="resize()" onload="navJS()">
+        <script>
+            function navJS() {
+                if(window.matchMedia("(min-width: 651px)").matches) {
+                    document.getElementById("countdown").style.display = "inline-block";
+                }
+                document.getElementById("navbar").className = "jsEnabled";   
+            }
+        </script>
+        
         <div id="container">
             
             <!--HEADER IMAGE AND TITLE-->
@@ -54,9 +63,10 @@
             </div> 
 
             <!--NAVIGATION-->
+                        <!--NAVIGATION-->
             <nav id="navbar">
                 <div id="nav" class="topNav">
-                    <a class="nav-active" href="index.php" id="home">Home</a>
+                    <a href="index.php" id="home">Home</a>
                     <a href="problems.php">Weekly Problems</a>
                     <a href="contests.php">Contests</a>
                     
