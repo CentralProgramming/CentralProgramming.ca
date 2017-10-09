@@ -78,13 +78,13 @@
             
             <h2>Past Problems</h2>
             <hr style="height: 25px; border: 0;">
-
+            
             <section id="past-probs">
                 <div class="row">
                     <?php
                         for($x=0; $x<count($name)-1; $x++){
                             echo '<div class="prob">
-                            <p class="date"><b>Date: </b>' . $date[$x+1] . '</p><br/>
+                            <p class="date"><b>Date: </b>' . date_format(new DateTime($date[$x+1]), "m/d/y") . '</p><br/>
                             <h3><a href="https://dmoj.ca/problem/' . $url[$x+1] . '" target="_blank">' . $name[$x+1] . ' &raquo;</a></h3>
                             <ul>
                                 <li><b>Points:</b> ' . $points[$x+1] . '</li>
