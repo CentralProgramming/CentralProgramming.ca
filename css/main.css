@@ -50,6 +50,12 @@ span.strong {
 span.light {
     font-weight: 300;
 }
+div.flex {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    flex-wrap: wrap;
+}
 
 
 /*PARALLAX*/

@@ -5,7 +5,6 @@
 <?php require_once "templates/nav.php"; ?>  
 
 
-            
         
             <!--COMING SOON-->
             <section id="soon">
@@ -16,13 +15,48 @@
             </section>
             
 
+            
+            <!--BEGINNER NOTES-->
+            <section id="beginners">
+                <h2>Beginners' Resources</h2>
+                <div id="note-container" class="flex">
+                
+                    <div class="website">
+                        <h3><a href="https://tickets.authentigate.ca/shop/WFD/266" target="_blank">Execute Python Online</a></h3>
+                        <p>An online Python editor that's great for testing longer programs. Input must be entered in advance.</p>
+                    </div>
+                    
+                    <div class="website">
+                        <h3><a href="https://www.python.org/shell/" target="_blank">Python Shell</a></h3>
+                        <p>Online Python console on the official  website. An excellent place to test Python code online.</p>
+                    </div>
+                    
+                    <div class="website">
+                        <h3><a href="https://cscircles.cemc.uwaterloo.ca/" target="_blank">CS Circles</a></h3>
+                        <p>One of the University of Waterloo's resources for learning Python. Enter anz0, ashmc, or Fay-Z as your "guru" to ask us questions through the site.</p>
+                    </div>
+                    
+                    <div class="website">
+                        <h3><a href="https://www.codecademy.com/catalog/language/python" target="_blank">Codeacademy</a></h3>
+                        <p>Interactive lessons on Python syntax. Offers free and paid membership options.</p>
+                    </div>
+                    
+                    <div class="website">
+                        <h3><a href="https://www.tutorialspoint.com/python3/" target="_blank">TutorialsPoint</a></h3>
+                        <p>Online Python tutorials/notes. More advanced, but less interactive. An excellent place to broaden your knowledge.</p>
+                    </div>
+                    
+                </div>
+            </section>
+
+        
 
             <section id="other">
                 <h2>Other Resources</h2>
                 
-                <div id="siteholder">
+                <div id="siteholder" class="flex">
                     <div class="website">
-                        <h3><a href="https://www.codecademy.com/learn/all" target="_blank">Codeacademy</a></h3>
+                        <h3><a href="https://www.codecademy.com/" target="_blank">Codeacademy</a></h3>
                         <p>Interactive lesions on a variety of subjects, including web development, data management, application design, and programming languages.</p>
                     </div>
 
@@ -43,128 +77,9 @@
                 </div>
             </section>
             
-            <!--<h2 id="res-title">Resources</h2>
-            
-            SIDE NAVBAR
-            <section id="sidenav">
-                <button class="accordion" id="input" onclick="openCtgy(this)"><h3>Input</h3></button>
-                <div class="panel">
-                    <button class="expanded" onclick="openSection(event, 'inputIntro')"><h4 style="font-weight: bold;">Introduction</h4></button>
-                    <button class="expanded" onclick="openSection(event, 'scanner')"><h4>Scanner</h4></button>
-                    <button class="expanded" onclick="openSection(event, 'stream')"><h4>Input Stream</h4></button>
-                    <button class="expanded" onclick="openSection(event, 'reader')"><h4>Buffered Reader</h4></button>
-                </div>
-                
-                <button class="accordion" id="arrays" onclick="openCtgy(this)"><h3>Arrays</h3></button>
-                <div class="panel">
-                    <button class="expanded" onclick="openSection(event, 'cgryIntro')"><h4 style="font-weight: bold;">Introduction</h4></button>
-                    <button class="expanded" onclick="openSection(event, 'sec1')"><h4>Section 1</h4></button>
-                    <button class="expanded" onclick="openSection(event, 'sec2')"><h4>Section 2</h4></button>
-                    <button class="expanded" onclick="openSection(event, 'sec3')"><h4>Section 3</h4></button>
-                </div>
-                
-                <div id="instruct">
-                    <h3>Please select a category</h3>
-                </div>
-                
-                <button class="accordion" id="arrayLists" onclick="openCtgy(this)"><h3>Array Lists</h3></button>
-                <div class="panel">
-                    <button class="expanded" onclick="openSection(event, 'cgryIntro')"><h4 style="font-weight: bold;">Introduction</h4></button>
-                    <button class="expanded" onclick="openSection(event, 'sec1')"><h4>Section 1</h4></button>
-                    <button class="expanded" onclick="openSection(event, 'sec2')"><h4>Section 2</h4></button>
-                    <button class="expanded" onclick="openSection(event, 'sec3')"><h4>Section 3</h4></button>
-                </div>
-                
-                <button class="accordion" id="recursion" onclick="openCtgy(this)"><h3>Recursion</h3></button>
-                <div class="panel">
-                    <button class="expanded" onclick="openSection(event, 'cgryIntro')"><h4 style="font-weight: bold;">Introduction</h4></button>
-                    <button class="expanded" onclick="openSection(event, 'sec1')"><h4>Section 1</h4></button>
-                    <button class="expanded" onclick="openSection(event, 'sec2')"><h4>Section 2</h4></button>
-                    <button class="expanded" onclick="openSection(event, 'sec3')"><h4>Section 3</h4></button>
-                </div>
-                
-                <button class="accordion" onclick="openCtgy(this)"><h3>Category</h3></button>
-                <div class="panel">
-                    <button class="expanded" onclick="openSection(event, 'cgryIntro')"><h4 style="font-weight: bold;">Introduction</h4></button>
-                    <button class="expanded" onclick="openSection(event, 'sec1')"><h4>Section 1</h4></button>
-                    <button class="expanded" onclick="openSection(event, 'sec2')"><h4>Section 2</h4></button>
-                    <button class="expanded" onclick="openSection(event, 'sec3')"><h4>Section 3</h4></button>
-                </div>
-            </section>
-            
-            
-            
-            
-            CONTENT
-            <section id="info">
-                
-                INTRO CONTENT
-                <div id="intro">
-                    <h2>Java Resources</h2><br/>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras tempor magna quis risus iaculis, sed mollis mi consectetur. Cras et tortor ut lacus blandit gravida. Praesent eu sodales nulla. Praesent aliquam fringilla dignissim. Suspendisse euismod, massa at rutrum tempor, nibh tellus efficitur nisl, id porta lectus ligula ac felis. Proin pretium, ex sit amet dapibus malesuada, ante est eleifend erat, vehicula tincidunt diam ex at odio.</p>
-                </div>
-            
-            
-                INPUT CONTENT
-                <div id="inputIntro" class="content">
-                    <h2>Introduction to Input</h2>
-                </div>
-
-                <div id="scanner" class="content">
-                    <h2>Scanner</h2><br/>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ac nisi vel nisi semper imperdiet auctor in nisl. Ut vel dolor felis. Quisque lobortis quam aliquam, commodo mi non, ullamcorper tortor. Proin tincidunt vehicula ipsum, nec ullamcorper sem aliquam a. Nunc venenatis, ante eget mollis pharetra, tellus magna rutrum massa, eget ultricies quam metus in leo. Vestibulum eu justo id quam porttitor interdum. Praesent dictum, quam in dapibus venenatis, elit metus aliquet nulla, ac iaculis dolor est ac justo. Curabitur quam mauris, dignissim et pulvinar at, scelerisque rhoncus arcu. Aliquam a massa sed justo tristique viverra nec sit amet est. Ut consequat eget orci in gravida. Curabitur at turpis tristique risus cursus tempus. Praesent sit amet lectus at est auctor maximus. Sed sapien odio, pulvinar vitae quam nec, pulvinar pulvinar dui.</p>
-
-                    <p>Vestibulum et laoreet massa. Aliquam aliquam erat massa, ac egestas massa efficitur ac. Nulla facilisi. Sed urna nibh, congue suscipit dignissim in, vestibulum sit amet tortor. Donec lobortis odio mi, non aliquet est convallis et. Etiam aliquet mattis posuere. Ut ultrices, quam ac suscipit luctus, urna nibh porta velit, a convallis nisi sem in tellus. Phasellus vitae purus at tellus laoreet sollicitudin ut ut velit. Cras placerat pharetra porttitor. Nam vel dui at sem pharetra aliquam tempus eu orci. Fusce ut sagittis turpis.</p>
-
-                    <p>Suspendisse libero ligula, lobortis quis pretium ac, tempus nec metus. Suspendisse velit enim, interdum ut tortor non, tempor vestibulum velit. Proin in mauris semper, luctus ante id, mattis nulla. Phasellus quis libero et metus egestas pharetra. Praesent ullamcorper tristique augue, eu aliquet odio ornare id. Sed vitae viverra lacus. Ut eu lobortis diam. Phasellus maximus turpis vehicula, elementum ligula in, scelerisque diam.</p>
-
-                    <p>Suspendisse non leo mi. Fusce at porta eros. Aenean ultrices, lacus maximus rutrum ultricies, nulla sem finibus lorem, in faucibus justo sapien non purus. Aenean augue ligula, hendrerit vel dui eget, aliquam ornare augue. Praesent eleifend dapibus tellus. Etiam vestibulum consequat orci, sed dictum urna bibendum vitae. Phasellus nec vestibulum lorem. Sed elementum lectus vel iaculis malesuada. Aliquam suscipit efficitur sapien, nec lobortis orci venenatis at. Nulla nec est ac erat scelerisque facilisis. Duis quis nibh lobortis, ullamcorper orci id, commodo est.</p>
-
-                    <p>Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nulla vel scelerisque elit. Phasellus finibus ultricies eros, sit amet malesuada arcu tincidunt non. In nulla odio, volutpat at dolor sed, egestas blandit nunc. Phasellus interdum nec sem nec convallis. Mauris dapibus nisi a arcu eleifend, a tempor dolor tempus. Sed scelerisque nunc in tincidunt semper. Morbi id elit at velit placerat mollis eget a nisi. Morbi tellus nisl, auctor ut eros a, ornare ullamcorper diam. Nulla venenatis erat quis odio efficitur condimentum ac in enim. Nulla non gravida felis.</p>
-                </div>
-
-                <div id="stream" class="content">
-                    <h2>Input Stream</h2>
-                </div>
-
-                <div id="reader" class="content">
-                    <h2>Buffered Reader</h2>
-                </div>
-
-
-                INTROS [PLACEHOLDER]
-                <div id="arrayIntro" class="content">
-                    <h2>Introduction to Arrays</h2>
-                </div>
-                <div id="arrayListsIntro" class="content">
-                    <h2>Introduction to Array Lists</h2>
-                </div>
-                <div id="recursionIntro" class="content">
-                    <h2>Introduction to Recursion</h2>
-                </div>
-                
-                PLACEHOLDER CONTENT
-                <div id="cgryIntro" class="content">
-                    <h2>Introduction</h2>
-                </div>
-                <div id="sec1" class="content">
-                    <h2>Section 1</h2><br/>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras tempor magna quis risus iaculis, sed mollis mi consectetur. Cras et tortor ut lacus blandit gravida. Praesent eu sodales nulla. Praesent aliquam fringilla dignissim.</p>
-                </div>
-                <div id="sec2" class="content">
-                    <h2>Section 2</h2><br/>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras tempor magna quis risus iaculis, sed mollis mi consectetur. Cras et tortor ut lacus blandit gravida. Praesent eu sodales nulla. Praesent aliquam fringilla dignissim.</p>
-                </div>
-                <div id="sec3" class="content">
-                    <h2>Section 3</h2><br/>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras tempor magna quis risus iaculis, sed mollis mi consectetur. Cras et tortor ut lacus blandit gravida. Praesent eu sodales nulla. Praesent aliquam fringilla dignissim.</p>
-                </div>
-            </section>
-            -->
             
             <hr style="height: 50px; border: 0; clear: both;">
            
-            
     
             
 <!--FOOTER & TOP BUTTON-->
