@@ -46,7 +46,7 @@
                         
                         <!--ANOUNCEMENTS-->
                         <div id="rounded-content">
-                            <h3>October 13</h3>
+                            <h3>October 13 & 20</h3>
                             <ul>
                                 <li><p>Beginners introduction to code</p>
                                     <ul>
@@ -80,9 +80,6 @@
                                     </ul>
                                 </li>
                             </ul>
-                            <br/>
-                            <iframe id="gform" src="https://docs.google.com/forms/d/e/1FAIpQLSc-Pvt9iQ2IkwTI5sSFkP3pQlCyu507v2rTMYk5nY--gYjf7w/viewform?embedded=true"></iframe>
-                            <p style="margin-top: 20px;"></p>
                         </div>
                         <p><a id="cal" href="calendar.php#from_news">View full calendar</a></p>
                     </div>
