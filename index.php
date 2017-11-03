@@ -46,6 +46,19 @@
                         
                         <!--ANOUNCEMENTS-->
                         <div id="rounded-content">
+                            <h3>November 3</h3>
+                            <ul>
+                                <li><p>Learn to draw graphics with code using Python's turtle module</p></li>
+                                <li><p>We will be working on <a href="https://repl.it" target="_blank">RepLit</a></p>
+                                    <ul>
+                                        <li><p>You can access our classroom <a href="https://repl.it/community/classrooms/35322" target="_blank">here</a></p></li>
+                                    </ul>
+                                </li>
+                                <li><p>Follow along our explainations or work at your own pace</p></li>
+                                <li><p>We will also be discussing our upcoming contest</p></li>
+                            </ul>
+                            <br/>
+                            
                             <h3>October 13 & 20</h3>
                             <ul>
                                 <li><p>Beginners introduction to code</p>
