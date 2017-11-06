@@ -46,12 +46,31 @@
                         
                         <!--ANOUNCEMENTS-->
                         <div id="rounded-content">
+                            <h3>November 24</h3>
+                            <ul>
+                                <li><p>Central's first very own programming contest!</p></li>
+                                <li><p>Compete for prizes, glory, and a whole lot of fun (and cookies) </p></li>
+                                <li><p>More information available soon</p></li>
+                            </ul>
+                            <br/>
+                            
+                            <h3>November 10 &amp; 17 &amp; 24</h3>
+                            <ul>
+                                <li><p>Contest practice</p>
+                                    <ul>
+                                        <li><p>Will be going over weekly problems and sharing tips</p></li>
+                                        <li><p>Preparing for our upcoming contest on November 24</p></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <br/>
+                            
                             <h3>November 3</h3>
                             <ul>
                                 <li><p>Learn to draw graphics with code using Python's turtle module</p></li>
                                 <li><p>We will be working on <a href="https://repl.it" target="_blank">RepLit</a></p>
                                     <ul>
-                                        <li><p>You can access our classroom <a href="https://repl.it/community/classrooms/35322" target="_blank">here</a></p></li>
+                                        <li><p>You can access the notes <a href="https://repl.it/community/classrooms/35322" target="_blank">here</a></p></li>
                                     </ul>
                                 </li>
                                 <li><p>Follow along our explainations or work at your own pace</p></li>
@@ -59,7 +78,7 @@
                             </ul>
                             <br/>
                             
-                            <h3>October 13 & 20</h3>
+                            <h3>October 13 &amp; 20</h3>
                             <ul>
                                 <li><p>Beginners introduction to code</p>
                                     <ul>

@@ -43,7 +43,7 @@
                         <div class="contest">
 
                             <div class="front" style="background-image: url(images/com1.jpeg);">
-                                <p class="date">11/?/18</p>
+                                <p class="date">11/24/18</p>
                                 <hr style="height: 20%; border: 0;">
                                 <h3>Central #1</h3>
                                 <div class="info" onclick="flipBack(this)">More info</div>
@@ -53,12 +53,12 @@
                                 <span class="turn" onclick="flipFront(this)">&orarr;</span>
                                 <h3>Central #1</h3>
                                 <ul>
-                                    <li><b>Date: </b> November 2017</li>
+                                    <li><b>Date: </b> November 24 2017</li>
                                     <li><b>Type: </b> Solo</li>
                                     <li><b>Location: </b> Online, in room 117</li>
                                     <li><b>Organizer: </b> Central Programming Club</li>
                                 </ul>
-                                <p class="description">This contest is to serve as an introduction to programming contests. We will be holding two levels, each suited to the knowledge acquired in each grade at that time. More information will be available closer to the event.</p>
+                                <p class="description">This contest is to serve as an introduction to programming contests. We will be holding two levels, each suited to the knowledge acquired in each course at that time. More information will be available closer to the event.</p>
                                 <a href="https://dmoj.ca/problems/" class="block" target="_blank">Practice</a>
                             </div>
 
