@@ -1,5 +1,5 @@
 /*COUNTDOWN*/
-var countDownDate = new Date("Nov 3, 2017 11:15:00").getTime();
+var countDownDate = new Date("Nov 10, 2017 11:15:00").getTime();
 var x = setInterval(function() {
     var now = new Date().getTime();
     var distance = countDownDate - now;
@@ -24,7 +24,6 @@ function hideCountdown() {
 
 
 /*NAVIGATION*/
-
 function resize() {
     if (window.matchMedia("(min-width: 651px)").matches) {
         document.getElementById("nav").className = "topNav";

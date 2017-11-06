@@ -75,7 +75,7 @@
 }
 #leaderboard table {
     width: 95%;
-    height: 84%;
+    height: 93%;
     margin: 0 auto;
     background-color: #e6e6e6;
     border-collapse: collapse;
@@ -98,23 +98,14 @@
     width: 50%;
     font-size: 1.25rem;
 }
-h3#disclaimer {
-    width: 95%;
-    height: 5%;
-    margin: 1% auto;
-    color: #808080;
-    font-size: 1rem;
-    text-align: left;
-}
    
 
 
 /*PAST PROBLEMS*/
 #past-probs {
     width: 100%;
-    min-height: 100px;
-    /*height: 500px;
-    overflow: scroll;*/
+    height: 500px;
+    overflow: scroll;
     padding: 2% 2% 1% 0;
     box-shadow: 0 5px 5px #666666;
     outline: 2px solid #737373;
