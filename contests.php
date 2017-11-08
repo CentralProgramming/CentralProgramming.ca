@@ -26,21 +26,9 @@
             
             <section id="upcoming">
                 <h2>Upcoming Contests</h2>
-                    <div class="none">
-                        <hr style="height: 25%; border: 0;">
-                        <h3>Nothing Upcoming</h3>
-                    </div>
-            </section>
-            
-            <hr style="height: 50px; border: 0;">
-            
-            
-            <section id="future">
-                <h2>Future Contests</h2>
                 <div class="contest-container">
-                
                     <div class="column">
-                        <div class="contest">
+                        <div class="contest" style="min-height: 550px;">
 
                             <div class="front" style="background-image: url(images/com1.jpeg);">
                                 <p class="date">11/24/18</p>
@@ -53,18 +41,26 @@
                                 <span class="turn" onclick="flipFront(this)">&orarr;</span>
                                 <h3>Central #1</h3>
                                 <ul>
-                                    <li><b>Date: </b> November 24 2017</li>
+                                    <li><b>Date: </b> November 24<sup>th</sup> 2017</li>
                                     <li><b>Type: </b> Solo</li>
                                     <li><b>Location: </b> Online, in room 117</li>
                                     <li><b>Organizer: </b> Central Programming Club</li>
                                 </ul>
-                                <p class="description">This contest is to serve as an introduction to programming contests. We will be holding two levels, each suited to the knowledge acquired in each course at that time. More information will be available closer to the event.</p>
+                                <p class="description">This contest is to serve as an introduction to programming contests. We will be holding two levels, each suited to the knowledge acquired in each course at that time. Compete for fame and glory or to practice your skills and have a good time. More information will be available closer to the event.</p>
+                                <a href="https://goo.gl/forms/jwbLjYlxlyJSqKFw2" class="block" target="_blank">Sign-Up</a>
                                 <a href="https://dmoj.ca/problems/" class="block" target="_blank">Practice</a>
                             </div>
-
+                        </div>
                     </div>
                 </div>
-
+            </section>
+            
+            <hr style="height: 50px; border: 0;">
+            
+            
+            <section id="future">
+                <h2>Future Contests</h2>
+                <div class="contest-container">
 
                 <div class="column">
                     <div class="contest">

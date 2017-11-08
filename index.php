@@ -50,6 +50,7 @@
                             <ul>
                                 <li><p>Central's first very own programming contest!</p></li>
                                 <li><p>Compete for prizes, glory, and a whole lot of fun (and cookies) </p></li>
+                                <li><p>Please sign up/let us know if the date doesn't work for you <a href="https://goo.gl/forms/jwbLjYlxlyJSqKFw2" target="_blank">here</a></p></li>
                                 <li><p>More information available soon</p></li>
                             </ul>
                             <br/>
