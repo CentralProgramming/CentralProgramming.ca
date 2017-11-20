@@ -51,11 +51,11 @@
                                 <li><p>Central's first very own programming contest!</p></li>
                                 <li><p>Compete for prizes, glory, and a whole lot of fun (and cookies) </p></li>
                                 <li><p>Please sign up/let us know if the date doesn't work for you <a href="https://goo.gl/forms/jwbLjYlxlyJSqKFw2" target="_blank">here</a></p></li>
-                                <li><p>More information available soon</p></li>
+                                <li><p><a href="contests.php#upcoming">More information</a></p></li>
                             </ul>
                             <br/>
                             
-                            <h3>November 10 &amp; 17 &amp; 24</h3>
+                            <h3>November 10 &amp; 24</h3>
                             <ul>
                                 <li><p>Contest practice</p>
                                     <ul>

@@ -24,6 +24,10 @@ h2 {
     color: #ffcc66;
     text-shadow: 2px 4px #000;
 }
+h2.smaller {
+    font-size: 2.15rem;
+    color: #ffdd99;
+}
 h3 {
     font-family: "Nunito", "Palatino Linotype", serif;
     font-size: 1.125rem;
@@ -112,11 +116,76 @@ p#timer {
     text-align: center;
 }
 
-#countdown span {
+span.closebtn {
     float: right;
+    cursor: pointer;
     padding-right: 10px;
 }
 
+
+/*MODAL*/
+.modal {
+    width: 100%;
+    height: 100%;
+    z-index: 99;
+    overflow: auto;
+    position: fixed;
+    background-color: rgba(0,0,0,0.4);
+}
+.modal-content {
+    width: 60%;
+    margin: 10% auto;
+    padding: 5% 5% 1%;
+    text-align: center;
+    box-shadow: 0 2px 5px #666666;
+    border: 10px solid #f2f2f2;
+    border-radius: 15px;
+    background-image: url(../images/banner.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.modal-content h2 {
+    background-color: rgba(225,225,225,0.5);
+}
+.modal-content p#desc {
+    width: 50%;
+    margin: 5% auto;
+    padding: 2%;
+    color: #fff;
+    text-shadow: 1px 1px #000;
+    background-color: rgba(0,0,0,0.5);
+}
+.modal-content #sign-up {
+    width: 25%;
+    margin: 0 auto;
+    padding: 10px;
+    font-family: "Nunito", "Palatino Linotype", serif;
+    font-size: 1.25rem;
+    font-weight: bold;
+    border-radius: 5px;
+    box-shadow: 2px 4px 5px #ccc;
+    background-color: #fff;
+}
+.modal-content #sign-up:hover {
+    box-shadow: 2px 4px 10px #666;
+    background-color: #f2f2f2;
+}
+.modal-content #note {
+    width: 90%;
+    margin: 7% auto 0;
+    color: #ddd;
+}
+#close-modal {
+    margin: -10%;
+    font-size: 2rem;
+    text-shadow: 1px 3px #666;
+    color: #ddd;
+}
+#close-modal:hover, #close-modal:focus {
+    font-weight: bold;
+    color: #f2f2f2;
+}
 
 
 /*NAVIGATION*/
@@ -393,6 +462,24 @@ input:focus, textarea:focus {
     .parallax {
         background-attachment: scroll;
     }
+    
+    /*MODAL*/
+    .modal-content {
+        width: 80%;
+    }
+    .modal-content h2 {
+        font-size: 6vw;
+    }
+    .modal-content h2.smaller {
+        font-size: 4vw;
+    }
+    .modal-content p {
+        width: 100%!important;
+    }
+    .modal-content #close-modal {
+        margin: -5%;
+    }
+    
     /*NAV*/
     nav a {
         font-size: 3.8vw;
@@ -450,6 +537,23 @@ input:focus, textarea:focus {
     /*COUNTDOWN*/
     div#countdown {
         display: none;
+    }
+    
+    /*MODAL*/
+    .modal-content {
+        width: 95%;
+    }
+    .modal-content h2 {
+        font-size: 10vw;
+    }
+    .modal-content h2.smaller {
+        font-size: 6vw;
+    }
+    .modal-content p {
+        font-size: 3.5vw;
+    }
+    .modal-content #sign-up {
+        font-size:4vw;
     }
     
     /*NAV*/
@@ -594,5 +698,22 @@ input:focus, textarea:focus {
     }
     h1#programming {
         font-size: 8.5vw;
+    }
+    
+    /*MODAL*/
+    .modal-content {
+        width: 100%;
+    }
+    .modal-content h2 {
+        font-size: 11vw;
+    }
+    .modal-content h2.smaller {
+        font-size: 8vw;
+    }
+    .modal-content p {
+        font-size: 4vw;
+    }
+    .modal-content #sign-up {
+        font-size: 5vw;
     }
 }

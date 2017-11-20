@@ -84,7 +84,9 @@
     </head>
     
     <body id="body" onresize="resize()<?php if(basename($_SERVER['PHP_SELF']) == 'resources.php'){echo '; fixNav()';}?>" onload="navJS()<?php 
-                                                if(basename($_SERVER['PHP_SELF']) == 'calendar.php'){
+                                               if(basename($_SERVER['PHP_SELF']) == 'index.php'){
+                                                    echo '; setModal();';
+                                                } else if(basename($_SERVER['PHP_SELF']) == 'calendar.php'){
                                                     echo '; setBack();';
                                                 }
                                                 else if(basename($_SERVER['PHP_SELF']) == 'contests.php'){
@@ -102,6 +104,48 @@
                 document.getElementById("navbar").className = "jsEnabled";   
             }
         </script>
+        
+        
+        <!--MODAL-->
+        <?php
+            if(!isset($_COOKIE["seenModal"]))
+                echo '<div class="modal" id="contest-modal">
+                <div class="modal-content">
+                    <span class="closebtn" id="close-modal">&times;</span>
+                    <h2 class="smaller">Interested in</h2> 
+                    <h2>Programming Contests?</h2>
+
+                    <p id="desc">Central Programming Club is hosting its first contest on <b>Friday November 24<sup>th</sup></b> after school</p>
+
+                    <a id="sign-up" href="https://goo.gl/forms/jwbLjYlxlyJSqKFw2" target="_blank">Sign up here<sup>*</sup></a>
+
+                    <p id="note">*Only current Central students may participate</p>
+                </div>
+            </div>
+
+
+            <script>
+                var modal = document.getElementById("contest-modal");
+                var span = document.getElementById("close-modal");
+                var link = document.getElementById("sign-up");
+
+                if(document.getElementById)
+
+                span.onclick = function() {
+                    modal.style.display = "none";  
+                }
+                link.onclick = function() {
+                    modal.style.display = "none";  
+                }
+                window.onclick = function(event) {
+                    if(event.target == modal) {
+                        modal.style.display = "none"; 
+                    }
+                }
+            </script>';
+
+            setcookie("seenModal", true, time() + (86400 * 10), "/");
+        ?>
         
         
         <div id="container">
@@ -122,7 +166,7 @@
             
             <!--COUNTDOWN TIMER-->
             <div id="countdown">
-                <h3>Next meeting in:</h3>
+                <h3>First Contest in:</h3>
                 <p id="timer"></p>
-                <span class="closebtn" style="cursor: pointer;" onclick="hideCountdown()">&times;</span>
+                <span class="closebtn"  onclick="hideCountdown()">&times;</span>
             </div>

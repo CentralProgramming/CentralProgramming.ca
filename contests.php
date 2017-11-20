@@ -46,7 +46,7 @@
                                     <li><b>Location: </b> Online, in room 117</li>
                                     <li><b>Organizer: </b> Central Programming Club</li>
                                 </ul>
-                                <p class="description">This contest is to serve as an introduction to programming contests. We will be holding two levels, each suited to the knowledge acquired in each course at that time. Compete for fame and glory or to practice your skills and have a good time. More information will be available closer to the event.</p>
+                                <p class="description">This contest is to serve as an introduction to programming contests. We will be holding two levels, each suited to the knowledge acquired in each course at that time. Compete for fame and glory or to practice your skills and have a good time. The contest will take approximately two hours (including set-up and prizes), and consist of three questions.</p>
                                 <a href="https://goo.gl/forms/jwbLjYlxlyJSqKFw2" class="block" target="_blank">Sign-Up</a>
                                 <a href="https://dmoj.ca/problems/" class="block" target="_blank">Practice</a>
                             </div>
