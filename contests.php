@@ -31,7 +31,7 @@
                         <div class="contest" style="min-height: 550px;">
 
                             <div class="front" style="background-image: url(images/com1.jpeg);">
-                                <p class="date">11/24/18</p>
+                                <p class="date">???</p>
                                 <hr style="height: 20%; border: 0;">
                                 <h3>Central #1</h3>
                                 <div class="info" onclick="flipBack(this)">More info</div>
@@ -41,7 +41,7 @@
                                 <span class="turn" onclick="flipFront(this)">&orarr;</span>
                                 <h3>Central #1</h3>
                                 <ul>
-                                    <li><b>Date: </b> November 24<sup>th</sup> 2017</li>
+                                    <li><b>Date: </b> Undetermined</li>
                                     <li><b>Type: </b> Solo</li>
                                     <li><b>Location: </b> Online, in room 117</li>
                                     <li><b>Organizer: </b> Central Programming Club</li>

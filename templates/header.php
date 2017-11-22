@@ -108,14 +108,14 @@
         
         <!--MODAL-->
         <?php
-            if(!isset($_COOKIE["seenModal"]))
+            if(!isset($_COOKIE["newModal"]))
                 echo '<div class="modal" id="contest-modal">
                 <div class="modal-content">
                     <span class="closebtn" id="close-modal">&times;</span>
-                    <h2 class="smaller">Interested in</h2> 
-                    <h2>Programming Contests?</h2>
+                    <h2>Contest Date</h2>
+                    <h2 class="smaller">had Been Moved!</h2> 
 
-                    <p id="desc">Central Programming Club is hosting its first contest on <b>Friday November 24<sup>th</sup></b> after school</p>
+                    <p id="desc">In order to allow more people the opportunity to participate, the contest is being postponed. Let us know in the sign-up form (or at a meeting) which dates work for you.</p>
 
                     <a id="sign-up" href="https://goo.gl/forms/jwbLjYlxlyJSqKFw2" target="_blank">Sign up here<sup>*</sup></a>
 
@@ -144,7 +144,7 @@
                 }
             </script>';
 
-            setcookie("seenModal", true, time() + (86400 * 10), "/");
+            setcookie("newModal", true, time() + (86400 * 10), "/");
         ?>
         
         
@@ -166,7 +166,7 @@
             
             <!--COUNTDOWN TIMER-->
             <div id="countdown">
-                <h3>First Contest in:</h3>
+                <h3>Next Meeting:</h3>
                 <p id="timer"></p>
                 <span class="closebtn"  onclick="hideCountdown()">&times;</span>
             </div>

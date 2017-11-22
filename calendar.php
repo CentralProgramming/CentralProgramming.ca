@@ -32,7 +32,7 @@
                 </div>
                 
                 <div class="event">
-                    <h3>CPC Programming Contest #1 - 11/24/17</h3>
+                    <h3>CPC Programming Contest #1 - ???</h3>
                     <div class="event-info">
                         <p>Test your skills and compete with your peers for prizes, fame, glory, and a whole lot of fun! We will be holding two levels, each suited to the knowledge acquired in each course at that time. This is a great way to start preparing for other contests later in the year, especially if you're interested in writing the Canadian Computing Competition by the University of Waterloo.</p>
                     </div>

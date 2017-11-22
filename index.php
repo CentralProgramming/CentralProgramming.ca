@@ -46,11 +46,11 @@
                         
                         <!--ANOUNCEMENTS-->
                         <div id="rounded-content">
-                            <h3>November 24</h3>
+                            <h3>CONTEST DATE</h3>
                             <ul>
                                 <li><p>Central's first very own programming contest!</p></li>
                                 <li><p>Compete for prizes, glory, and a whole lot of fun (and cookies) </p></li>
-                                <li><p>Please sign up/let us know if the date doesn't work for you <a href="https://goo.gl/forms/jwbLjYlxlyJSqKFw2" target="_blank">here</a></p></li>
+                                <li><p>Please sign up/let us know when you're available <a href="https://goo.gl/forms/jwbLjYlxlyJSqKFw2" target="_blank">here</a></p></li>
                                 <li><p><a href="contests.php#upcoming">More information</a></p></li>
                             </ul>
                             <br/>
