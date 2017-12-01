@@ -55,6 +55,15 @@
                             </ul>
                             <br/>
                             
+                            <h3>December 1 &amp; 8</h3>
+                            <ul>
+                                <li><p>Introducing a collaborative long-term project</p></li>
+                                <li><p>Bring your ideas and vote for your favourite</p></li>
+                                <li><p>Choose from web applications, game development, and Raspberry Pi projects</p></li>
+                                <li><p>We will also be signing up for <a href="http://github.com" target="_blank">GitHub</a></p></li>
+                            </ul>
+                            <br/>
+                            
                             <h3>November 10 &amp; 24</h3>
                             <ul>
                                 <li><p>Contest practice</p>
