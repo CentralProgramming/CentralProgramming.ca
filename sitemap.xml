@@ -7,37 +7,37 @@
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>http://centralprogramming.ca/index.php</loc>
+    <loc>http://centralprogramming.ca/index.html</loc>
     <lastmod>2018-01-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>http://centralprogramming.ca/problems.php</loc>
+    <loc>http://centralprogramming.ca/problems.html</loc>
     <lastmod>2017-12-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://centralprogramming.ca/contests.php</loc>
+    <loc>http://centralprogramming.ca/contests.html</loc>
     <lastmod>2018-01-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>http://centralprogramming.ca/resources.php</loc>
+    <loc>http://centralprogramming.ca/resources.html</loc>
     <lastmod>2017-10-13</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>http://centralprogramming.ca/calendar.php</loc>
+    <loc>http://centralprogramming.ca/calendar.html</loc>
     <lastmod>2017-11-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>http://centralprogramming.ca/contact.php</loc>
+    <loc>http://centralprogramming.ca/contact.html</loc>
     <lastmod>2017-09-15</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.4</priority>

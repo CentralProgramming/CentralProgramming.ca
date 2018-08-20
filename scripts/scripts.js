@@ -224,23 +224,23 @@ function setBack(){
     
     if (location.hash != ""){
         if (location.hash == "#from_home"){
-            backLink.setAttribute("href","index.php");
+            backLink.setAttribute("href","index.html");
             backPage.innerHTML = "Home";
         }
         else if (location.hash == "#from_news"){
-            backLink.setAttribute("href","index.php#announcements");
+            backLink.setAttribute("href","index.html#announcements");
             backPage.innerHTML = "Announcements";
         }
         else if (location.hash == "#from_problems"){
-            backLink.setAttribute("href","problems.php");
+            backLink.setAttribute("href","problems.html");
             backPage.innerHTML = "Weekly Problems";
         }
         else if (location.hash == "#from_contests"){
-            backLink.setAttribute("href","contests.php");
+            backLink.setAttribute("href","contests.html");
             backPage.innerHTML = "Contests";
         }
         else if (location.hash == "#from_resources"){
-            backLink.setAttribute("href","resources.php");
+            backLink.setAttribute("href","resources.html");
             backPage.innerHTML = "Resources";
         }
         document.getElementById("back-link").style.display = "block";
