@@ -1,0 +1,348 @@
+<!--HEAD & HEADER-->
+<!DOCTYPE HTML>
+<html lang="en">
+    
+    <head>
+        <!--META DATA-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="UTF-8">
+        <meta name="keywords" content="central programming club, london central, lcss, programming club, coding club">
+        <meta name="description" content="Practice your coding skills with Central Programming Club&apos;s weekly problems.">
+        <meta name="author" content="Central Programming">
+        <link rel="author" href="humans.txt">
+        
+        <!--FONTS-->
+        <link href="https://fonts.googleapis.com/css?family=Monoton%7CPatua+One%7CGraduate%7CNunito:300,400,700%7CBowlby One" rel="stylesheet">
+        
+        <!--TAB TITLE AND ICON-->
+        <title>
+            Weekly Problems &verbar; Central Programming Club        </title>
+        <link rel="shortcut icon" href="images/central-logo.png">
+        
+        <!--STYLESHEET AND JAVASCRIPT LINKS-->
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/problemspage.css">
+        <script src="scripts/scripts.js"></script>
+    </head>
+    
+    <body id="body" onresize="resize()" onload="navJS()">
+        <script>
+            function navJS() {
+                if(window.matchMedia("(min-width: 651px)").matches) {
+                    document.getElementById("countdown").style.display = "inline-block";
+                }
+                document.getElementById("navbar").className = "jsEnabled";   
+            }
+        </script>
+        
+        
+        <div id="container">
+            
+            <!--HEADER IMAGE AND TITLE-->
+            <header>
+                <div class="parallax" id="header-image">
+                <hr style="height: 150px; border: 0;">
+                    <a href="index.php"><img id="logo" src="images/central-programming-club-logo.png" alt="Central Programming Club's Logo">
+                    <div id="title">
+                        <h1 id="central"><span class="purple">C</span>entral</h1>
+                        <h1 id="programming"><span class="purple">P</span>rogramming</h1>
+                        <h1 id="club"><span class="purple">C</span>lub</h1>
+                    </div></a>
+                </div>
+            </header>
+
+            
+            <!--COUNTDOWN TIMER
+            <div id="countdown">
+                <h3>Next Meeting:</h3>
+                <p id="timer"></p>
+                <span class="closebtn"  onclick="hideCountdown()">&times;</span>
+            </div>-->            
+<!--NAV & ALERT-->
+            <!--NAVIGATION-->
+            <nav id="navbar">
+                <div id="nav" class="topNav">
+                    <a  href="index.php" id="home">Home</a>
+                    <a class="nav-active" href="problems.php">Weekly Problems</a>
+                    <a  href="contests.php">Contests</a>
+                    
+                    <!--RESOURCES SECTION (MOBILE)-->
+                    <div class="resources">
+                        <a  href="resources.php">Resources</a>
+                        <div class="resources-content">
+                            <a href="resources.php#sec_input">Input Types</a>
+                            <a href="resources.php#sec_arrays">Arrays</a>
+                            <a href="resources.php#sec_arraylists">Array Lists</a>
+                            <a href="resources.php#sec_recursion">Recursion</a>
+                        </div>
+                    </div>
+                    
+                    <!--RESOURCES SECTION (DROPDOWN)-->
+                    <div class="dropdown">
+                        <a href="resources.php" class="dropbtn ">Resources</a>
+                        <div class="dropdown-content">
+                            <a href="resources.php#sec_input">Input Types</a>
+                            <a href="resources.php#sec_arrays">Arrays</a>
+                            <a href="resources.php#sec_arraylists">Array Lists</a>
+                            <a href="resources.php#sec_recursion">Recursion</a>
+                        </div>
+                    </div>
+
+                    <!--MOBILE LINKS OPEN/CLOSE-->
+                    <a href="javascript:void(0);" id="icon" onclick="navButton()">&#9776;</a>
+                </div>
+            </nav>
+            
+            <noscript>
+                <div class="alert">
+                    <h3>This site works best with JavaScript Enabled</h3>
+                </div>
+            </noscript> 
+            <div class="alert">
+                <h3>This site is now static and forms/emails no longer work</h3>
+            </div>
+
+<!--LEADERBOARD SCRIPT-->
+
+            
+            <div id="top">
+                <div id="left">
+                    
+                    <!--PURPOSE SECTION-->
+                    <section id="about">
+                        <div id="about-content">
+                            <h2>Purpose</h2><br/>
+                            <p>Programming problems are a great way to prepare for contests, practice your coding skills, and exercise problem solving. With that in mind, a new problem from <a href="https://dmoj.ca/" target="_blank">DMOJ</a> will be posted here every Thursday. By participating in and solving these problems, you will earn points that go towards year-end prizes. You don't have to make a commitment to participate every week <span class="light">(because who has time for that at Central?)</span>; simply try a problem at home when you have time, or come in during one of our meetings and solve it with the help of your peers.</p><br/>
+                        </div>
+                    </section>
+
+                    
+                    <!--THIS WEEKS PROBLEM-->
+                    <section id="this-week">
+                        <h2>This Week's Problem</h2>
+                        <div class="prob">
+                            <h3><a href="https://dmoj.ca/problemecoo12r3p1" target="_blank">ECOO '12 R3 P1 - The Word Garden &raquo;</a></h3>
+                            <ul>
+                                <li><b>Points:</b> 10</li>
+                                <li><b>Time limit:</b> 2.0</li>
+                                <li><b>Author:</b> ECOO</li>
+                            </ul>
+                            <br/><p>Create "Word Gardens" out of a given quotation.</p>
+                        </div>
+                    </section>
+                </div>
+
+                
+                
+                <!--LEADERBOARD-->
+                <section id="leaderboard">
+                    <div id="leader-title">
+                        <h2>Leaderboard</h2>
+                    </div>
+                    <table>
+                        <tr>
+                            <th>Rank</th>
+                            <th>Username</th>
+                            <th><a href="#disclaimer">Points</a></th>
+                        </tr>
+                        <tr>
+                                        <td class="rank">01</td>
+                                        <td class="user"><a href="https://dmoj.ca/user/_Zaman" target="_blank">_Zaman</a></td>
+                                        <td class="points">10</td>
+                                    </tr><tr>
+                                        <td class="rank">02</td>
+                                        <td class="user"><a href="https://dmoj.ca/user/t_han27" target="_blank">t_han27</a></td>
+                                        <td class="points">6</td>
+                                    </tr><tr>
+                                        <td class="rank">02</td>
+                                        <td class="user"><a href="https://dmoj.ca/user/carolxu1" target="_blank">carolxu1</a></td>
+                                        <td class="points">6</td>
+                                    </tr><tr>
+                                        <td class="rank">03</td>
+                                        <td class="user"><a href="https://dmoj.ca/user/stuartbfong" target="_blank">stuartbfong</a></td>
+                                        <td class="points">5</td>
+                                    </tr><tr>
+                                        <td class="rank">04</td>
+                                        <td class="user"><a href="https://dmoj.ca/user/Kavin" target="_blank">Kavin</a></td>
+                                        <td class="points">4</td>
+                                    </tr><tr>
+                                        <td class="rank">04</td>
+                                        <td class="user"><a href="https://dmoj.ca/user/ridvansong" target="_blank">ridvansong</a></td>
+                                        <td class="points">4</td>
+                                    </tr><tr>
+                                        <td class="rank">04</td>
+                                        <td class="user"><a href="https://dmoj.ca/user/stu" target="_blank">stu</a></td>
+                                        <td class="points">4</td>
+                                    </tr><tr>
+                                        <td class="rank">05</td>
+                                        <td class="user"><a href="https://dmoj.ca/user/linjerr492" target="_blank">linjerr492</a></td>
+                                        <td class="points">2</td>
+                                    </tr><tr>
+                                        <td class="rank">06</td>
+                                        <td class="user"><a href="https://dmoj.ca/user/wangzhon150" target="_blank">wangzhon150</a></td>
+                                        <td class="points">1</td>
+                                    </tr><tr>
+                                        <td class="rank">06</td>
+                                        <td class="user"><a href="https://dmoj.ca/user/Kevin_Lee_LCSS" target="_blank">Kevin_Lee_LCSS</a></td>
+                                        <td class="points">1</td>
+                                    </tr>                    </table>
+                </section>
+            </div>
+            
+            
+            
+            <!--PAST PROBLEMS-->
+            <hr style="height: 30px; border: 0;">
+            
+            <h2>Past Problems</h2>
+            <hr style="height: 25px; border: 0;">
+            
+            <section id="past-probs">
+                <div class="row">
+                    <div class="prob">
+                            <p class="date"><b>Date: </b>03/12/18</p><br/>
+                            <h3><a href="https://dmoj.ca/problem/ecoo15r2p4" target="_blank">ECOO '15 R2 P4 - Rectangle Roundup &raquo;</a></h3>
+                            <ul>
+                                <li><b>Points:</b> 6</li>
+                                <li><b>Time limit:</b> 30.0</li>
+                                <li><b>Author:</b> ECOO</li>
+                            </ul>
+                            <br/><p>Output the perimeter of the largest possible rectangle you can create given a set of rectangular and square tiles.</p></div><div class="prob">
+                            <p class="date"><b>Date: </b>12/10/17</p><br/>
+                            <h3><a href="https://dmoj.ca/problem/ecoo12r1p4" target="_blank">ECOO '12 R1 P4 - Boggled &raquo;</a></h3>
+                            <ul>
+                                <li><b>Points:</b> 6</li>
+                                <li><b>Time limit:</b> 2.0</li>
+                                <li><b>Author:</b> ECOO</li>
+                            </ul>
+                            <br/><p>From the input of a game of "Boggled", print, according to the rules of game, the resulting score and the number of words that are legal, not found, too short, and repeated.</p></div><div class="prob">
+                            <p class="date"><b>Date: </b>12/01/17</p><br/>
+                            <h3><a href="https://dmoj.ca/problem/ccc07j5" target="_blank">CCC '07 J5 - Keep on Truckin' &raquo;</a></h3>
+                            <ul>
+                                <li><b>Points:</b> 5</li>
+                                <li><b>Time limit:</b> 2.0</li>
+                                <li><b>Author:</b> CCC</li>
+                            </ul>
+                            <br/><p>Determine how many ways a truck driver can choose motels based on the minimum distance traveled, speed limit, and list of motels available.</p></div><div class="prob">
+                            <p class="date"><b>Date: </b>11/23/17</p><br/>
+                            <h3><a href="https://dmoj.ca/problem/ccc03s3" target="_blank">CCC '03 S3 - Floor Plan &raquo;</a></h3>
+                            <ul>
+                                <li><b>Points:</b> 4</li>
+                                <li><b>Time limit:</b> 2.0</li>
+                                <li><b>Author:</b> CCC</li>
+                            </ul>
+                            <br/><p>Given the floorplan of a house and a certain amount of hardwood flooring, determine how many rooms can have hardwood installed and how much is left over.</p></div><div class="prob">
+                            <p class="date"><b>Date: </b>11/11/17</p><br/>
+                            <h3><a href="https://dmoj.ca/problem/ccc12s3" target="_blank">CCC '12 S3 - Absolutely Acidic &raquo;</a></h3>
+                            <ul>
+                                <li><b>Points:</b> 4</li>
+                                <li><b>Time limit:</b> 5.0</li>
+                                <li><b>Author:</b> CCC</li>
+                            </ul>
+                            <br/><p>From a list of river acidity readings, output the absolute difference between the two most frequently occurring readings.</p></div><div class="prob">
+                            <p class="date"><b>Date: </b>11/03/17</p><br/>
+                            <h3><a href="https://dmoj.ca/problem/ccc05s1" target="_blank">CCC '05 S1 - Snow Calls &raquo;</a></h3>
+                            <ul>
+                                <li><b>Points:</b> 4</li>
+                                <li><b>Time limit:</b> 2.0</li>
+                                <li><b>Author:</b> CCC</li>
+                            </ul>
+                            <br/><p>Convert phone numbers whose digits have been changed to characters back into normal phone numbers.</p></div><div class="prob">
+                            <p class="date"><b>Date: </b>10/29/17</p><br/>
+                            <h3><a href="https://dmoj.ca/problem/ccc11j1" target="_blank">CCC '11 J1 - Which Alien? &raquo;</a></h3>
+                            <ul>
+                                <li><b>Points:</b> 2</li>
+                                <li><b>Time limit:</b> 2.0</li>
+                                <li><b>Author:</b> CCC</li>
+                            </ul>
+                            <br/><p>Output a list of all possible aliens who could have illegally crossed our space based on a description of the amount of antenna and eyes they have.</p></div><div class="prob">
+                            <p class="date"><b>Date: </b>10/20/17</p><br/>
+                            <h3><a href="https://dmoj.ca/problem/ecoo12r1p2" target="_blank">ECOO '12 R1 P2 - Decoding DNA
+ &raquo;</a></h3>
+                            <ul>
+                                <li><b>Points:</b> 1</li>
+                                <li><b>Time limit:</b> 2.0</li>
+                                <li><b>Author:</b> ECCO</li>
+                            </ul>
+                            <br/><p>Transcribe a portion of DNA to RNA by finding its promoter and exterminator.</p></div><div class="prob">
+                            <p class="date"><b>Date: </b>10/13/17</p><br/>
+                            <h3><a href="https://dmoj.ca/problem/dwite07c2p1" target="_blank">DWITE '07 R2 #1 - Not Quite Prime &raquo;</a></h3>
+                            <ul>
+                                <li><b>Points:</b> 1</li>
+                                <li><b>Time limit:</b> 2.0</li>
+                                <li><b>Author:</b> DWITE</li>
+                            </ul>
+                            <br/><p>Determine if each of the 5 inputs is a prime or a semiprime. A prime can only be divided by 1 and itself, and a semiprime is the product of two prime numbers.</p></div><div class="prob">
+                            <p class="date"><b>Date: </b>10/06/17</p><br/>
+                            <h3><a href="https://dmoj.ca/problem/ccc04j3" target="_blank">CCC '04 J3 - Smile with Similes &raquo;</a></h3>
+                            <ul>
+                                <li><b>Points:</b> </li>
+                                <li><b>Time limit:</b> 2.0</li>
+                                <li><b>Author:</b> CCC</li>
+                            </ul>
+                            <br/><p>Output all possible similes from a list of adjectives and nouns.</p></div><div class="prob">
+                            <p class="date"><b>Date: </b>09/28/17</p><br/>
+                            <h3><a href="https://dmoj.ca/problem/ccc12j2" target="_blank">CCC '12 J2 - Sounds fishy! &raquo;</a></h3>
+                            <ul>
+                                <li><b>Points:</b> </li>
+                                <li><b>Time limit:</b> 2.0</li>
+                                <li><b>Author:</b> CCC</li>
+                            </ul>
+                            <br/><p>From input of four "depth readings", determine whether fish are rising, diving, or swimming at a constant depth.</p></div><div class="prob">
+                            <p class="date"><b>Date: </b>09/22/17</p><br/>
+                            <h3><a href="https://dmoj.ca/problem/ccc02j1" target="_blank">CCC '02 J1 - 0123456789 &raquo;</a></h3>
+                            <ul>
+                                <li><b>Points:</b> </li>
+                                <li><b>Time limit:</b> 2.0</li>
+                                <li><b>Author:</b> CCC</li>
+                            </ul>
+                            <br/><p>From input of a number from 0-9, output the digit using asterisks.<br/><br/>Tip: <span class=light>there are spaces between asterisks in a vertical segment.</span></p></div>                </div>
+            </section>
+
+            <hr style="height: 100px; border: 0;">
+            
+            
+            
+<!--FOOTER & TOP BUTTON-->
+            <!--FOOTER-->
+            <footer>
+                <div id="content">
+                    <div class="foot-colmn">
+                            <ul>
+                                <li><a href="index.php#info_top">About Us</a></li>
+                                <li><a href="index.php#team_sec">Team</a></li>
+                                <li><a href="index.php#announcements">News</a></li>
+                                <li><a href="contact.php">Contact</a></li>
+                            </ul>
+                        </div>
+                    
+                    <div class="foot-colmn" id="github">
+                        <a href="https://github.com/CentralProgramming" target="_blank" style="cursor: pointer;"><img src="images/GitHub-Mark.png" alt="GitHub">
+                        <p style="color: #4d3300;">Visit us on GitHub</p></a>
+                    </div>
+                    
+
+                        <div class="foot-colmn">
+                            <ul>
+                                <li><a href="https://dmoj.ca/organization/LCSS/users" target="_blank">DMOJ</a></li>
+                                <li><a href="problems.php">Problems</a></li>
+                                <li><a href="contests.php">Contests</a></li>
+                                <li><a href="calendar.php#from_problems">Calendar</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                
+                <div id="strip">
+                    <p id="copyright">&copy; <script>document.write(new Date().getFullYear())</script> Central Programming</p>
+                    <p id="foot-top"><a onclick="topFunction()">Top</a></p>
+                    <p id="error"><a href="contact.php?type=site">Report an Error</a></p>
+                </div>
+            </footer>
+
+
+            <!--BACK TO TOP BUTTON-->
+            <button onclick="topFunction()" id="topBtn">Top</button>
+
+        </div>
+    </body>
+</html>    

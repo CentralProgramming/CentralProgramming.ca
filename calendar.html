@@ -1,0 +1,204 @@
+<!--HEAD & HEADER-->
+<!DOCTYPE HTML>
+<html lang="en">
+    
+    <head>
+        <!--META DATA-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="UTF-8">
+        <meta name="keywords" content="central programming club, london central, lcss, programming club, coding club">
+        <meta name="description" content="A calendar of events for Central Programming Club in 2017/2018.">
+        <meta name="author" content="Central Programming">
+        <link rel="author" href="humans.txt">
+        
+        <!--FONTS-->
+        <link href="https://fonts.googleapis.com/css?family=Monoton%7CPatua+One%7CGraduate%7CNunito:300,400,700%7CBowlby One" rel="stylesheet">
+        
+        <!--TAB TITLE AND ICON-->
+        <title>
+            Calendar &verbar; Central Programming Club        </title>
+        <link rel="shortcut icon" href="images/central-logo.png">
+        
+        <!--STYLESHEET AND JAVASCRIPT LINKS-->
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/calendarpage.css">
+        <script src="scripts/scripts.js"></script>
+    </head>
+    
+    <body id="body" onresize="resize()" onload="navJS(); setBack();">
+        <script>
+            function navJS() {
+                if(window.matchMedia("(min-width: 651px)").matches) {
+                    document.getElementById("countdown").style.display = "inline-block";
+                }
+                document.getElementById("navbar").className = "jsEnabled";   
+            }
+        </script>
+        
+        
+        <div id="container">
+            
+            <!--HEADER IMAGE AND TITLE-->
+            <header>
+                <div class="parallax" id="header-image">
+                <hr style="height: 150px; border: 0;">
+                    <a href="index.php"><img id="logo" src="images/central-programming-club-logo.png" alt="Central Programming Club's Logo">
+                    <div id="title">
+                        <h1 id="central"><span class="purple">C</span>entral</h1>
+                        <h1 id="programming"><span class="purple">P</span>rogramming</h1>
+                        <h1 id="club"><span class="purple">C</span>lub</h1>
+                    </div></a>
+                </div>
+            </header>
+
+            
+            <!--COUNTDOWN TIMER
+            <div id="countdown">
+                <h3>Next Meeting:</h3>
+                <p id="timer"></p>
+                <span class="closebtn"  onclick="hideCountdown()">&times;</span>
+            </div>-->            
+<!--NAV & ALERT-->
+            <!--NAVIGATION-->
+            <nav id="navbar">
+                <div id="nav" class="topNav">
+                    <a  href="index.php" id="home">Home</a>
+                    <a  href="problems.php">Weekly Problems</a>
+                    <a  href="contests.php">Contests</a>
+                    
+                    <!--RESOURCES SECTION (MOBILE)-->
+                    <div class="resources">
+                        <a  href="resources.php">Resources</a>
+                        <div class="resources-content">
+                            <a href="resources.php#sec_input">Input Types</a>
+                            <a href="resources.php#sec_arrays">Arrays</a>
+                            <a href="resources.php#sec_arraylists">Array Lists</a>
+                            <a href="resources.php#sec_recursion">Recursion</a>
+                        </div>
+                    </div>
+                    
+                    <!--RESOURCES SECTION (DROPDOWN)-->
+                    <div class="dropdown">
+                        <a href="resources.php" class="dropbtn ">Resources</a>
+                        <div class="dropdown-content">
+                            <a href="resources.php#sec_input">Input Types</a>
+                            <a href="resources.php#sec_arrays">Arrays</a>
+                            <a href="resources.php#sec_arraylists">Array Lists</a>
+                            <a href="resources.php#sec_recursion">Recursion</a>
+                        </div>
+                    </div>
+
+                    <!--MOBILE LINKS OPEN/CLOSE-->
+                    <a href="javascript:void(0);" id="icon" onclick="navButton()">&#9776;</a>
+                </div>
+            </nav>
+            
+            <noscript>
+                <div class="alert">
+                    <h3>This site works best with JavaScript Enabled</h3>
+                </div>
+            </noscript>  
+            <div class="alert">
+                <h3>This site is now static and forms/emails no longer work</h3>
+            </div>
+            
+            
+            
+            <div id="back-link">
+                <hr style="height: 50px; border: 0;">
+                <p><a id="page-from">&laquo; Back to <span id="back-page"></span></a></p>
+            </div>
+            
+            <section id="calendar">
+                <h2>Calendar</h2>
+                <iframe id="gcal" src="https://calendar.google.com/calendar/embed?showTitle=0&amp;showPrint=0&amp;showTabs=0&amp;showCalendars=0&amp;showTz=0&amp;height=600&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=gotvdsb.ca_3ng3kf7rgb3pqqvl42jhlucolk%40group.calendar.google.com&amp;color=%23875509&amp;ctz=America%2FNew_York"></iframe>     
+            </section>
+            
+             <hr style="height: 50px; border: 0;">
+            
+            
+            <section id="events">
+                <h2>Important Dates</h2>
+                <hr style="height: 20px; border: 0;">
+                
+                <div class="event">
+                    <h3>First Meeting - 9/22/17</h3>
+                    <div class="event-info">
+                        <p>The first meeting of Central's Programming Club where we will be introducing the club and coding problems, discussing future meetings, filling out the Google Form, and signing up for DMOJ.</p>
+                    </div>
+                    <div class="tag"><h4><a># Meetings</a></h4></div>
+                </div>
+                
+                <div class="event">
+                    <h3>CPC Programming Contest #1 - 2/13-20/18</h3>
+                    <div class="event-info">
+                        <p>Test your skills and compete with your peers for prizes, fame, glory, and a whole lot of fun! We will be holding two levels, each suited to the knowledge acquired in each course at that time. This is a great way to start preparing for other contests later in the year, especially if you're interested in writing the Canadian Computing Competition by the University of Waterloo. Links: <a href="https://dmoj.ca/contest/cpc01j" target="_blank">Junior</a>, <a href="https://dmoj.ca/contest/cpc01s" target="_blank">Senior</a></p>
+                    </div>
+                    <div class="tag"><h4><a href="contests.php"># Contests</a></h4></div>
+                </div>
+                
+                <div class="event">
+                    <h3>Canadian Computing Competition - 2/14/18</h3>
+                    <div class="event-info">
+                        <p>"The Canadian Computing Competition (CCC) is a fun challenge for secondary school students with an interest in programming. It is an opportunity for students to test their ability in designing, understanding and implementing algorithms." &nbsp; &mdash;<a href="http://www.cemc.uwaterloo.ca/contests/computing.html" target="_blank">CEMC</a>.</p>
+                    </div>
+                    <div class="tag"><h4><a href="contests.php"># Contests</a></h4></div>
+                </div>
+                
+                <div class="event">
+                    <h3>ECOO Programming Contest - 4/?/18</h3>
+                    <div class="event-info">
+                        <p>"The contest takes place in three rounds: 
+                            the board-wide contest, the regional contest, and the province-wide contest. A team consists of 4 students and one computer. In order to compete effectively, work must be divided efficiently among the team members." &nbsp; &mdash;<a href="http://ecoocs.org/" target="_blank">ECOO</a>.</p>
+                    </div>
+                    <div class="tag"><h4><a href="contests.php"># Contests</a></h4></div>
+                </div>
+            </section>
+            
+            <hr style="height: 50px; border: 0;">
+            
+    
+            
+<!--FOOTER & TOP BUTTON-->
+            <!--FOOTER-->
+            <footer>
+                <div id="content">
+                    <div class="foot-colmn">
+                            <ul>
+                                <li><a href="index.php#info_top">About Us</a></li>
+                                <li><a href="index.php#team_sec">Team</a></li>
+                                <li><a href="index.php#announcements">News</a></li>
+                                <li><a href="contact.php">Contact</a></li>
+                            </ul>
+                        </div>
+                    
+                    <div class="foot-colmn" id="github">
+                        <a href="https://github.com/CentralProgramming" target="_blank" style="cursor: pointer;"><img src="images/GitHub-Mark.png" alt="GitHub">
+                        <p style="color: #4d3300;">Visit us on GitHub</p></a>
+                    </div>
+                    
+
+                        <div class="foot-colmn">
+                            <ul>
+                                <li><a href="https://dmoj.ca/organization/LCSS/users" target="_blank">DMOJ</a></li>
+                                <li><a href="problems.php">Problems</a></li>
+                                <li><a href="contests.php">Contests</a></li>
+                                <li><a href="calendar.php#from_">Calendar</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                
+                <div id="strip">
+                    <p id="copyright">&copy; <script>document.write(new Date().getFullYear())</script> Central Programming</p>
+                    <p id="foot-top"><a onclick="topFunction()">Top</a></p>
+                    <p id="error"><a href="contact.php?type=site">Report an Error</a></p>
+                </div>
+            </footer>
+
+
+            <!--BACK TO TOP BUTTON-->
+            <button onclick="topFunction()" id="topBtn">Top</button>
+
+        </div>
+    </body>
+</html>    

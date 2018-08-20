@@ -1,26 +1,113 @@
 <!--HEAD & HEADER-->
-<?php require_once "templates/header.php"; ?>
+<!DOCTYPE HTML>
+<html lang="en">
+    
+    <head>
+        <!--META DATA-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="UTF-8">
+        <meta name="keywords" content="central programming club, london central, lcss, programming club, coding club">
+        <meta name="description" content="Information about all of the computer contests Central Programming Club will be participating in this school year.">
+        <meta name="author" content="Central Programming">
+        <link rel="author" href="humans.txt">
+        
+        <!--FONTS-->
+        <link href="https://fonts.googleapis.com/css?family=Monoton%7CPatua+One%7CGraduate%7CNunito:300,400,700%7CBowlby One" rel="stylesheet">
+        
+        <!--TAB TITLE AND ICON-->
+        <title>
+            Computer Contests &verbar; Central Programming Club        </title>
+        <link rel="shortcut icon" href="images/central-logo.png">
+        
+        <!--STYLESHEET AND JAVASCRIPT LINKS-->
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/contestspage.css">
+        <script src="scripts/scripts.js"></script>
+    </head>
+    
+    <body id="body" onresize="resize()" onload="navJS(); jsEnabled();">
+        <script>
+            function navJS() {
+                if(window.matchMedia("(min-width: 651px)").matches) {
+                    document.getElementById("countdown").style.display = "inline-block";
+                }
+                document.getElementById("navbar").className = "jsEnabled";   
+            }
+        </script>
+        
+        
+        <div id="container">
             
+            <!--HEADER IMAGE AND TITLE-->
+            <header>
+                <div class="parallax" id="header-image">
+                <hr style="height: 150px; border: 0;">
+                    <a href="index.php"><img id="logo" src="images/central-programming-club-logo.png" alt="Central Programming Club's Logo">
+                    <div id="title">
+                        <h1 id="central"><span class="purple">C</span>entral</h1>
+                        <h1 id="programming"><span class="purple">P</span>rogramming</h1>
+                        <h1 id="club"><span class="purple">C</span>lub</h1>
+                    </div></a>
+                </div>
+            </header>
+
+            
+            <!--COUNTDOWN TIMER
+            <div id="countdown">
+                <h3>Next Meeting:</h3>
+                <p id="timer"></p>
+                <span class="closebtn"  onclick="hideCountdown()">&times;</span>
+            </div>-->            
 <!--NAV & ALERT-->
-<?php require_once "templates/nav.php"; ?>  
+            <!--NAVIGATION-->
+            <nav id="navbar">
+                <div id="nav" class="topNav">
+                    <a  href="index.php" id="home">Home</a>
+                    <a  href="problems.php">Weekly Problems</a>
+                    <a class="nav-active" href="contests.php">Contests</a>
+                    
+                    <!--RESOURCES SECTION (MOBILE)-->
+                    <div class="resources">
+                        <a  href="resources.php">Resources</a>
+                        <div class="resources-content">
+                            <a href="resources.php#sec_input">Input Types</a>
+                            <a href="resources.php#sec_arrays">Arrays</a>
+                            <a href="resources.php#sec_arraylists">Array Lists</a>
+                            <a href="resources.php#sec_recursion">Recursion</a>
+                        </div>
+                    </div>
+                    
+                    <!--RESOURCES SECTION (DROPDOWN)-->
+                    <div class="dropdown">
+                        <a href="resources.php" class="dropbtn ">Resources</a>
+                        <div class="dropdown-content">
+                            <a href="resources.php#sec_input">Input Types</a>
+                            <a href="resources.php#sec_arrays">Arrays</a>
+                            <a href="resources.php#sec_arraylists">Array Lists</a>
+                            <a href="resources.php#sec_recursion">Recursion</a>
+                        </div>
+                    </div>
+
+                    <!--MOBILE LINKS OPEN/CLOSE-->
+                    <a href="javascript:void(0);" id="icon" onclick="navButton()">&#9776;</a>
+                </div>
+            </nav>
+            
+            <noscript>
+                <div class="alert">
+                    <h3>This site works best with JavaScript Enabled</h3>
+                </div>
+            </noscript>  
+            <div class="alert">
+                <h3>This site is now static and forms/emails no longer work</h3>
+            </div>
 
             
 <!--FORM SCRIPT-->
-<?php require_once "scripts/contestscript.php"; ?>
 
 
             <!--ERRORS-->
-            <?php
-                foreach($errors as $x => $alert){
-                    if($alert!=""){
-                        echo "<div class='alert' id='error'><h3>Error: " . $alert . "</h3></div>";
-                    }
-                }
-                if($messageSent == true){
-                    echo "<div class='alert' id='success'><h3>Your message has been sent. Thank you for your feedback.</h3></div>";
-                }    
-            ?>
-
+            
             
             <hr style="height: 25px; border: 0;">
             
@@ -171,13 +258,13 @@
                 <hr style="height: 25px; border: 0;">
                 
                 <div class="form">
-                    <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
+                    <form method="post" action="/contests.php">
                         <h3><span class="required">*</span> Name of contest:</h3>
-                        <input type="text" name="name" value="<?php echo $name;?>">
+                        <input type="text" name="name" value="">
                         <br/><br/>
                         
                         <h3><span class="required">*</span> Contest website:</h3>
-                        <input type="url" name="site" value="<?php echo $site;?>">
+                        <input type="url" name="site" value="">
                         <br/><br/>
                         
                         <input type="submit" value="Submit" id="submit">
@@ -191,4 +278,45 @@
             
             
 <!--FOOTER & TOP BUTTON-->
-<?php require_once "templates/footer.php"; ?>    
+            <!--FOOTER-->
+            <footer>
+                <div id="content">
+                    <div class="foot-colmn">
+                            <ul>
+                                <li><a href="index.php#info_top">About Us</a></li>
+                                <li><a href="index.php#team_sec">Team</a></li>
+                                <li><a href="index.php#announcements">News</a></li>
+                                <li><a href="contact.php">Contact</a></li>
+                            </ul>
+                        </div>
+                    
+                    <div class="foot-colmn" id="github">
+                        <a href="https://github.com/CentralProgramming" target="_blank" style="cursor: pointer;"><img src="images/GitHub-Mark.png" alt="GitHub">
+                        <p style="color: #4d3300;">Visit us on GitHub</p></a>
+                    </div>
+                    
+
+                        <div class="foot-colmn">
+                            <ul>
+                                <li><a href="https://dmoj.ca/organization/LCSS/users" target="_blank">DMOJ</a></li>
+                                <li><a href="problems.php">Problems</a></li>
+                                <li><a href="contests.php">Contests</a></li>
+                                <li><a href="calendar.php#from_contests">Calendar</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                
+                <div id="strip">
+                    <p id="copyright">&copy; <script>document.write(new Date().getFullYear())</script> Central Programming</p>
+                    <p id="foot-top"><a onclick="topFunction()">Top</a></p>
+                    <p id="error"><a href="contact.php?type=site">Report an Error</a></p>
+                </div>
+            </footer>
+
+
+            <!--BACK TO TOP BUTTON-->
+            <button onclick="topFunction()" id="topBtn">Top</button>
+
+        </div>
+    </body>
+</html>    
