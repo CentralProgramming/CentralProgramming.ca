@@ -32,9 +32,9 @@
                 </div>
                 
                 <div class="event">
-                    <h3>CPC Programming Contest #1 - ???</h3>
+                    <h3>CPC Programming Contest #1 - 2/13-20/18</h3>
                     <div class="event-info">
-                        <p>Test your skills and compete with your peers for prizes, fame, glory, and a whole lot of fun! We will be holding two levels, each suited to the knowledge acquired in each course at that time. This is a great way to start preparing for other contests later in the year, especially if you're interested in writing the Canadian Computing Competition by the University of Waterloo.</p>
+                        <p>Test your skills and compete with your peers for prizes, fame, glory, and a whole lot of fun! We will be holding two levels, each suited to the knowledge acquired in each course at that time. This is a great way to start preparing for other contests later in the year, especially if you're interested in writing the Canadian Computing Competition by the University of Waterloo. Links: <a href="https://dmoj.ca/contest/cpc01j" target="_blank">Junior</a>, <a href="https://dmoj.ca/contest/cpc01s" target="_blank">Senior</a></p>
                     </div>
                     <div class="tag"><h4><a href="contests.php"># Contests</a></h4></div>
                 </div>

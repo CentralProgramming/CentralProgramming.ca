@@ -106,48 +106,6 @@
         </script>
         
         
-        <!--MODAL-->
-        <?php
-            if(!isset($_COOKIE["newModal"]))
-                echo '<div class="modal" id="contest-modal">
-                <div class="modal-content">
-                    <span class="closebtn" id="close-modal">&times;</span>
-                    <h2>Contest Date</h2>
-                    <h2 class="smaller">had Been Moved!</h2> 
-
-                    <p id="desc">In order to allow more people the opportunity to participate, the contest is being postponed. Let us know in the sign-up form (or at a meeting) which dates work for you.</p>
-
-                    <a id="sign-up" href="https://goo.gl/forms/jwbLjYlxlyJSqKFw2" target="_blank">Sign up here<sup>*</sup></a>
-
-                    <p id="note">*Only current Central students may participate</p>
-                </div>
-            </div>
-
-
-            <script>
-                var modal = document.getElementById("contest-modal");
-                var span = document.getElementById("close-modal");
-                var link = document.getElementById("sign-up");
-
-                if(document.getElementById)
-
-                span.onclick = function() {
-                    modal.style.display = "none";  
-                }
-                link.onclick = function() {
-                    modal.style.display = "none";  
-                }
-                window.onclick = function(event) {
-                    if(event.target == modal) {
-                        modal.style.display = "none"; 
-                    }
-                }
-            </script>';
-
-            setcookie("newModal", true, time() + (86400 * 10), "/");
-        ?>
-        
-        
         <div id="container">
             
             <!--HEADER IMAGE AND TITLE-->
@@ -164,9 +122,9 @@
             </header>
 
             
-            <!--COUNTDOWN TIMER-->
+            <!--COUNTDOWN TIMER
             <div id="countdown">
                 <h3>Next Meeting:</h3>
                 <p id="timer"></p>
                 <span class="closebtn"  onclick="hideCountdown()">&times;</span>
-            </div>
+            </div>-->

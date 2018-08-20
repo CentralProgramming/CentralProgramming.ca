@@ -15,7 +15,7 @@
                     <section id="about">
                         <div id="about-content">
                             <h2>Purpose</h2><br/>
-                            <p>Programming problems are a great way to prepare for contests, practice your coding skills, and exercise problem solving. With that in mind, a new problem from <a href="https://dmoj.ca/" target="_blank">DMOJ</a> will be posted here every Thursday. By participating in and solving these problems, you will earn points that go towards monthly and year-end prizes. You don't have to make a commitment to participate every week <span class="light">(because who has time for that at Central?)</span>; simply try a problem at home when you have time, or come in during one of our meetings and solve it with the help of your peers.</p><br/>
+                            <p>Programming problems are a great way to prepare for contests, practice your coding skills, and exercise problem solving. With that in mind, a new problem from <a href="https://dmoj.ca/" target="_blank">DMOJ</a> will be posted here every Thursday. By participating in and solving these problems, you will earn points that go towards year-end prizes. You don't have to make a commitment to participate every week <span class="light">(because who has time for that at Central?)</span>; simply try a problem at home when you have time, or come in during one of our meetings and solve it with the help of your peers.</p><br/>
                         </div>
                     </section>
 
@@ -24,7 +24,7 @@
                     <section id="this-week">
                         <h2>This Week's Problem</h2>
                         <div class="prob">
-                            <h3><a href="https://dmoj.ca/problem/<?php echo $url[0]; ?>" target="_blank"><?php echo $name[0]; ?> &raquo;</a></h3>
+                            <h3><a href="https://dmoj.ca/problem<?php echo $url[0]; ?>" target="_blank"><?php echo $name[0]; ?> &raquo;</a></h3>
                             <ul>
                                 <li><b>Points:</b> <?php echo $points[0]; ?></li>
                                 <li><b>Time limit:</b> <?php echo number_format($limit[0], 1); ?></li>

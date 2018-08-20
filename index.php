@@ -46,16 +46,70 @@
                         
                         <!--ANOUNCEMENTS-->
                         <div id="rounded-content">
-                            <h3>CONTEST DATE</h3>
+                        <h3>May 11</h3>
                             <ul>
-                                <li><p>Central's first very own programming contest!</p></li>
-                                <li><p>Compete for prizes, glory, and a whole lot of fun (and cookies) </p></li>
-                                <li><p>Please sign up/let us know when you're available <a href="https://goo.gl/forms/jwbLjYlxlyJSqKFw2" target="_blank">here</a></p></li>
-                                <li><p><a href="contests.php#upcoming">More information</a></p></li>
+                                <li><p>Learn how to predict patterns with Python machine-learning</p></li>
+                                <li><p>Please bring your own laptop and download <a href="https://www.anaconda.com/download/#macos" target="_blank">Anaconda</a></p></li>
+                            </ul>
+                            <br/>
+                        
+                        <h3>April 13 &amp; 20 &amp; May 4</h3>
+                            <ul>
+                                <li><p>Learn how to make a custom brower start up page with HTML, CSS, and Javascript!</p></li>
+                                <li><p>Follow along our explainations or work at your own pace</p></li>
+                                <li><p>Check out the lessons on <a href="https://github.com/CentralProgramming/Custom-Browser-Start-Page" target="_blank">GitHub</a> or <a href="https://repl.it/community/classrooms/58722" target="_blank">RepLit</a></p></li>
                             </ul>
                             <br/>
                             
-                            <h3>December 1 &amp; 8</h3>
+                        <h3>March 23</h3>
+                            <ul>
+                                <li><p>Work on anything programming related and get help on any questions or contest problems you may have</p></li>
+                                <li><p>April's big meeting has been moved due to the assembly</p></li>
+                            </ul>
+                            <br/>
+                        
+                        <h3>March 9</h3>
+                            <ul>
+                                <li><p>Learn more about how to participate in the <a href="https://ecoocs.org" target="_blank">ECOO</a> programming contest</p></li>
+                                <li><p>Work in teams or on your own to practice problems</p></li>
+                            </ul>
+                            <br/>
+                               
+                            <h3>February 13 - 19</h3>
+                            <ul>
+                                <li><p>Central's first very own programming contest!</p></li>
+                                <li><p>Practice for the upcomming <a href="http://www.cemc.uwaterloo.ca/contests/computing.html" target="_blank">Canadian Computing Competition</a> hosted by the University of Waterloo</p></li>
+                                <li><p>Links: <a href="https://dmoj.ca/contest/cpc01j" target="_blank">Junior</a>, <a href="https://dmoj.ca/contest/cpc01s" target="_blank">Senior</a></p></li>
+                            </ul>
+                            <br/>
+                            
+                            <h3>January 12  &amp; 19</h3>
+                            <ul>
+                                <li><p>Information and practice sessions for the <a href="http://www.cemc.uwaterloo.ca/contests/computing.html" target="_blank">Canadian Computing Competition</a></p></li>
+                                <li><p>Anyone interested in writing the contest is encourged to attend these meetings</p></li>
+                            </ul>
+                            <br/>
+                            
+                            <h3>Winter Break</h3>
+                            <ul>
+                                <li><p>In place of our weekly problems we will be posting a weekly contest</p>
+                                	<ul>
+                                		<li><p>Practice for the upcoming Canadian Computing Competition</p></li>
+                                		<li><p>Solve problems in a timed situation</p></li>
+                                	</ul>
+                                </li>
+                                <li><p>Enjoy your break and bring in your project ideas for the new year!</p></li>
+                            </ul>
+                            <br/>
+                            
+                            <h3>December 22</h3>
+                            <ul>
+                                <li><p>Have some fun during the last meeting of 2017</p></li>
+                                <li><p>Come to play Mario Kart and other games on the Nintendo Switch or just hang out</p></li>
+                            </ul>
+                            <br/>
+                            
+                            <h3>December 1 &amp; 8 &amp; 15</h3>
                             <ul>
                                 <li><p>Introducing a collaborative long-term project</p></li>
                                 <li><p>Bring your ideas and vote for your favourite</p></li>
@@ -215,7 +269,7 @@
                             <h3><b>Ashley</b></h3>
                             <p class="title">Co-President</p>
                             <div class="desc-container"></div>
-                            <p class="description">Ashley’s favourite and least favourite part of programming is spending hours trying to figure out why it isn’t working (only for it to be a typo). The satisfaction of finally solving a difficult problem is one of the reasons she enjoys contests so much. Ashley’s main interest is in software and game design.
+                            <p class="description">Ashley’s favourite and least favourite part of programming is spending hours trying to figure out why it isn’t working (only for it to be a typo). The satisfaction of finally solving a difficult problem is one of the reasons she enjoys contests so much. Next year Ashley will be studying computer science/software engineering at Carleton.
                             </p>
                             <p class="email"><a href="mailto:ashley@centralprogramming.ca">ashley@centralprogramming.ca</a></p>
                             <a class="contact" href="contact.php?check=ashley">Contact</a>
